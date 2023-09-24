@@ -1,0 +1,46 @@
+.achievements {
+
+}
+    .achievements__heading {
+        width: 273px;
+        height: 99px;
+        background-image: url("../images/heading-achievements.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    @media (min-resolution: 2dppx) {
+        .achievements__heading {
+            background-image: url("../images/heading-achievements@2x.webp");
+        }
+    }
+
+    .achievements__list {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 9px;
+    }
+        .achievements__item {
+            box-shadow: inset 0 0 0 1px rgb(255 255 255 / 40%);
+            border-radius: 25px;
+        }
+            .achievements__image {
+                vertical-align: top;
+                filter: saturate(0);
+                opacity: 0.5;
+            }
+
+
+        .achievements__item--achieved {
+            box-shadow: none;
+            background-image: linear-gradient(#00FFFF, #B32DFF);
+        }
+            .achievements__item--achieved .achievements__image {
+                filter: none;
+                opacity: 1;
+            }
