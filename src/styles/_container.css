@@ -1,14 +1,21 @@
 .container {
-    width: 960px;
-    border-left: var(--container-padding) solid transparent;
-    border-right: var(--container-padding) solid transparent;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-@media (width < 600px) {
+@media (width < 360px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (1100px <= width) {
 
     .container {
-        width: auto;
+        min-width: 1000px;
+        max-width: 1180px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
