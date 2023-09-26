@@ -5,6 +5,6 @@ body {
     background-color: #081632;
     color: #FFFFFF;
     font-family: var(--font);
-    font-size: var(--body-font-size);
-    line-height: var(--body-line-heigth);
+    font-size: 16px;
+    line-height: 24px;
 }
