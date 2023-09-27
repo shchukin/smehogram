@@ -1,9 +1,18 @@
 .action {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
     height: var(--header-height);
     border: none;
     padding: 0 40px;
     background-color: transparent;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-transform: lowercase;
     cursor: pointer;
 }
     .action::before {
@@ -67,4 +76,22 @@
 }
     .action--profile::after {
         background-image: url("../vectors/profile.svg");
+    }
+
+
+.action--login {
+
+}
+    .action--login::before {
+        top: 15px;
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+        width: auto;
+        height: auto;
+        border-radius: 35px;
+    }
+
+    .action--login::after {
+        background-image: url("../vectors/login.svg");
     }
