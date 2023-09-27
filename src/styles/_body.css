@@ -2,7 +2,7 @@ body {
     height: 100%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--background-color);
+    background-color: var(--hovering-background-color);
     background-image: url("../images/background-desktop.webp");
     background-size: 1682px 1478px;
     background-repeat: no-repeat;

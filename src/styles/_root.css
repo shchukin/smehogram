@@ -3,7 +3,8 @@
     --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
     --transition-hover: 0.1s ease;
     --transition-show: 0.6s var(--ease-out-quint);
-    --background-color: #071535;
+    --hovering-background-color: rgb(102 206 255 / 25%);
+    --hover-color: #66CEFF;
     /*--input-border: #B3B3B3;*/
     /*--input-border-hover-and-focus: #7E7E7E;*/
     /*--placeholder-color: #999999;*/

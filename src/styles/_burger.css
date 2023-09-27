@@ -1,0 +1,51 @@
+.burger {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 110px;
+    height: 110px;
+    border: none;
+    background-color: transparent;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+    .burger::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        transition: background-color var(--transition-hover);
+    }
+
+    .burger:hover::before {
+        background-color: var(--hovering-background-color)
+    }
+
+    .burger::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 32px;
+        height: 32px;
+        background-image: url("../vectors/burger.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+.burger:active {
+    translate: 0 1px;
+}

@@ -117,7 +117,7 @@
                 margin-top: 28px;
                 font-size: 12px;
                 line-height: 18px;
-                color: rgb(255 255 255 / 0.5);
+                color: rgb(255 255 255 / 50%);
                 text-align: center;
             }
 
@@ -155,10 +155,6 @@
                     background-color: #66CEFF;
                 }
 
-                .achievements__close:active {
-                    translate: 0 1px;
-                }
-
                 /* крестик */
                 .achievements__close::after {
                     content: "";
@@ -176,6 +172,11 @@
                     background-repeat: no-repeat;
                     background-position: center center;
                 }
+
+
+            .achievements__close:active {
+                translate: 0 1px;
+            }
 
 
 
