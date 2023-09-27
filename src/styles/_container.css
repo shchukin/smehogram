@@ -1,15 +1,16 @@
 .container {
-    padding-left: var(--container-padding);
-    padding-right: var(--container-padding);
-    box-sizing: content-box;
-    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+    width: 1160px;
 }
 
-@media (1100px <= width) {
+@media (width < 750px) {
 
     .container {
-        max-width: 1180px;
+        width: 100%;
+        min-width: 320px;
+        max-width: 500px;
+        border-left: var(--container-padding) solid transparent;
+        border-right: var(--container-padding) solid transparent;
     }
 }
