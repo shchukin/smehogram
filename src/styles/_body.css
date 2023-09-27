@@ -2,7 +2,7 @@ body {
     height: 100%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--hovering-background-color);
+    background-color: #071535;
     background-image: url("../images/background-desktop.webp");
     background-size: 1682px 1478px;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body {
 }
 
 /* Картинка по ширине ограничена в 1682px */
-@media (1682px < width) {
+@media (1682px <= width) {
     body {
         background-size: cover;
     }

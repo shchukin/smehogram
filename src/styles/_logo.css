@@ -1,0 +1,15 @@
+.logo {
+    position: fixed;
+    left: 110px;
+    top: 25px;
+    display: block;
+    width: 129px;
+    height: 40px;
+    background-image: url("../vectors/logo.svg");
+    background-size: 129px 22px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+}
