@@ -4,6 +4,7 @@
     --transition-hover: 0.1s ease;
     --transition-show: 0.6s var(--ease-out-quint);
     --container-padding: 20px;
+    --background-color: #071535;
     /*--input-border: #B3B3B3;*/
     /*--input-border-hover-and-focus: #7E7E7E;*/
     /*--placeholder-color: #999999;*/
