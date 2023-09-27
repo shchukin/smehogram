@@ -1,0 +1,49 @@
+.header {
+    height: var(--header-height);
+}
+    .header__detachable-part {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: var(--header-height);
+        display: flex;
+        align-items: center;
+    }
+        .header__burger {
+
+        }
+
+        .header__branding {
+
+        }
+
+        .header__profile {
+            margin-left: auto;
+        }
+
+
+
+
+@media (width < 750px) {
+
+    .header {
+
+    }
+        .header__detachable-part {
+
+        }
+            .header__burger {
+
+            }
+
+            .header__branding {
+
+            }
+
+            .header__profile {
+        
+            }
+}
+
+

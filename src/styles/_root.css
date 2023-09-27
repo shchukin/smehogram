@@ -5,6 +5,7 @@
     --transition-show: 0.6s var(--ease-out-quint);
     --hovering-background-color: rgb(102 206 255 / 25%);
     --hover-color: #66CEFF;
+    --header-height: 90px;
     /*--input-border: #B3B3B3;*/
     /*--input-border-hover-and-focus: #7E7E7E;*/
     /*--placeholder-color: #999999;*/
@@ -15,6 +16,7 @@
 
 @media (width < 750px) {
     :root {
+        --header-height: 70px;
         --container-padding: 40px;
     }
 }
