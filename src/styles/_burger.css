@@ -26,7 +26,7 @@
     }
 
     .burger:hover::before {
-        background-color: var(--hovering-background-color)
+        background-color: var(--hovering-background-color);
     }
 
     .burger::after {
