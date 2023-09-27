@@ -1,4 +1,4 @@
-.burger {
+.action {
     position: relative;
     height: var(--header-height);
     border: none;
@@ -6,7 +6,7 @@
     background-color: transparent;
     cursor: pointer;
 }
-    .burger::before {
+    .action::before {
         content: "";
         position: absolute;
         left: 0;
@@ -20,22 +20,22 @@
         transition: background-color var(--transition-hover);
     }
 
-    .burger:hover::before {
+    .action:hover::before {
         background-color: var(--hovering-background-color);
     }
 
-    .burger::after {
+    .action::after {
         content: "";
         display: block;
         width: 32px;
         height: 32px;
-        background-image: url("../vectors/burger.svg");
+
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
     }
 
-.burger:active {
+.action:active {
     translate: 0 1px;
 }
 
@@ -43,11 +43,28 @@
 
 @media (width < 750px) {
 
-    .burger {
+    .action {
        padding-left: 20px;
        padding-right: 20px;
     }
-        .burger::before {
+        .action::before {
             display: none;
         }
 }
+
+
+
+
+.action--burger {
+
+}
+    .action--burger::after {
+        background-image: url("../vectors/burger.svg");
+    }
+
+.action--profile {
+
+}
+    .action--profile::after {
+        background-image: url("../vectors/profile.svg");
+    }
