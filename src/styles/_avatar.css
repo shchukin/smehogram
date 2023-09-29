@@ -1,0 +1,8 @@
+.avatar {
+
+}
+    .avatar__image {
+        vertical-align: top;
+        background-color: var(--image-fallback);
+        border-radius: 50%;
+    }

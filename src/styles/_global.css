@@ -6,6 +6,7 @@
     --hovering-background-color: rgb(102 206 255 / 25%);
     --hover-color: #66CEFF;
     --header-height: 92px;
+    --image-fallback: #D9D9D9;
     /*--input-border: #B3B3B3;*/
     /*--input-border-hover-and-focus: #7E7E7E;*/
     /*--placeholder-color: #999999;*/
