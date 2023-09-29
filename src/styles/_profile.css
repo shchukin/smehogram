@@ -1,43 +1,79 @@
 @media (750px <= width) {
 
-    /* Для показа профиля используется две анимации:
-     * 1) Анимация прозрачности. Смотри строки с комментарием (1). В отличии от слайда, которы
-     *
-     * (2)
-     */
     .profile {
         position: fixed;
         z-index: 750;
-        right: 0;
         top: 0;
-        bottom: 0;
+        right: -420px;
         width: 420px;
-        opacity: 0;           /* (2) */
-        visibility: hidden;   /* (2) */
-        pointer-events: none; /* (2) */
-        transition: opacity 300ms ease,
-                    visibility 300ms ease;
+        max-height: 100%;
+        overflow-y: auto; /* скроллбар */
+        opacity: 0; /* прозрачность для анимации */
+        visibility: hidden; /* чтобы в профиль нельзя было попасть табами */
+        pointer-events: none; /* чтобы во время анимации закрытия сквозь профиль можно было кликать (например в хендлер профиля в шапке повторного резкого открытия) */
+        transition: opacity 300ms ease,    /* анимация закрытия */
+                    visibility 300ms ease, /* анимация закрытия */
+                    right 1000ms ease;     /* анимация закрытия */
     }
-        @keyframes profile-slide {
-            from { transform: translateX(100%); }
-            to { transform: translateX(0); }
-        }
-
-        .profile__panel {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: blue;
-        }
 
     .profile--expanded {
-        opacity: 1;           /* (2) */
-        visibility: visible;  /* (2) */
-        pointer-events: auto; /* (2) */
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition: opacity 400ms ease,                 /* анимация открытия */
+                    visibility 400ms ease,              /* анимация открытия */
+                    right 800ms var(--ease-out-quint); /* анимация открытия */
     }
-        .profile--expanded .profile__panel {
-            animation: profile-slide 20s ease forwards; /* (1) */
+        .profile__panel {
+            padding: 115px 60px 60px;
+            background-image: url("../images/profile.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        @media (min-resolution: 2dppx) {
+            .profile__panel {
+                background-image: url("../images/profile@2x.webp");
+            }
         }
 }
+
+
+
+/* Красивая анимация закрытия: */
+/*@media (750px <= width) {*/
+
+/*    .profile {*/
+/*        position: fixed;*/
+/*        z-index: 750;*/
+/*        right: 0;*/
+/*        top: 0;*/
+/*        bottom: 0;*/
+/*        width: 420px;*/
+/*        opacity: 0;           !* (2) *!*/
+/*        visibility: hidden;   !* (2) *!*/
+/*        pointer-events: none; !* (2) *!*/
+/*        transition: opacity 300ms ease,*/
+/*                    visibility 300ms ease;*/
+/*    }*/
+/*        .profile__panel {*/
+/*            position: absolute;*/
+/*            top: 0;*/
+/*            bottom: 0;*/
+/*            right: -420px;*/
+/*            width: 420px;*/
+/*            background-color: blue;*/
+/*            transition: right 1s ease;*/
+/*        }*/
+
+/*    .profile--expanded {*/
+/*        opacity: 1;           !* (2) *!*/
+/*        visibility: visible;  !* (2) *!*/
+/*        pointer-events: auto; !* (2) *!*/
+/*    }*/
+/*        .profile--expanded .profile__panel {*/
+/*            right: 0;*/
+/*        }*/
+/*}*/
