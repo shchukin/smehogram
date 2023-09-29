@@ -55,9 +55,10 @@
             }
 
     .user__body {
-        margin-top: 80px;
+        margin-top: 60px;
     }
         .user__name {
+            margin-bottom: 4px;
             display: flex;
             align-items: baseline;
             font-weight: bold;
@@ -75,38 +76,59 @@
             .user__item {
                 position: relative;
                 display: block;
-                padding: 12px 10px;
                 margin-top: -1px;
+                padding: 10px;
+                border-top: 1px solid rgb(255 255 255 / 25%);
+                border-bottom: 1px solid rgb(255 255 255 / 25%);
+                font-size: 16px;
+                line-height: 24px;
                 text-decoration: none;
-                border-radius: 6px;
+                color: inherit;
+                transition: background-color var(--transition-hover);
             }
-                .user__item::before,
-                .user__item::after {
-                    content: "";
-                    position: absolute;
-                    left: 10px;
-                    right: 10px;
-                    display: block;
-                    height: 1px;
-                    background-color: rgb(255 255 255 / 25%);
-                }
 
-                .user__item::before {
-                    top: 0;
-                }
+            .user__item:hover {
+                background-color: rgb(255 255 255 / 25%);
+            }
 
-                .user__item::after {
-                    bottom: 0;
-                }
+            .user__item:first-child {
+                border-top: 1px solid rgb(255 255 255 / 50%);
+            }
 
-                .user__item:first-child::before {
-                    background-color: rgb(255 255 255 / 50%);
-                }
+            .user__item:last-child {
+                border-bottom: 1px solid rgb(255 255 255 / 50%);
+            }
 
-                .user__item:last-child::after {
-                    background-color: rgb(255 255 255 / 50%);
-                }
+    .user__footer {
+        margin-top: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .user__create-game {
+            margin-left: -4px;
+        }
 
-                .user__item:hover {
-                    background-color: var(--hovering-background-color);
-                }
+        .user__logout {
+            display: block;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            width: fit-content;
+            font-size: 12px;
+            line-height: 18px;
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+            text-transform: lowercase;
+            transition: text-decoration-color var(--transition-hover);
+        }
+
+        .user__logout:hover {
+            text-decoration-color: transparent;
+        }
+
+
+@media (800px <= height) {
+
+}

@@ -10,6 +10,7 @@
     color: rgb(255 255 255 / 40%);
     cursor: pointer;
     user-select: none;
+    transition: color var(--transition-hover);
 }
     .edit::before {
         content: "";
@@ -23,6 +24,9 @@
         transition: background-color var(--transition-hover);
     }
 
+.edit:hover {
+    color: #FFFFFF;
+}
     .edit:hover::before {
         background-color: var(--hovering-background-color);
     }
