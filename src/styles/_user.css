@@ -1,0 +1,26 @@
+.user {
+
+}
+    .user__heading {
+        width: 194px;
+        height: 96px;
+        background-image: url("../images/heading-user.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    @media (1.5dppx <= resolution < 2.5dppx ) {
+        .user__heading {
+            background-image: url("../images/heading-user@2x.webp");
+        }
+    }
+
+    @media (2.5dppx <= resolution) {
+        .user__heading {
+            background-image: url("../images/heading-user@3x.webp");
+        }
+    }

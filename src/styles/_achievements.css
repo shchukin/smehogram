@@ -18,9 +18,15 @@
         overflow: hidden;
     }
 
-    @media (min-resolution: 2dppx) {
+    @media (1.5dppx <= resolution < 2.5dppx ) {
         .achievements__heading {
             background-image: url("../images/heading-achievements@2x.webp");
+        }
+    }
+
+    @media (2.5dppx <= resolution) {
+        .achievements__heading {
+            background-image: url("../images/heading-achievements@3x.webp");
         }
     }
 

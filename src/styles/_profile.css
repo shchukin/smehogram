@@ -6,7 +6,7 @@
         top: 0;
         right: -420px;
         width: 420px;
-        max-height: 100%;
+        height: 100%;
         overflow-y: auto; /* скроллбар */
         opacity: 0; /* прозрачность для анимации */
         visibility: hidden; /* чтобы в профиль нельзя было попасть табами */
@@ -26,11 +26,12 @@
                     right 800ms var(--ease-out-quint); /* анимация открытия */
     }
         .profile__panel {
+            min-height: 100%; /* растягиваем фон */
             padding: 115px 60px 60px;
             background-image: url("../images/profile.webp");
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center center;
+            background-position: center top;
         }
 
         @media (min-resolution: 2dppx) {
@@ -38,42 +39,11 @@
                 background-image: url("../images/profile@2x.webp");
             }
         }
+
+        .profile__close,
+        .profile__close.action {
+            position: absolute;
+            left: 42px;
+            top: 20px;
+        }
 }
-
-
-
-/* Красивая анимация закрытия: */
-/*@media (750px <= width) {*/
-
-/*    .profile {*/
-/*        position: fixed;*/
-/*        z-index: 750;*/
-/*        right: 0;*/
-/*        top: 0;*/
-/*        bottom: 0;*/
-/*        width: 420px;*/
-/*        opacity: 0;           !* (2) *!*/
-/*        visibility: hidden;   !* (2) *!*/
-/*        pointer-events: none; !* (2) *!*/
-/*        transition: opacity 300ms ease,*/
-/*                    visibility 300ms ease;*/
-/*    }*/
-/*        .profile__panel {*/
-/*            position: absolute;*/
-/*            top: 0;*/
-/*            bottom: 0;*/
-/*            right: -420px;*/
-/*            width: 420px;*/
-/*            background-color: blue;*/
-/*            transition: right 1s ease;*/
-/*        }*/
-
-/*    .profile--expanded {*/
-/*        opacity: 1;           !* (2) *!*/
-/*        visibility: visible;  !* (2) *!*/
-/*        pointer-events: auto; !* (2) *!*/
-/*    }*/
-/*        .profile--expanded .profile__panel {*/
-/*            right: 0;*/
-/*        }*/
-/*}*/

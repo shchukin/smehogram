@@ -2,11 +2,12 @@
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 6px;
-    width: fit-content;
-    height: var(--header-height);
+    width: 50px;
+    height: 50px;
     border: none;
-    padding: 0 40px;
+    padding: 0;
     background-color: transparent;
     font-family: inherit;
     font-size: 14px;
@@ -23,8 +24,8 @@
         right: 0;
         bottom: 0;
         margin: auto;
-        width: 70px;
-        height: 70px;
+        width: 42px;
+        height: 42px;
         border-radius: 50%;
         transition: background-color var(--transition-hover);
     }
@@ -36,8 +37,8 @@
     .action::after {
         content: "";
         display: block;
-        width: 32px;
-        height: 32px;
+        width: 16px;
+        height: 16px;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
@@ -52,8 +53,7 @@
 @media (width < 750px) {
 
     .action {
-       padding-left: 20px;
-       padding-right: 20px;
+
     }
         .action::before {
             display: none;
@@ -63,23 +63,100 @@
 
 
 
-.action--burger {
+
+
+.action--close {
 
 }
+    .action--close::before {
+
+    }
+
+    .action--close::after {
+        background-image: url("../vectors/cross.svg");
+    }
+
+
+
+.action--close-to-right {
+
+}
+    .action--close-to-right::before {
+        width: 42px;
+        height: 42px;
+    }
+
+    .action--close-to-right::after {
+        width: 16px;
+        height: 16px;
+        background-image: url("../vectors/chevron-right.svg");
+    }
+
+
+
+.action--burger {
+    width: fit-content;
+    height: var(--header-height);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+    .action--burger::before {
+        width: 70px;
+        height: 70px;
+    }
+
     .action--burger::after {
+        width: 32px;
+        height: 32px;
         background-image: url("../vectors/burger.svg");
     }
 
-.action--profile {
+@media (width < 750px) {
 
+    .action--burger {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        .action--burger::after {
+
+        }
 }
+
+.action--profile {
+    width: fit-content;
+    height: var(--header-height);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+    .action--profile::before {
+        width: 70px;
+        height: 70px;
+    }
+
     .action--profile::after {
+        width: 32px;
+        height: 32px;
         background-image: url("../vectors/profile.svg");
     }
 
+@media (width < 750px) {
+
+    .action--profile {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        .action--profile::after {
+
+        }
+}
+
+
 
 .action--login {
-
+    width: fit-content;
+    height: var(--header-height);
+    padding-left: 40px;
+    padding-right: 40px;
 }
     .action--login::before {
         top: 15px;
@@ -92,5 +169,19 @@
     }
 
     .action--login::after {
+        width: 32px;
+        height: 32px;
         background-image: url("../vectors/login.svg");
     }
+
+@media (width < 750px) {
+
+    .action--login {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        .action--login::after {
+
+        }
+}
+
