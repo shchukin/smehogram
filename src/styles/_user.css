@@ -75,7 +75,7 @@
         }
             .user__item {
                 position: relative;
-                display: block;
+                display: flex;
                 margin-top: -1px;
                 padding: 10px;
                 border-top: 1px solid rgb(255 255 255 / 25%);
@@ -98,6 +98,16 @@
             .user__item:last-child {
                 border-bottom: 1px solid rgb(255 255 255 / 50%);
             }
+                .user__balance {
+                    padding: 4px 50px 4px 20px;
+                    margin: -4px 0 -4px auto;
+                    background-image: url("../vectors/user-balance.svg");
+                    background-size: 32px 32px;
+                    background-repeat: no-repeat;
+                    background-position: right center;
+                    font-weight: bold;
+                    color: #FFB369;
+                }
 
     .user__footer {
         margin-top: 34px;
