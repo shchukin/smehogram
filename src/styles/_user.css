@@ -55,7 +55,7 @@
             }
 
     .user__body {
-        margin-top: 60px;
+        margin-top: 30px;
     }
         .user__name {
             margin-bottom: 4px;
@@ -77,7 +77,7 @@
                 position: relative;
                 display: flex;
                 margin-top: -1px;
-                padding: 10px;
+                padding: 8px 10px;
                 border-top: 1px solid rgb(255 255 255 / 25%);
                 border-bottom: 1px solid rgb(255 255 255 / 25%);
                 font-size: 16px;
@@ -110,7 +110,7 @@
                 }
 
     .user__footer {
-        margin-top: 34px;
+        margin-top: 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -140,7 +140,67 @@
 
 
 
-@media (750px <= width) and (820px <= height) {
+@media (630px <= height < 660px) { /* Здесь высота, а не ширина */
+
+    .user {
+
+    }
+        .user__body {
+            margin-top: 48px;
+        }
+
+        .user__item {
+
+        }
+
+        .user__footer {
+
+        }
+}
+
+@media (660px <= height < 720px) { /* Здесь высота, а не ширина */
+
+    .user {
+
+    }
+        .user__body {
+            margin-top: 56px;
+        }
+
+        .user__item {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .user__footer {
+
+        }
+}
+
+
+@media (720px <= height < 820px) { /* Здесь высота, а не ширина */
+
+    .user {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+        .user__body {
+            margin-top: 60px;
+        }
+
+        .user__item {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .user__footer {
+
+        }
+}
+
+
+
+@media (820px <= height) { /* Здесь высота, а не ширина */
 
     .user {
         padding-top: 24px;
