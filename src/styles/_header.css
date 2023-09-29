@@ -1,8 +1,9 @@
 .header {
+    position: relative;
     height: var(--header-height);
 }
-    .header__detachable-part {
-        position: absolute;
+    .header__panel {
+        position: absolute; /* Здесь можно сделать position: fixed, чтобы прикрепить шапку. Правда, нужно будет ещё добавить фон. */
         z-index: 500;
         left: 0;
         top: 0;
@@ -33,8 +34,8 @@
     .header {
 
     }
-        .header__detachable-part {
-            position: fixed;
+        .header__panel {
+
         }
             .header__burger {
 

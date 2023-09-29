@@ -1,0 +1,43 @@
+@media (750px <= width) {
+
+    /* Для показа профиля используется две анимации:
+     * 1) Анимация прозрачности. Смотри строки с комментарием (1). В отличии от слайда, которы
+     *
+     * (2)
+     */
+    .profile {
+        position: fixed;
+        z-index: 750;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 420px;
+        opacity: 0;           /* (2) */
+        visibility: hidden;   /* (2) */
+        pointer-events: none; /* (2) */
+        transition: opacity 300ms ease,
+                    visibility 300ms ease;
+    }
+        @keyframes profile-slide {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+
+        .profile__panel {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: blue;
+        }
+
+    .profile--expanded {
+        opacity: 1;           /* (2) */
+        visibility: visible;  /* (2) */
+        pointer-events: auto; /* (2) */
+    }
+        .profile--expanded .profile__panel {
+            animation: profile-slide 20s ease forwards; /* (1) */
+        }
+}
