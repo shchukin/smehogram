@@ -106,7 +106,7 @@
         justify-content: space-between;
     }
         .user__create-game {
-            margin-left: -4px;
+            display: none;
         }
 
         .user__logout {
@@ -129,6 +129,20 @@
         }
 
 
-@media (800px <= height) {
 
+@media (750px <= width) and (820px <= height) {
+
+    .user {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+        .user__body {
+            margin-top: 87px;
+        }
+
+        .user__item {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
 }
+
