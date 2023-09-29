@@ -1,5 +1,7 @@
 .avatar {
-
+    display: inline-block;
+    vertical-align: top;
+    user-select: none;
 }
     .avatar__image {
         vertical-align: top;

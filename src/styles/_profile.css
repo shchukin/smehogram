@@ -27,7 +27,7 @@
     }
         .profile__panel {
             min-height: 100%; /* растягиваем фон */
-            padding: 94px 60px 60px;
+            padding: 114px 60px 60px;
             background-image: url("../images/profile.webp");
             background-size: cover;
             background-repeat: no-repeat;

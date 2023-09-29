@@ -15,6 +15,7 @@
     color: #FFFFFF;
     text-transform: lowercase;
     cursor: pointer;
+    user-select: none;
 }
     .action::before {
         content: "";

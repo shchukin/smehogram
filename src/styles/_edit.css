@@ -1,0 +1,28 @@
+.edit {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 8px;
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(255 255 255 / 40%);
+    cursor: pointer;
+    user-select: none;
+}
+    .edit::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+        bottom: 6px;
+        left: 0;
+        right: 0;
+        display: block;
+        border-radius: 4px;
+        transition: background-color var(--transition-hover);
+    }
+
+    .edit:hover::before {
+        background-color: var(--hovering-background-color);
+    }
