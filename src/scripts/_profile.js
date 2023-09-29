@@ -6,8 +6,6 @@
         $html.addClass('profile-expanded');
     });
 
-
-
     $('.profile__close').on('click', function (event) {
         event.preventDefault();
         $html.removeClass('profile-expanded');
