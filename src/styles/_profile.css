@@ -23,21 +23,15 @@
         pointer-events: auto;
         transition: opacity 400ms ease,                 /* анимация открытия */
                     visibility 400ms ease,              /* анимация открытия */
-                    right 800ms var(--ease-out-quint); /* анимация открытия */
+                    right 800ms var(--ease-out-quint);  /* анимация открытия */
     }
         .profile__panel {
             min-height: 100%; /* растягиваем фон */
-            padding: 115px 60px 60px;
+            padding: 94px 60px 60px;
             background-image: url("../images/profile.webp");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center top;
-        }
-
-        @media (min-resolution: 2dppx) {
-            .profile__panel {
-                background-image: url("../images/profile@2x.webp");
-            }
         }
 
         .profile__close,
