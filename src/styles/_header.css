@@ -48,6 +48,8 @@
             .header__profile {
 
             }
+
+    .profile-expanded .header {
+        display: none;
+    }
 }
-
-

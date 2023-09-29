@@ -1,3 +1,24 @@
+.profile {
+    height: 100%;
+}
+    .profile__panel {
+        min-height: 100%; /* растягиваем фон */
+        padding: 90px 60px 60px;
+        background-image: url("../images/profile.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    .profile__close,
+    .profile__close.action {
+        position: absolute;
+        left: 42px;
+        top: 20px;
+    }
+
+
+/* Десктоп */
 @media (750px <= width) {
 
     .profile {
@@ -6,7 +27,6 @@
         top: 0;
         right: -420px;
         width: 420px;
-        height: 100%;
         overflow-y: auto; /* скроллбар */
         opacity: 0; /* прозрачность для анимации */
         visibility: hidden; /* чтобы в профиль нельзя было попасть табами */
@@ -16,7 +36,7 @@
                     right 1000ms ease;     /* анимация закрытия */
     }
 
-    .profile--expanded {
+    .profile-expanded .profile {
         right: 0;
         opacity: 1;
         visibility: visible;
@@ -25,19 +45,28 @@
                     visibility 400ms ease,              /* анимация открытия */
                     right 800ms var(--ease-out-quint);  /* анимация открытия */
     }
+
+}
+
+
+/* мобилки */
+@media (width < 750px) {
+
+    .profile {
+        display: none;
+    }
+
+    .profile-expanded .profile {
+        display: block;
+    }
         .profile__panel {
-            min-height: 100%; /* растягиваем фон */
-            padding: 90px 60px 60px;
-            background-image: url("../images/profile.webp");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center top;
+
         }
 
         .profile__close,
         .profile__close.action {
-            position: absolute;
-            left: 42px;
-            top: 20px;
+            left: auto;
+            right: 11px;
+            top: 10px;
         }
 }

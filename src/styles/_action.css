@@ -79,21 +79,34 @@
 
 
 
-.action--close-to-right {
+.action--close-profile {
 
 }
-    .action--close-to-right::before {
+    .action--close-profile::before {
         width: 42px;
         height: 42px;
     }
 
-    .action--close-to-right::after {
+    .action--close-profile::after {
         width: 16px;
         height: 16px;
         background-image: url("../vectors/chevron-right.svg");
     }
 
 
+@media (width < 750px) {
+
+    .action--close-profile {
+
+    }
+        .action--close-profile::before {
+
+        }
+
+        .action--close-profile::after {
+            background-image: url("../vectors/cross.svg");
+        }
+}
 
 .action--burger {
     width: fit-content;
