@@ -1,0 +1,8 @@
+.create {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
