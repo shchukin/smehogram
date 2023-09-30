@@ -3,36 +3,60 @@
     flex-direction: column;
     justify-content: center;
     min-height: calc(100% - var(--header-height));
-    padding-bottom: 115px;
+    padding-bottom: 112px;
 }
     .achievements__heading {
+        position: relative;
         margin: 0 auto;
         width: 273px;
-        height: 99px;
-        background-image: url("../images/heading-achievements.webp");
+        height: 46px;
+        background-image: url("../images/achievements-heading-letters.svg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
-        text-indent: 200%;
-        white-space: nowrap;
-        overflow: hidden;
     }
-
-    @media (1.5dppx <= resolution < 2.5dppx ) {
-        .achievements__heading {
-            background-image: url("../images/heading-achievements@2x.webp");
+        .achievements__heading::before,
+        .achievements__heading::after {
+            content: "";
+            position: absolute;
+            z-index: 10;
+            display: block;
+            width: 49px;
+            height: 71px;
+            background-image: url("../images/achievements-heading-illustration.webp");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
         }
-    }
 
-    @media (2.5dppx <= resolution) {
-        .achievements__heading {
-            background-image: url("../images/heading-achievements@3x.webp");
+        .achievements__heading::before {
+            left: 216px;
+            top: -43px;
+            transform: rotate(18.5deg) scaleX(-0.6619) scaleY(0.6619);
         }
-    }
+
+        .achievements__heading::after {
+            left: 163px;
+            top: -8px;
+        }
+
+        @media (1.5dppx <= resolution < 2.5dppx ) {
+            .achievements__heading::before,
+            .achievements__heading::after {
+                background-image: url("../images/achievements-heading-illustration@2x.webp");
+            }
+        }
+
+        @media (2.5dppx <= resolution) {
+            .achievements__heading::before,
+            .achievements__heading::after {
+                background-image: url("../images/achievements-heading-illustration@3x.webp");
+            }
+        }
 
     .achievements__body {
         position: relative;
-        margin-top: 40px;
+        margin-top: 59px;
     }
         .achievements__list {
             display: grid;
@@ -216,7 +240,7 @@
         }
 
         .achievements__body {
-            margin-top: 30px;
+            margin-top: 49px;
         }
             .achievements__list {
                 grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
