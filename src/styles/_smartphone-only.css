@@ -1,0 +1,11 @@
+.smartphone-only {
+
+}
+
+
+@media (width < 750px) {
+
+    .smartphone-only {
+        display: none;
+    }
+}

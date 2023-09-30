@@ -1,0 +1,90 @@
+.http-error {
+
+}
+    .http-error__wrap {
+        position: relative;
+        display: block;
+        width: fit-content; /* Ширина всего компонента определяется шириной текста внутри. Далее по его левому краю всё выравнивается. */
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 107px;
+    }
+        .http-error__heading {
+            width: 303px;
+            height: 45px;
+            background-image: url("../images/http-error-heading.svg");
+        }
+
+        .http-error__code {
+            margin-top: -33px;
+            margin-left: -30px;
+            margin-right: -30px;
+            font-family: Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 300px;
+            line-height: 300px;
+            color: #F38185;
+        }
+
+
+        /* Большая иллюстрация */
+        .http-error__wrap::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 335px;
+            height: 251px;
+            background-image: url("../images/http-error-other-illustration.webp");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        @media (1.5dppx <= resolution < 2.5dppx ) {
+            .http-error__wrap::before {
+                background-image: url("../images/http-error-other-illustration@2x.webp");
+            }
+        }
+
+        @media (2.5dppx <= resolution) {
+            .http-error__wrap::before {
+                background-image: url("../images/http-error-other-illustration@3x.webp");
+            }
+        }
+
+        /* Маленькая вогнутая линия */
+        .http-error__wrap::after {
+            content: "";
+            position: absolute;
+            left: 312px;
+            bottom: 78px;
+            width: 36px;
+            height: 13px;
+            background-image: url("../vectors/error-line.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+
+        .http-error__texts {
+            position: absolute;
+            left: 364px;
+            bottom: 37px;
+        }
+            .http-error__sub-heading {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 30px;
+                white-space: nowrap;
+            }
+
+            .http-error__description {
+                margin-top: 8px;
+                font-size: 16px;
+                line-height: 24px;
+                white-space: nowrap;
+            }
+
+
