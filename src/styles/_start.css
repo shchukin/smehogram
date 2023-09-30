@@ -39,6 +39,17 @@
             gap: 21px;
         }
 
+        .start__sub-menu {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+
     .start__alternate-menu {
         margin-bottom: calc(-1 * var(--bottom-padding));
         display: flex;
