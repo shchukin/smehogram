@@ -29,17 +29,6 @@
             background-position: center center;
         }
 
-        .achievements__heading::before {
-            left: 216px;
-            top: -43px;
-            transform: rotate(18.5deg) scaleX(-0.6619) scaleY(0.6619);
-        }
-
-        .achievements__heading::after {
-            left: 163px;
-            top: -8px;
-        }
-
         @media (1.5dppx <= resolution < 2.5dppx ) {
             .achievements__heading::before,
             .achievements__heading::after {
@@ -52,6 +41,17 @@
             .achievements__heading::after {
                 background-image: url("../images/achievements-heading-illustration@3x.webp");
             }
+        }
+
+        .achievements__heading::before {
+            left: 163px;
+            top: -8px;
+        }
+
+        .achievements__heading::after {
+            left: 216px;
+            top: -43px;
+            transform: rotate(18.5deg) scaleX(-0.6619) scaleY(0.6619);
         }
 
     .achievements__body {
