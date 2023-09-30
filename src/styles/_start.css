@@ -1,13 +1,13 @@
 .start {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: calc(100% - var(--header-height));
-    padding-top: 50px;
-    padding-bottom: 200px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100%;
+    /*padding-top: 50px;*/
+    /*padding-bottom: 200px;*/
 }
     .start__center {
-
+        margin-top: auto;
+        margin-bottom: auto;
     }
         .start__branding {
             display: flex;
@@ -36,13 +36,12 @@
         }
 
     .start__alternate-menu {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 74px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 66px;
+        padding-bottom: 66px;
+        font-weight: 500;
         font-size: 16px;
         line-height: 24px;
     }
