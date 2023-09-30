@@ -6,3 +6,98 @@
     padding-top: 50px;
     padding-bottom: 100px;
 }
+    .create__heading {
+        position: relative;
+        width: 275px;
+        height: 157px;
+        margin: 0 auto;
+        background-image: url("../images/create-heading-letters.svg");
+    }
+        .create__heading::after {
+            content: "";
+            position: absolute;
+            left: 223px;
+            bottom: 0;
+            width: 34px;
+            height: 137px;
+            background-image: url("../images/create-heading-illustrations.webp");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        @media (1.5dppx <= resolution < 2.5dppx ) {
+            .create__heading::after {
+                background-image: url("../images/create-heading-illustrations@2x.webp");
+            }
+        }
+
+        @media (2.5dppx <= resolution) {
+            .create__heading::after {
+                background-image: url("../images/create-heading-illustrations@3x.webp");
+            }
+        }
+
+    .create__options {
+        margin-top: 92px;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        width: 615px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: column;
+        gap: 25px;
+    }
+        .create__options .button {
+            text-align: left;
+            justify-content: flex-start;
+        }
+
+
+
+@media (width < 750px) {
+
+    .create {
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: center;*/
+        /*min-height: 100%;*/
+        /*padding-top: 50px;*/
+        /*padding-bottom: 100px;*/
+    }
+        .create__heading {
+            /*position: relative;*/
+            /*width: 275px;*/
+            /*height: 157px;*/
+            margin-left: 0;
+            margin-right: 0;
+            /*background-image: url("../images/create-heading-letters.svg");*/
+        }
+            .create__heading::after {
+                /*content: "";*/
+                /*position: absolute;*/
+                /*left: 223px;*/
+                /*bottom: 0;*/
+                /*width: 34px;*/
+                /*height: 137px;*/
+            }
+
+
+        .create__options {
+            /*margin-top: 92px;*/
+            /*display: grid;*/
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+            width: 100%;
+            grid-template-columns: unset;
+            grid-template-rows: unset;
+            grid-auto-flow: unset;
+            /*gap: 25px;*/
+            grid-auto-rows: 1fr
+        }
+            .create__options .button {
+                /*text-align: left;*/
+                /*justify-content: flex-start;*/
+            }
+}

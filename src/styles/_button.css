@@ -7,7 +7,7 @@
     padding: 18px 30px;
     min-width: 100px;
     background-color: #EF768C;
-    background-image: linear-gradient(90deg, #FFB369, #E238AF);
+    background-image: linear-gradient(to right, #FFB369, #E238AF);
     border-radius: 25px;
     font-family: inherit;
     font-weight: bold;
@@ -42,7 +42,7 @@
 
 .button--secondary {
     background-color: #6C81FF;
-    background-image: linear-gradient(90deg, #45AEFF, #9352FF);
+    background-image: linear-gradient(to right, #45AEFF, #9352FF);
 }
 
 .button--secondary:hover {
@@ -75,4 +75,23 @@
     }
 
 
-
+.button--free {
+    position: relative;
+    overflow: hidden;
+}
+    .button--free::after {
+        content: "Free";
+        position: absolute;
+        right: -61px;
+        bottom: -94px;
+        width: 140px;
+        height: 140px;
+        background-image: linear-gradient(to right, #FFB369, #E238AF);
+        padding-left: 34px;
+        padding-top: 17px;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
