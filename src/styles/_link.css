@@ -23,8 +23,7 @@
 
 .link:active,
 .wysiwyg a:active {
-    color: #777777;
-    transition: none;
+    translate: 0 1px;
 }
 
 
