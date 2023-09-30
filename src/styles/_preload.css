@@ -1,0 +1,50 @@
+/* Предзагрузка изображений.
+ * В большей степени -- это хак. Используем два слоя, которые не будут видимы пользователем,
+ * прячем их за краем экрана. Браузер же, тем не менее, отрендерит их.
+ * Добавляем в эти слои картинки нужные для предзагрузки. В основном это картинки,
+ * которые используются в модалках.
+ */
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    right: 100%;
+    bottom: 100%;
+    width: 1px;
+    height: 1px;
+}
+
+
+
+/* Картинки без версии для ретины в ::before */
+
+body::before {
+    background-image: url("../images/profile.webp"),
+                       url("../images/menu.webp");
+}
+
+
+
+/* Картинки с версией для ретины в ::after */
+
+body::after {
+    background-image: url("../images/heading-user.webp"),
+                      url("../images/heading-nav-illustration.webp")
+    ;
+}
+
+@media (1.5dppx <= resolution < 2.5dppx ) {
+    body::after {
+        background-image: url("../images/heading-user@2x.webp"),
+                          url("../images/heading-nav-illustration@2x.webp")
+        ;
+    }
+}
+
+@media (2.5dppx <= resolution) {
+    body::after {
+        background-image: url("../images/heading-user@3x.webp"),
+                          url("../images/heading-nav-illustration@3x.webp")
+        ;
+    }
+}

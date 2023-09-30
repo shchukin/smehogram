@@ -1,0 +1,45 @@
+.nav {
+
+}
+    .nav__heading {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 205px;
+        height: 44px;
+        background-image: url("../images/heading-nav-letters.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+        .nav__heading::after {
+            content: "";
+            position: absolute;
+            left: 16px;
+            top: -48px;
+            width: 82px;
+            height: 62px;
+            background-image: url("../images/heading-nav-illustration.webp");
+            background-size: 82px 62px;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        @media (1.5dppx <= resolution < 2.5dppx ) {
+            .nav__heading::after {
+                background-image: url("../images/heading-nav-illustration@2x.webp");
+            }
+        }
+
+        @media (2.5dppx <= resolution) {
+            .nav__heading::after {
+                background-image: url("../images/heading-nav-illustration@3x.webp");
+            }
+        }
+
+    .nav__list {
+
+    }
+        .nav__link {
+            display: block;
+        }

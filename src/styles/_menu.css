@@ -1,0 +1,72 @@
+.menu {
+    height: 100%;
+}
+    .menu__panel {
+        min-height: 100%; /* растягиваем фон */
+        padding: 90px 60px 60px;
+        background-image: url("../images/menu.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    .menu__close,
+    .menu__close.action {
+        position: absolute;
+        right: 42px;
+        top: 20px;
+    }
+
+
+/* Десктоп */
+@media (750px <= width) {
+
+    .menu {
+        position: fixed;
+        z-index: 750;
+        top: 0;
+        left: -420px;
+        width: 420px;
+        overflow-y: auto; /* скроллбар */
+        opacity: 0; /* прозрачность для анимации */
+        visibility: hidden; /* чтобы в профиль нельзя было попасть табами */
+        pointer-events: none; /* чтобы во время анимации закрытия сквозь профиль можно было кликать (например в хендлер профиля в шапке повторного резкого открытия) */
+        transition: opacity 300ms ease,    /* анимация закрытия */
+                    visibility 300ms ease, /* анимация закрытия */
+                    left 1000ms ease;     /* анимация закрытия */
+    }
+
+    .menu-expanded .menu {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition: opacity 400ms ease,                 /* анимация открытия */
+                    visibility 400ms ease,              /* анимация открытия */
+                    left 800ms var(--ease-out-quint);  /* анимация открытия */
+    }
+
+}
+
+
+/* мобилки */
+@media (width < 750px) {
+
+    .menu {
+        display: none;
+    }
+
+    .menu-expanded .menu {
+        display: block;
+    }
+        .menu__panel {
+
+        }
+
+        .menu__close,
+        .menu__close.action {
+            /*left: auto;*/
+            right: 11px;
+            top: 10px;
+        }
+}

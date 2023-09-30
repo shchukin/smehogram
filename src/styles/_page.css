@@ -2,6 +2,11 @@
     height: calc(100% - var(--header-height));
 }
 
-.profile-expanded .page {
-    display: none;
+
+
+@media (width < 750px) {
+
+    .profile-expanded .page {
+        display: none;
+    }
 }
