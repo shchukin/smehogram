@@ -69,7 +69,7 @@
             }
 
         .nav__link:hover {
-            background-color: rgb(255 255 255 / 25%);
+            background-color: var(--white-hover);
         }
             .nav__link:hover::before {
                 background-color: transparent;

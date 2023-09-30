@@ -4,6 +4,8 @@
     .user__head {
         display: flex;
         justify-content: space-between;
+        padding-left: 60px;
+        padding-right: 60px;
     }
         .user__summary {
 
@@ -44,6 +46,8 @@
     }
         .user__name {
             margin-bottom: 4px;
+            padding-left: 60px;
+            padding-right: 60px;
             display: flex;
             align-items: baseline;
             font-weight: bold;
@@ -55,34 +59,49 @@
             }
 
         .user__list {
-            margin-left: -10px;
-            margin-right: -10px;
+
         }
-            .user__item {
+            .user__link {
                 position: relative;
                 display: flex;
                 margin-top: -1px;
-                padding: 8px 10px;
-                border-top: 1px solid rgb(255 255 255 / 25%);
-                border-bottom: 1px solid rgb(255 255 255 / 25%);
+                padding: 8px 60px;
                 font-size: 16px;
                 line-height: 24px;
                 text-decoration: none;
                 color: inherit;
-                transition: background-color var(--transition-hover);
+                transition: background-color 50ms ease;
             }
+                .user__link::before {
+                    content: "";
+                    position: absolute;
+                    left: 60px;
+                    right: 60px;
+                    top: 0;
+                    height: 1px;
+                    background-color: rgb(255 255 255 / 20%);
+                    transition: background-color 50ms ease;
+                }
 
-            .user__item:hover {
-                background-color: rgb(255 255 255 / 25%);
+            .user__link:hover {
+                background-color: var(--white-hover);
             }
+                .user__link:hover::before {
+                    background-color: transparent;
+                }
 
-            .user__item:first-child {
-                border-top: 1px solid rgb(255 255 255 / 50%);
-            }
+                .user__link:hover + .user__link::before {
+                    background-color: transparent;
+                }
 
-            .user__item:last-child {
-                border-bottom: 1px solid rgb(255 255 255 / 50%);
-            }
+
+            /*.user__link:first-child {*/
+            /*    border-top: 1px solid rgb(255 255 255 / 50%);*/
+            /*}*/
+
+            /*.user__link:last-child {*/
+            /*    border-bottom: 1px solid rgb(255 255 255 / 50%);*/
+            /*}*/
                 .user__balance {
                     padding: 4px 50px 4px 20px;
                     margin: -4px 0 -4px auto;
@@ -96,6 +115,8 @@
 
     .user__footer {
         margin-top: 20px;
+        padding-left: 60px;
+        padding-right: 60px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -135,7 +156,7 @@
             margin-top: 48px;
         }
 
-        .user__item {
+        .user__link {
 
         }
 
@@ -153,7 +174,7 @@
             margin-top: 56px;
         }
 
-        .user__item {
+        .user__link {
             padding-top: 10px;
             padding-bottom: 10px;
         }
@@ -174,7 +195,7 @@
             margin-top: 60px;
         }
 
-        .user__item {
+        .user__link {
             padding-top: 10px;
             padding-bottom: 10px;
         }
@@ -196,7 +217,7 @@
             margin-top: 87px;
         }
 
-        .user__item {
+        .user__link {
             padding-top: 12px;
             padding-bottom: 12px;
         }

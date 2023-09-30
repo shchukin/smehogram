@@ -49,6 +49,7 @@
 
             }
 
+    .menu-expanded .header,
     .profile-expanded .header {
         display: none;
     }

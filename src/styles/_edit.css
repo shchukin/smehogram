@@ -28,5 +28,9 @@
     color: #FFFFFF;
 }
     .edit:hover::before {
-        background-color: var(--hovering-background-color);
+        background-color: var(--blue-hover);
     }
+
+.edit:active {
+    translate: 0 1px;
+}

@@ -14,7 +14,7 @@
     .menu__close,
     .menu__close.action {
         position: absolute;
-        right: 42px;
+        right: 38px;
         top: 20px;
     }
 
@@ -66,7 +66,6 @@
 
         .menu__close,
         .menu__close.action {
-            /*left: auto;*/
             right: 11px;
             top: 10px;
         }

@@ -6,6 +6,7 @@
 
 @media (width < 750px) {
 
+    .menu-expanded .page,
     .profile-expanded .page {
         display: none;
     }
