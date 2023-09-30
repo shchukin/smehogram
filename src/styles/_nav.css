@@ -5,6 +5,7 @@
         position: relative;
         margin-top: 0;
         margin-bottom: 0;
+        margin-left: 60px;
         width: 205px;
         height: 44px;
         background-image: url("../images/nav-heading-letters.svg");
@@ -41,22 +42,42 @@
         margin-top: 30px;
     }
         .nav__link {
+            margin-top: -1px;
+            position: relative;
             display: block;
-            border-bottom: 1px solid rgb(255 255 255 / 40%);
-            padding: 14px 20px;
-            margin: 0 -20px;
+            padding: 14px 60px;
             font-weight: bold;
             font-size: 16px;
             line-height: 24px;
             text-decoration: none;
             color: #FFFFFF;
-            transition: background-color var(--transition-hover);
+            transition: background-color 50ms ease;
         }
+            .nav__link::before {
+                content: "";
+                position: absolute;
+                left: 60px;
+                right: 60px;
+                top: 0;
+                height: 1px;
+                background-color: rgb(255 255 255 / 20%);
+                transition: background-color 50ms ease;
+            }
+
+            .nav__link:first-child::before {
+                display: none;
+            }
 
         .nav__link:hover {
             background-color: rgb(255 255 255 / 25%);
         }
+            .nav__link:hover::before {
+                background-color: transparent;
+            }
 
+            .nav__link:hover + .nav__link::before {
+                background-color: transparent;
+            }
 
 
 /* Медиа-запросы ниже нужны для того, чтобы умещаться в один экран по высоте, без скроллбара */

@@ -3,7 +3,8 @@
 }
     .menu__panel {
         min-height: 100%; /* растягиваем фон */
-        padding: 90px 60px 60px;
+        padding-top: 90px;
+        padding-bottom: 60px;
         background-image: url("../images/menu.webp");
         background-size: cover;
         background-repeat: no-repeat;
