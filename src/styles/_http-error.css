@@ -113,6 +113,7 @@
             width: 660px;
             height: 230px;
             background-image: url("../images/http-error-404-code.svg");
+            background-size: contain;
             background-repeat: no-repeat;
             background-position: center center;
             text-indent: 200%;
@@ -236,13 +237,15 @@
             /*padding-bottom: 120px;*/
         }
             .http-error--404 .http-error__heading {
-                /*margin-left: 50px;*/
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .http-error--404 .http-error__code {
-                /*margin-top: 13px;*/
+                margin-top: 0;
                 /*margin-left: 0;*/
-                /*width: 660px;*/
+                width: 280px;
+                height: 98px;
                 /*height: 230px;*/
                 /*background-image: url("../images/http-error-404-code.svg");*/
                 /*background-repeat: no-repeat;*/
@@ -255,12 +258,19 @@
 
             /* Большая иллюстрация */
             .http-error--404 .http-error__wrap::before {
-                /*left: 168px;*/
-                /*width: 302px;*/
-                /*height: 287px;*/
+                bottom: auto;
+                top: 77px;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                width: 240px;
+                height: 228px;
+                rotate: 20deg;
             }
 
             .http-error--404 .http-error__sub-heading {
+                margin-top: 213px;
                 /*left: 63px;*/
                 /*bottom: 30px;*/
             }
