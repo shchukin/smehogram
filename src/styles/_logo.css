@@ -3,7 +3,12 @@
     width: 129px;
     height: 40px;
     background-image: url("../vectors/logo.svg");
-    background-size: 129px 22px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+.logo--larger {
+    width: 180px;
+    height: 56px;
 }
