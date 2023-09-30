@@ -1,0 +1,74 @@
+.ban {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100% - var(--header-height));
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+    /* Большая иллюстрация */
+    .ban::before {
+        content: "";
+        position: relative;
+        display: block;
+        width: 142px;
+        height: 206px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -6px;
+        background-image: url("../images/ban-illustration.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    @media (1.5dppx <= resolution < 2.5dppx ) {
+        .ban::before {
+            background-image: url("../images/ban-illustration@2x.webp");
+        }
+    }
+
+    @media (2.5dppx <= resolution) {
+        .ban::before {
+            background-image: url("../images/ban-illustration@3x.webp");
+        }
+    }
+
+    .ban__heading {
+        width: 168px;
+        height: 52px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../images/ban-heading.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .ban__sub-heading {
+        margin-top: 57px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .ban__description {
+        max-width: 240px;
+        margin-top: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+
+@media (width < 750px) {
+
+    .ban {
+        padding-top: 25px;
+        padding-bottom: 75px;
+    }
+}
