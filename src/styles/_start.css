@@ -1,9 +1,13 @@
 .start {
+    --bottom-padding: 200px;
+}
+
+.start {
     display: grid;
     grid-template-rows: 1fr auto;
     min-height: 100%;
-    /*padding-top: 50px;*/
-    /*padding-bottom: 200px;*/
+    padding-top: 50px;
+    padding-bottom: var(--bottom-padding);
 }
     .start__center {
         margin-top: auto;
@@ -36,6 +40,7 @@
         }
 
     .start__alternate-menu {
+        margin-bottom: calc(-1 * var(--bottom-padding));
         display: flex;
         flex-direction: column;
         align-items: center;
