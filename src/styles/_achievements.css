@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     min-height: calc(100% - var(--header-height));
+    padding-top: 50px;
     padding-bottom: 112px;
 }
     .achievements__heading {
@@ -232,7 +233,7 @@
 @media (width < 750px) {
 
     .achievements {
-
+        padding-top: 27px;
     }
         .achievements__heading {
             margin-left: 0;
