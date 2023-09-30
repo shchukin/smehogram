@@ -7,7 +7,7 @@
         margin-bottom: 0;
         width: 205px;
         height: 44px;
-        background-image: url("../images/heading-nav-letters.svg");
+        background-image: url("../images/nav-letters.svg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
@@ -19,7 +19,7 @@
             top: -48px;
             width: 82px;
             height: 62px;
-            background-image: url("../images/heading-nav-illustration.webp");
+            background-image: url("../images/nav-illustration.webp");
             background-size: 82px 62px;
             background-repeat: no-repeat;
             background-position: center center;
@@ -27,13 +27,13 @@
 
         @media (1.5dppx <= resolution < 2.5dppx ) {
             .nav__heading::after {
-                background-image: url("../images/heading-nav-illustration@2x.webp");
+                background-image: url("../images/nav-illustration@2x.webp");
             }
         }
 
         @media (2.5dppx <= resolution) {
             .nav__heading::after {
-                background-image: url("../images/heading-nav-illustration@3x.webp");
+                background-image: url("../images/nav-illustration@3x.webp");
             }
         }
 
