@@ -1,5 +1,10 @@
 .http-error {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100% - var(--header-height));
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
     .http-error__wrap {
         position: relative;
@@ -67,24 +72,121 @@
             background-position: center center;
         }
 
-
         .http-error__texts {
+
+        }
+
+        .http-error__sub-heading {
+            position: absolute;
+            left: 364px;
+            bottom: 69px;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            white-space: nowrap;
+        }
+
+        .http-error__description {
             position: absolute;
             left: 364px;
             bottom: 37px;
+            font-size: 16px;
+            line-height: 24px;
+            white-space: nowrap;
         }
-            .http-error__sub-heading {
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 30px;
-                white-space: nowrap;
+
+
+
+.http-error--404 {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*min-height: calc(100% - var(--header-height));*/
+}
+    .http-error--404 .http-error__wrap {
+        /*position: relative;*/
+        /*display: block;*/
+        /*width: fit-content; !* Ширина всего компонента определяется шириной текста внутри. Далее по его левому краю всё выравнивается. *!*/
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+        padding-bottom: 120px;
+    }
+        .http-error--404 .http-error__heading {
+            margin-left: 50px;
+            /*width: 303px;*/
+            /*height: 45px;*/
+            /*background-image: url("../images/http-error-heading.svg");*/
+        }
+
+        .http-error--404 .http-error__code {
+            margin-top: 13px;
+            margin-left: 0;
+            width: 660px;
+            height: 230px;
+            background-image: url("../images/http-error-404-code.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+
+        /* Большая иллюстрация */
+        .http-error--404 .http-error__wrap::before {
+            /*content: "";*/
+            /*position: absolute;*/
+            left: 168px;
+            /*bottom: 0;*/
+            width: 302px;
+            height: 287px;
+            background-image: url("../images/http-error-404-illustration.webp");
+            /*background-size: contain;*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: center center;*/
+        }
+
+        @media (1.5dppx <= resolution < 2.5dppx ) {
+            .http-error--404 .http-error__wrap::before {
+                background-image: url("../images/http-error-404-illustration@2x.webp");
             }
+        }
 
-            .http-error__description {
-                margin-top: 8px;
-                font-size: 16px;
-                line-height: 24px;
-                white-space: nowrap;
+        @media (2.5dppx <= resolution) {
+            .http-error--404 .http-error__wrap::before {
+                background-image: url("../images/http-error-404-illustration@3x.webp");
             }
+        }
 
+        /* Маленькая вогнутая линия */
+        .http-error--404 .http-error__wrap::after {
+            /*content: "";*/
+            /*position: absolute;*/
+            left: 442px;
+            bottom: 32px;
+            /*width: 36px;*/
+            /*height: 13px;*/
+            /*background-image: url("../vectors/error-line.svg");*/
+            /*background-size: contain;*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: center center;*/
+        }
 
+        .http-error--404 .http-error__sub-heading {
+            /*position: absolute;*/
+            left: 63px;
+            bottom: 30px;
+            /*font-weight: bold;*/
+            /*font-size: 24px;*/
+            /*line-height: 30px;*/
+            /*white-space: nowrap;*/
+        }
+
+        .http-error--404 .http-error__description {
+            /*position: absolute;*/
+            left: 495px;
+            bottom: 28px;
+            /*font-size: 16px;*/
+            /*line-height: 24px;*/
+            /*white-space: nowrap;*/
+        }
