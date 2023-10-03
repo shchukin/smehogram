@@ -2,7 +2,7 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    padding: 54px 66px 47px;
+    padding: 54px 66px 37px;
 }
     .dialog__heading {
         position: relative;
@@ -86,4 +86,36 @@
 
     .dialog--login .dialog__addition {
         padding-top: 13px;
+        padding-bottom: 10px;
+    }
+
+
+.dialog--register .dialog__heading {
+    width: 245px;
+    height: 102px;
+    background-image: url("../images/register-heading-letters.svg");
+}
+    .dialog--register .dialog__heading::after {
+        left: 213px;
+        top: 19px;
+        width: 45px;
+        height: 92px;
+        background-image: url("../images/register-heading-illustration.webp");
+    }
+
+    @media (1.5dppx <= resolution < 2.5dppx ) {
+        .dialog--register .dialog__heading::after {
+            background-image: url("../images/register-heading-illustration@2x.webp");
+        }
+    }
+
+    @media (2.5dppx <= resolution) {
+        .dialog--register .dialog__heading::after {
+            background-image: url("../images/register-heading-illustration@3x.webp");
+        }
+    }
+
+    .dialog--register .dialog__addition {
+        font-size: 12px;
+        line-height: 18px;
     }
