@@ -1,0 +1,116 @@
+.trial {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+    .trial__inner {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: calc(20px + 15vh);
+        border-bottom: 80px solid transparent;
+        width: 674px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        .trial__intro {
+            flex-basis: 244px;
+        }
+            .trial__heading {
+                position: relative;
+                margin-top: 0;
+                margin-bottom: 0;
+                width: 226px;
+                height: 145px;
+                background-image: url("../images/trial-headings-letters.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+                .trial__heading::after {
+                    content: "";
+                    position: absolute;
+                    left: -40px;
+                    top: 10px;
+                    width: 117px;
+                    height: 151px;
+                    background-image: url("../images/trial-headings-illustration.webp");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+
+                @media (1.5dppx <= resolution < 2.5dppx ) {
+                    .trial__heading::after {
+                        background-image: url("../images/trial-headings-illustration@2x.webp");
+                    }
+                }
+
+                @media (2.5dppx <= resolution) {
+                    .trial__heading::after {
+                        background-image: url("../images/trial-headings-illustration@3x.webp");
+                    }
+                }
+
+
+            .trial__hint {
+                margin-top: 21px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+        .trial__operations {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+            .trial__ribbon {
+                display: flex;
+                align-items: center;
+                gap: 18px;
+            }
+                .trial__ribbon .action {
+                    margin-left: -14px;
+                    margin-right: -14px;
+                }
+
+        .trial__data {
+            flex-basis: 295px;
+        }
+            .trial__sub-heading {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .trial__list {
+                margin-top: 8px;
+            }
+                .trial__team {
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                    padding-right: 32px;
+                    background-image: url("../vectors/confirmation-no.svg");
+                    background-repeat: no-repeat;
+                    background-position: right center;
+                    border-bottom: 1px solid rgb(255 255 255 / 25%);
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+
+                .trial__team--connected {
+                    background-image: url("../vectors/confirmation-yes.svg");
+                }
+
+        .trial__begin {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }

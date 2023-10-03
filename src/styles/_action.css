@@ -67,11 +67,29 @@
 
 
 
+.action--settings {
+    width: 60px;
+    height: 60px;
+}
+    .action--settings::before {
+        width: 60px;
+        height: 60px;
+    }
+
+    .action--settings::after {
+        width: 32px;
+        height: 32px;
+        background-image: url("../vectors/settings.svg");
+    }
+
+
+
 .action--close {
 
 }
     .action--close::before {
-
+        width: 42px;
+        height: 42px;
     }
 
     .action--close::after {
