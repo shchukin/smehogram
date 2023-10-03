@@ -43,8 +43,9 @@
         .nav__link {
             position: relative;
             display: block;
-            padding: 14px 30px;
-            margin: -1px -30px 0;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            margin-top: -1px;
             border-radius: 6px;
             font-weight: bold;
             font-size: 16px;
@@ -56,8 +57,8 @@
             .nav__link::before {
                 content: "";
                 position: absolute;
-                left: 30px;
-                right: 30px;
+                left: 0;
+                right: 0;
                 top: 0;
                 height: 1px;
                 background-color: rgb(255 255 255 / 20%);
@@ -68,16 +69,35 @@
                 display: none;
             }
 
-        .nav__link:hover {
-            background-color: var(--white-hover);
-        }
-            .nav__link:hover::before {
-                background-color: transparent;
-            }
 
-            .nav__link:hover + .nav__link::before {
-                background-color: transparent;
-            }
+
+
+/* Наведения -- только на десктопах */
+@media (750px <= width) {
+
+    .nav__link {
+        padding-left: calc(var(--container-padding) / 2);
+        padding-right: calc(var(--container-padding) / 2);
+        margin-left: calc(-1 * var(--container-padding) / 2);
+        margin-right: calc(-1 * var(--container-padding) / 2);
+    }
+        .nav__link::before {
+            left: calc(var(--container-padding) / 2);
+            right: calc(var(--container-padding) / 2);
+        }
+
+    .nav__link:hover {
+        background-color: var(--white-hover);
+    }
+        .nav__link:hover::before {
+            background-color: transparent;
+        }
+
+        .nav__link:hover + .nav__link::before {
+            background-color: transparent;
+        }
+}
+
 
 
 /* Медиа-запросы ниже нужны для того, чтобы умещаться в один экран по высоте, без скроллбара */
@@ -127,4 +147,3 @@
             padding-bottom: 24px;
         }
 }
-

@@ -82,8 +82,9 @@
             .user__link {
                 position: relative;
                 display: flex;
-                padding: 8px 30px;
-                margin: -1px -30px 0;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                margin-top: -1px;
                 border-radius: 4px;
                 font-size: 16px;
                 line-height: 24px;
@@ -94,25 +95,13 @@
                 .user__link::before {
                     content: "";
                     position: absolute;
-                    left: 30px;
-                    right: 30px;
+                    left: 0;
+                    right: 0;
                     top: 0;
                     height: 1px;
                     background-color: rgb(255 255 255 / 20%);
                     transition: background-color 50ms ease;
                 }
-
-            .user__link:hover {
-                background-color: var(--white-hover);
-            }
-                .user__link:hover::before {
-                    background-color: transparent;
-                }
-
-                .user__link:hover + .user__link::before {
-                    background-color: transparent;
-                }
-
 
                 .user__balance {
                     padding: 4px 50px 4px 20px;
@@ -153,6 +142,34 @@
         .user__logout:hover {
             text-decoration-color: transparent;
         }
+
+
+
+/* Наведения -- только на десктопах */
+@media (750px <= width) {
+
+    .user__link {
+        padding-left: calc(var(--container-padding) / 2);
+        padding-right: calc(var(--container-padding) / 2);
+        margin-left: calc(-1 * var(--container-padding) / 2);
+        margin-right: calc(-1 * var(--container-padding) / 2);
+    }
+        .user__link::before {
+            left: calc(var(--container-padding) / 2);
+            right: calc(var(--container-padding) / 2);
+        }
+
+    .user__link:hover {
+        background-color: var(--white-hover);
+    }
+        .user__link:hover::before {
+            background-color: transparent;
+        }
+
+        .user__link:hover + .user__link::before {
+            background-color: transparent;
+        }
+}
 
 
 /* Медиа-запросы ниже нужны для того, чтобы умещаться в один экран по высоте, без скроллбара */
