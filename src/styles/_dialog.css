@@ -21,11 +21,24 @@
             background-position: center center;
         }
 
+    .dialog__body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+        .dialog__field {
+            margin-top: 18px;
+        }
 
+        .dialog__field:first-child {
+            margin-top: 0;
+        }
 
     .dialog__operations {
-        margin-top: auto;
-        text-align: center  ;
+        text-align: center;
     }
         .dialog__operations .button {
 
