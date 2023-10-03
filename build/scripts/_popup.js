@@ -53,6 +53,7 @@
 
         $('[data-popup-show]').on('click', function (event) {
             event.preventDefault();
+            popupHide(); // Закрываем все остальные попапы
             popupShow($($(this).attr('href')));
         });
 

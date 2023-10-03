@@ -5,7 +5,7 @@
         <title>.input</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic" rel="stylesheet">-->
-        <link rel="stylesheet" href="../styles/style.css?1696309737">
+        <link rel="stylesheet" href="../styles/style.css?1696351529">
     </head>
 
     <body>
@@ -17,38 +17,74 @@
             <br>
             <h1>.input</h1>
 
-            <div class="input">
-                <input class="input__widget" type="text" placeholder="First name">
+
+            <br>
+            <br>
+            <h2>.input--classic</h2>
+
+            <div class="input input--classic">
+                <input class="input__widget" type="text" placeholder="Введите игровое имя">
             </div>
 
             <br>
 
-            <div class="input">
-                <input class="input__widget" type="text" placeholder="First name" value="Konstantin Konstantinopolsky">
+            <div class="input input--classic">
+                <input class="input__widget" type="text" placeholder="Введите игровое имя" value="Константин Константинопольский">
             </div>
 
 
             <br>
             <br>
             <br>
-            <h2>With <a href="_label.html">.label</a> and <a href="_helper.html">.helper</a></h2>
+            <h2>.input--fancy</h2>
+
+
+            <div class="input input--fancy">
+                <input class="input__widget" type="text" placeholder="Введите игровое имя">
+            </div>
+
+            <br>
+
+            <div class="input input--fancy">
+                <input class="input__widget" type="text" placeholder="Введите игровое имя" value="Константин Константинопольский">
+            </div>
+
+
+
+
+
+            <br>
+            <br>
+            <br>
+            <h2>С припиской <a href="_helper.html">.helper</a></h2>
             <p>
                 These two are not part of <b><i>.input</i></b> component. However, they often used together,
                 placed before and after, like so:
             </p>
 
-            <label class="label" for="bp24napi">
-                First name
-            </label>
+            <br>
 
-            <div class="input">
-                <input class="input__widget" type="text" id="bp24napi">
+            <div class="input input--classic">
+                <input class="input__widget" type="text" id="bp24napi" placeholder="Имя">
             </div>
 
             <div class="helper">
-                Can’t be changed later
+                Нельзя изменить в будущем
             </div>
 
+            <br>
+            <br>
+
+            <div class="input input--fancy">
+                <input class="input__widget" type="text" id="f9uim13t" placeholder="Имя">
+            </div>
+
+            <div class="helper">
+                Нельзя изменить в будущем
+            </div>
+
+            <br>
+            <br>
             <p>
                 Also, the same <b><i>.helper</i></b> component will be used to output messages in cases covering errors.
             </p>
@@ -58,20 +94,39 @@
             <br>
             <h2>Disabled</h2>
 
-            <div class="input">
-                <input class="input__widget" type="text" placeholder="First name" disabled>
+            <div class="input input--classic">
+                <input class="input__widget" type="text" placeholder="Введите игровое имя" disabled>
             </div>
             <div class="helper">
-                Please choose contract type before filling the name
+                Перед тем как вводить имя, пожалуйста, выберите контракт
             </div>
 
             <br>
 
-            <div class="input">
-                <input class="input__widget" type="text" placeholder="First name" value="Konstantin Konstantinopolsky" disabled>
+            <div class="input input--classic">
+                <input class="input__widget" type="text" placeholder="Введите игровое имя" value="Konstantin Konstantinopolsky" disabled>
             </div>
             <div class="helper">
-                Name can’t be changed
+                Имя нельзя изменить
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input input--fancy">
+                <input class="input__widget" type="text" placeholder="Введите игровое имя" disabled>
+            </div>
+            <div class="helper">
+                Перед тем как вводить имя, пожалуйста, выберите контракт
+            </div>
+
+            <br>
+
+            <div class="input input--fancy">
+                <input class="input__widget" type="text" placeholder="Введите игровое имя" value="Konstantin Konstantinopolsky" disabled>
+            </div>
+            <div class="helper">
+                Имя нельзя изменить
             </div>
 
 
@@ -85,8 +140,8 @@
                 and error messages coded manually as well.
             </p>
 
-            <div class="input input--error">
-                <input class="input__widget" type="text" placeholder="First name">
+            <div class="input input--classic input--error">
+                <input class="input__widget" type="text" placeholder="Введите игровое имя">
             </div>
             <div class="helper helper--error">
                 This field is required
@@ -94,7 +149,7 @@
 
             <br>
 
-            <div class="input input--error">
+            <div class="input input--classic input--error">
                 <input class="input__widget" type="email" placeholder="Email" value="foobar@example.">
             </div>
             <div class="helper helper--error">
@@ -104,7 +159,48 @@
             <br>
             <p>In the multi-error case, helpers should be output one after another, like so:</p>
 
-            <div class="input input--error">
+            <div class="input input--classic input--error">
+                <input class="input__widget" type="password" placeholder="Password" value="0xFoo">
+            </div>
+            <div class="helper helper--error">
+                Password is too short
+            </div>
+            <div class="helper helper--error">
+                Password must contain a special character
+            </div>
+            <div class="helper helper--error">
+                Password must be hard to guess: dates, phone numbers and names are not allowed and either it shouldn’t be based on public data
+            </div>
+            <div class="helper helper--error">
+                New password is similar to previous password
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="input input--fancy input--error">
+                <input class="input__widget" type="text" placeholder="Введите игровое имя">
+            </div>
+            <div class="helper helper--error">
+                This field is required
+            </div>
+
+            <br>
+
+            <div class="input input--fancy input--error">
+                <input class="input__widget" type="email" placeholder="Email" value="foobar@example.">
+            </div>
+            <div class="helper helper--error">
+                Email is not valid
+            </div>
+
+            <br>
+            <p>In the multi-error case, helpers should be output one after another, like so:</p>
+
+            <div class="input input--fancy input--error">
                 <input class="input__widget" type="password" placeholder="Password" value="0xFoo">
             </div>
             <div class="helper helper--error">
@@ -129,7 +225,14 @@
                 The font was changed here for better-looking dots.
             </p>
 
-            <div class="input">
+            <div class="input input--classic">
+                <input class="input__widget" type="password" value="0xFoo">
+            </div>
+
+
+            <br>
+
+            <div class="input input--fancy">
                 <input class="input__widget" type="password" value="0xFoo">
             </div>
 
@@ -142,7 +245,13 @@
                 Don’t forget to use the <b><i>rows</i></b> attribute to specify number of lines.
             </p>
 
-            <div class="input">
+            <div class="input input--classic">
+                <textarea class="input__widget" placeholder="Your message" rows="3"></textarea>
+            </div>
+
+            <br>
+
+            <div class="input input--fancy">
                 <textarea class="input__widget" placeholder="Your message" rows="3"></textarea>
             </div>
 
@@ -154,7 +263,14 @@
                 set in the styles will limit the computed height, even if it exceeds any reasonable value.
             </p>
 
-            <div class="input input--expandable">
+            <div class="input input--classic input--expandable">
+                <textarea class="input__widget" placeholder="Your message" rows="3"></textarea>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input input--fancy input--expandable">
                 <textarea class="input__widget" placeholder="Your message" rows="3"></textarea>
             </div>
 
@@ -163,7 +279,7 @@
             <br>
             <h2>Select</h2>
 
-            <div class="input">
+            <div class="input input--classic">
                 <select class="input__widget">
                     <option selected>Bangkok</option>
                     <option>Moscow</option>
@@ -174,7 +290,7 @@
 
             <br>
 
-            <div class="input">
+            <div class="input input--classic">
                 <select class="input__widget" disabled>
                     <option selected>Bangkok</option>
                     <option>Moscow</option>
@@ -185,7 +301,42 @@
 
             <br>
 
-            <div class="input input--error">
+            <div class="input input--classic input--error">
+                <select class="input__widget">
+                    <option selected>Bangkok</option>
+                    <option>Moscow</option>
+                    <option>...</option>
+                    <option>Washington</option>
+                </select>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="input input--fancy">
+                <select class="input__widget">
+                    <option selected>Bangkok</option>
+                    <option>Moscow</option>
+                    <option>...</option>
+                    <option>Washington</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="input input--fancy">
+                <select class="input__widget" disabled>
+                    <option selected>Bangkok</option>
+                    <option>Moscow</option>
+                    <option>...</option>
+                    <option>Washington</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="input input--fancy input--error">
                 <select class="input__widget">
                     <option selected>Bangkok</option>
                     <option>Moscow</option>
@@ -213,8 +364,7 @@
                 class to change the color.
             </p>
 
-
-            <div class="input">
+            <div class="input input--classic">
                 <select class="input__widget">
                     <option value="placeholder" selected>City</option>
                     <option>Bangkok</option>
@@ -226,7 +376,7 @@
 
             <br>
 
-            <div class="input">
+            <div class="input input--classic">
                 <select class="input__widget" disabled>
                     <option value="placeholder" selected>City</option>
                     <option>Bangkok</option>
@@ -238,7 +388,7 @@
 
             <br>
 
-            <div class="input input--error">
+            <div class="input input--classic input--error">
                 <select class="input__widget">
                     <option value="placeholder" selected>City</option>
                     <option>Bangkok</option>
@@ -247,6 +397,45 @@
                     <option>Washington</option>
                 </select>
             </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="input input--fancy">
+                <select class="input__widget">
+                    <option value="placeholder" selected>City</option>
+                    <option>Bangkok</option>
+                    <option>Moscow</option>
+                    <option>...</option>
+                    <option>Washington</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="input input--fancy">
+                <select class="input__widget" disabled>
+                    <option value="placeholder" selected>City</option>
+                    <option>Bangkok</option>
+                    <option>Moscow</option>
+                    <option>...</option>
+                    <option>Washington</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="input input--fancy input--error">
+                <select class="input__widget">
+                    <option value="placeholder" selected>City</option>
+                    <option>Bangkok</option>
+                    <option>Moscow</option>
+                    <option>...</option>
+                    <option>Washington</option>
+                </select>
+            </div>
+
 
             <p>
                 Don’t make option with placeholder to be disabled. Users may want to leave this field untouched, or clear it by re-selecting placeholder.
@@ -266,7 +455,7 @@
             <label class="label" for="uzoyce97">
                 type="email"
             </label>
-            <div class="input">
+            <div class="input input--classic">
                 <input class="input__widget" type="email" id="uzoyce97">
             </div>
 
@@ -275,7 +464,7 @@
             <label class="label" for="qv6hko4q">
                 type="tel"
             </label>
-            <div class="input">
+            <div class="input input--classic">
                 <input class="input__widget" type="tel" id="qv6hko4q">
             </div>
 
@@ -284,7 +473,7 @@
             <label class="label" for="dqx2iwgu">
                 type="url"
             </label>
-            <div class="input">
+            <div class="input input--classic">
                 <input class="input__widget" type="url" id="dqx2iwgu">
             </div>
 
@@ -293,7 +482,7 @@
             <label class="label" for="ey58yjk9">
                 type="search"
             </label>
-            <div class="input">
+            <div class="input input--classic">
                 <input class="input__widget" type="search" id="ey58yjk9">
             </div>
 
@@ -302,7 +491,7 @@
             <label class="label" for="h68i9f7g">
                 type="number"
             </label>
-            <div class="input">
+            <div class="input input--classic">
                 <input class="input__widget" type="number" id="h68i9f7g">
             </div>
 
@@ -311,7 +500,7 @@
             <label class="label" for="8fq2k8fo">
                 type="color"
             </label>
-            <div class="input">
+            <div class="input input--classic">
                 <input class="input__widget" type="color" id="8fq2k8fo">
             </div>
 
@@ -320,7 +509,7 @@
             <label class="label" for="vecqj15p">
                 type="date"
             </label>
-            <div class="input">
+            <div class="input input--classic">
                 <input class="input__widget" type="date" id="vecqj15p">
             </div>
 
@@ -329,7 +518,7 @@
             <label class="label" for="8xg4jfb3">
                 type="datetime-local"
             </label>
-            <div class="input">
+            <div class="input input--classic">
                 <input class="input__widget" type="datetime-local" id="8xg4jfb3">
             </div>
 
@@ -338,7 +527,7 @@
             <label class="label" for="brif3gg2">
                 type="week"
             </label>
-            <div class="input">
+            <div class="input input--classic">
                 <input class="input__widget" type="week" id="brif3gg2">
             </div>
 
@@ -347,7 +536,7 @@
             <label class="label" for="iei6tkvf">
                 type="month"
             </label>
-            <div class="input">
+            <div class="input input--classic">
                 <input class="input__widget" type="month" id="iei6tkvf">
             </div>
 
@@ -356,7 +545,7 @@
             <label class="label" for="33s23mr7">
                 type="time"
             </label>
-            <div class="input">
+            <div class="input input--classic">
                 <input class="input__widget" type="time" id="33s23mr7">
             </div>
 
@@ -377,12 +566,12 @@
 
         <script src="../vendors/jquery/jquery-3.7.0.min.js"></script>
         <script src="../vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script src="../scripts/_mfp.js?1696309737"></script>
-        <script src="../scripts/_input.js?1696309737"></script>
-        <script src="../scripts/_achievements.js?1696309737"></script>
-        <script src="../scripts/_profile.js?1696309737"></script>
-        <script src="../scripts/_menu.js?1696309737"></script>
-        <script src="../scripts/_popup.js?1696309737"></script>
+        <script src="../scripts/_mfp.js?1696351529"></script>
+        <script src="../scripts/_input.js?1696351529"></script>
+        <script src="../scripts/_achievements.js?1696351529"></script>
+        <script src="../scripts/_profile.js?1696351529"></script>
+        <script src="../scripts/_menu.js?1696351529"></script>
+        <script src="../scripts/_popup.js?1696351529"></script>
 
 
     </body>
