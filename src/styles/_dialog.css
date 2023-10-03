@@ -270,7 +270,6 @@
 
 
 
-
 .dialog--team .dialog__heading {
     width: 225px;
     height: 117px;
@@ -297,14 +296,40 @@
     }
 
     .dialog--team .dialog__body {
-        /*padding-top: 30px;*/
         padding-bottom: 46px;
     }
 
     .dialog--team .dialog__operations {
         padding-bottom: 10px;
-        /*margin-top: 28px;*/
-        /*margin-bottom: -4px;*/
-        /*font-size: 12px;*/
-        /*line-height: 24px;*/
+    }
+
+
+
+.dialog--qr .dialog__heading {
+    width: 225px;
+    height: 117px;
+}
+    .dialog--qr .dialog__heading::after {
+        left: 123px;
+        top: 4px;
+        width: 79px;
+        height: 109px;
+    }
+
+    .dialog--qr .dialog__body {
+        padding-bottom: 10px;
+    }
+
+    .dialog--qr .dialog__operations {
+        padding-bottom: 10px;
+    }
+        .dialog--qr .dialog__operations .button {
+            min-width: 220px;
+        }
+
+    .dialog--qr .dialog__addition {
+        width: 220px;
+        padding-bottom: 23px;
+        margin-left: auto;
+        margin-right: auto;
     }

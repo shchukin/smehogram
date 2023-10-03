@@ -76,6 +76,24 @@
     }
 
 
+.button--copy {
+    padding-left: 24px;
+}
+    .button--copy::after {
+        content: "";
+        flex-shrink: 0;
+        margin-left: 10px;
+        margin-right: -14px;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url("../vectors/copy.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
 .button--free {
     position: relative;
     overflow: hidden;
@@ -96,3 +114,4 @@
         line-height: 18px;
         text-transform: uppercase;
     }
+
