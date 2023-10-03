@@ -1,0 +1,20 @@
+.coins {
+
+}
+    .coins__heading {
+        display: block;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .coins__amount {
+        margin-top: 22px;
+    }
+
+    .coins__cost {
+        margin-top: 21px;
+        border: 1px solid #FFB369;
+        padding: 19px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+    }

@@ -190,3 +190,80 @@
         font-size: 16px;
         line-height: 24px;
     }
+
+
+
+
+.dialog--test .dialog__heading {
+    width: 206px;
+    height: 94px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/test-heading-letters.svg");
+}
+    .dialog--test .dialog__heading::after {
+        left: 154px;
+        top: 53px;
+        width: 66px;
+        height: 49px;
+        background-image: url("../images/test-heading-illustration.webp");
+    }
+
+    @media (1.5dppx <= resolution < 2.5dppx ) {
+        .dialog--test .dialog__heading::after {
+            background-image: url("../images/test-heading-illustration@2x.webp");
+        }
+    }
+
+    @media (2.5dppx <= resolution) {
+        .dialog--test .dialog__heading::after {
+            background-image: url("../images/test-heading-illustration@3x.webp");
+        }
+    }
+
+    .dialog--test .dialog__body {
+        text-align: center;
+        max-width: 280px;
+    }
+
+    .dialog--test .dialog__operations {
+        margin-bottom: 26px;
+    }
+
+
+
+.dialog--coins .dialog__heading {
+    width: 185px;
+    height: 94px;
+    background-image: url("../images/coins-heading-letters.svg");
+}
+    .dialog--coins .dialog__heading::after {
+        left: 162px;
+        top: 24px;
+        width: 72px;
+        height: 69px;
+        background-image: url("../images/coins-heading-illustration.webp");
+    }
+
+    @media (1.5dppx <= resolution < 2.5dppx ) {
+        .dialog--coins .dialog__heading::after {
+            background-image: url("../images/coins-heading-illustration@2x.webp");
+        }
+    }
+
+    @media (2.5dppx <= resolution) {
+        .dialog--coins .dialog__heading::after {
+            background-image: url("../images/coins-heading-illustration@3x.webp");
+        }
+    }
+
+    .dialog--coins .dialog__body {
+        padding-top: 30px;
+    }
+
+    .dialog--coins .dialog__addition {
+        margin-top: 28px;
+        margin-bottom: -4px;
+        font-size: 12px;
+        line-height: 24px;
+    }
