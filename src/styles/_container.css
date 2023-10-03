@@ -1,13 +1,9 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
+    max-width: 800px;
     border-left: var(--container-padding) solid transparent;
     border-right: var(--container-padding) solid transparent;
-}
-
-.container--wide { /* игра, страница вопроса и результата */
-    width: 1120px;
 }
 
 .container--unlimited {
@@ -20,6 +16,5 @@
         width: 100%;
         min-width: 320px;
         max-width: 500px;
-
     }
 }
