@@ -84,6 +84,7 @@
 
 }
     .input--classic.input--error .input__widget {
+        background-color: #FFDDDD;
         color: var(--error);
         border-color: var(--error);
     }
@@ -105,7 +106,56 @@
     }
 
 
+/* Select */
+    .input--classic select.input__widget {
+        appearance: none;
+        padding-right: 62px;
+        background-image: url("../vectors/classic-select-chevron.svg");
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-position: right 24px center;
+        cursor: pointer;
+        transition: background-color var(--transition-hover);
+    }
 
+    .input--classic select.input__widget:hover {
+        box-shadow: none; /* same as base, not hover input */
+        background-color: var(--classic-select-hover);
+    }
+
+    /* Select & Disabled */
+    .input--classic select.input__widget:disabled {
+        background-color: var(--classic-disabled-background);
+        cursor: default;
+    }
+
+    /* Select & Error */
+    .input--classic.input--error select.input__widget {
+        background-image: url("../vectors/classic-select-chevron-error.svg");
+    }
+
+    .input--classic.input--error select.input__widget:hover {
+        box-shadow: none;
+        background-color: var(--classic-select-hover);
+    }
+
+    .input--classic.input--placeholder-is-chosen {
+
+    }
+        .input--classic.input--placeholder-is-chosen select.input__widget {
+            color: var(--classic-placeholder-color);
+        }
+
+        .input--classic.input--placeholder-is-chosen select.input__widget:disabled {
+            color: var(--classic-disabled-color);
+        }
+
+        .input--classic.input--placeholder-is-chosen.input--error select.input__widget {
+            color: var(--error);
+        }
+            .input--classic.input--placeholder-is-chosen select.input__widget option {
+                color: #000000; /* Browsers on Windows inherit grey color from <select> to <option>`s. Reset it. */
+            }
 
 
 .input--fancy {
@@ -172,27 +222,55 @@
 
 
 
+/* Select */
+    .input--fancy select.input__widget {
+        appearance: none;
+        padding-right: 32px;
+        background-image: url("../vectors/fancy-select-chevron.svg");
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        cursor: pointer;
+    }
 
-select.input__widget {
-    appearance: none;
-    padding-right: 50px;
-    background-image: url("../vectors/dropdown.svg");
-    background-size: 16px 16px;
-    background-repeat: no-repeat;
-    background-position: right 16px center;
-    cursor: pointer;
-}
+    .input--fancy select.input__widget:hover {
 
-select.input__widget:hover {
-    box-shadow: none; /* same as original, not hover input */
-    border-color: var(--input-border); /* same as original, not hover input */
-    background-color: #F6F6F6;
-}
+    }
 
-/* Disabled */
-select.input__widget:disabled {
-    cursor: default;
-}
+    /* Select & Disabled */
+    .input--fancy select.input__widget:disabled {
+        cursor: default;
+        background-image: url("../vectors/fancy-select-chevron-disabled.svg");
+    }
+
+    /* Select & Error */
+    .input--fancy.input--error select.input__widget {
+        background-image: url("../vectors/fancy-select-chevron-error.svg");
+    }
+
+    .input--fancy.input--error select.input__widget:hover {
+        border-color: var(--error);
+    }
+
+    .input--fancy.input--placeholder-is-chosen {
+
+    }
+        .input--fancy.input--placeholder-is-chosen select.input__widget {
+            color: var(--fancy-placeholder-color);
+        }
+
+        .input--fancy.input--placeholder-is-chosen select.input__widget:disabled {
+            color: var(--fancy-disabled-color);
+        }
+
+        .input--fancy.input--placeholder-is-chosen.input--error select.input__widget {
+            color: var(--error);
+        }
+            .input--fancy.input--placeholder-is-chosen select.input__widget option {
+                color: #000000; /* Browsers on Windows inherit grey color from <select> to <option>`s. Reset it. */
+            }
+
+
 
 
 
