@@ -35,7 +35,5 @@
 @media (width < 475px) {
     .window {
         width: 100%;
-        padding-left: var(--container-padding); /* На этом разрешении заканчивается max-width модакли и она начинает прилипать к краям экрана. И можно уменьшать паддинг */
-        padding-right: var(--container-padding);
     }
 }

@@ -4,6 +4,13 @@
     flex-direction: column;
     padding: 54px 66px 37px;
 }
+
+@media (width < 475px) {
+    .dialog {
+        padding-left: var(--container-padding); /* На этом разрешении заканчивается max-width модакли и она начинает прилипать к краям экрана. И можно уменьшать паддинг */
+        padding-right: var(--container-padding);
+    }
+}
     .dialog__heading {
         position: relative;
         margin-top: 0;
@@ -11,6 +18,36 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
+    }
+
+    @supports (zoom: 0.5) {
+        @media (350px <= width < 375px) {
+            .dialog__heading {
+                zoom: 0.9;
+            }
+        }
+
+        @media (width < 350px) {
+            .dialog__heading {
+                zoom: 0.8;
+            }
+        }
+    }
+
+    @supports not (zoom: 0.5) {
+        @media (350px <= width < 375px) {
+            .dialog__heading {
+                transform: scale(0.9);
+                transform-origin: 0 0;
+            }
+        }
+
+        @media (width < 350px) {
+            .dialog__heading {
+                transform: scale(0.8);
+                transform-origin: 0 0;
+            }
+        }
     }
         .dialog__heading::after {
             content: "";
@@ -85,7 +122,7 @@
     }
 
     .dialog--login .dialog__addition {
-        padding-top: 13px;
+        padding-top: 10px;
         padding-bottom: 10px;
     }
 
@@ -118,4 +155,38 @@
     .dialog--register .dialog__addition {
         font-size: 12px;
         line-height: 18px;
+    }
+
+
+
+.dialog--settings .dialog__heading {
+    width: 277px;
+    height: 118px;
+    background-image: url("../images/settings-heading-letters.svg");
+}
+    .dialog--settings .dialog__heading::after {
+        left: 202px;
+        top: 1px;
+        width: 45px;
+        height: 92px;
+        background-image: url("../images/settings-heading-illustration.webp");
+    }
+
+    @media (1.5dppx <= resolution < 2.5dppx ) {
+        .dialog--settings .dialog__heading::after {
+            background-image: url("../images/settings-heading-illustration@2x.webp");
+        }
+    }
+
+    @media (2.5dppx <= resolution) {
+        .dialog--settings .dialog__heading::after {
+            background-image: url("../images/settings-heading-illustration@3x.webp");
+        }
+    }
+
+    .dialog--settings .dialog__addition {
+        margin-top: 25px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
     }

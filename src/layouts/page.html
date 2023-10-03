@@ -183,7 +183,7 @@
                 </div>
             </div>
 
-            <div class="popup popup--visible" id="login">
+            <div class="popup" id="login">
                 <div class="popup__container">
                     <div class="popup__viewport">
                         <div class="popup__slot">
@@ -211,6 +211,47 @@
                                     <div class="dialog__addition">
                                         если у вас нет учетной записи,<br>
                                         тогда <a class="link link--text-alike" href="#register" data-popup-show>зарегистрируйтесь</a>
+                                    </div>
+                                </form>
+                                <div class="window__close">
+                                    <button class="action action--close" type="button" data-popup-close>
+                                        <span class="visuallyhidden">Закрыть</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup" id="register">
+                <div class="popup__container">
+                    <div class="popup__viewport">
+                        <div class="popup__slot">
+
+                            <div class="window">
+                                <form class="dialog dialog--register">
+                                    <h2 class="dialog__heading">
+                                        <span class="visuallyhidden">Регистрация</span>
+                                    </h2>
+                                    <div class="dialog__body">
+                                        <div class="dialog__field">
+                                            <div class="input input--fancy">
+                                                <input class="input__widget" type="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="dialog__field">
+                                            <div class="input input--fancy">
+                                                <input class="input__widget" type="password" placeholder="Пароль из почты">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dialog__operations">
+                                        <button class="button" type="submit">Зарегаться</button>
+                                    </div>
+                                    <div class="dialog__addition">
+                                        регистрируясь вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности. Также подтверждаете, что Вам есть 18 лет и более
                                     </div>
                                 </form>
                                 <div class="window__close">
