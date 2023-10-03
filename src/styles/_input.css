@@ -58,7 +58,7 @@
     }
 
     .input--classic .input__widget:focus-visible {
-        box-shadow: 0 0 0 4px var(--classic-hover-and-focus);
+        box-shadow: 0 0 0 3px var(--classic-hover-and-focus);
         transition: none;
     }
 
@@ -67,7 +67,7 @@
     }
 
 
-    /* Disabled */
+/* Disabled */
     .input--classic .input__widget:disabled {
         background-color: var(--classic-disabled-background);
         box-shadow: none;
@@ -79,29 +79,40 @@
     }
 
 
-    /* Error */
-    .input--classic.input--error {
+/* Error */
+.input--classic.input--error {
 
+}
+    .input--classic.input--error .input__widget {
+        color: var(--error);
+        border-color: var(--error);
     }
-        .input--classic.input--error .input__widget {
-            color: var(--error);
-            border-color: var(--error);
-        }
 
-        .input--classic.input--error .input__widget:hover {
-            box-shadow: 0 0 0 2px var(--classic-hover-and-focus);
-        }
+    .input--classic.input--error .input__widget:hover {
+        box-shadow: 0 0 0 2px var(--classic-hover-and-focus);
+    }
 
-        .input--classic.input--error .input__widget::placeholder {
-            color: var(--error);
-        }
+    .input--classic.input--error .input__widget::placeholder {
+        color: var(--error);
+    }
+
+/* Textarea */
+    .input--classic textarea.input__widget {
+        height: auto; /* user rows="" attribute to set a default height */
+        resize: vertical;
+        min-height: 64px; /* 1 row */
+        max-height: 280px; /* 10 rows */
+    }
+
+
+
 
 
 .input--fancy {
 
 }
     .input--fancy .input__widget {
-        height: 64px;
+        height: 48px;
         padding: 12px 0;
         background-color: transparent;
         box-shadow: inset 0 -1px 0 0 rgb(255 255 255 / 50%);
@@ -123,7 +134,7 @@
     }
 
 
-    /* Disabled */
+/* Disabled */
     .input--fancy .input__widget:disabled {
         box-shadow: inset 0 -1px 0 0 var(--fancy-disabled-shadow);
         color: var(--fancy-disabled-color);
@@ -134,33 +145,31 @@
     }
 
 
-    /* Error */
-    .input--fancy.input--error {
+/* Error */
+.input--fancy.input--error {
 
-    }
-        .input--fancy.input--error .input__widget {
-            color: var(--error);
-            box-shadow: inset 0 -1px 0 0 var(--error);
-        }
-
-        .input--fancy.input--error .input__widget:hover {
-            box-shadow: inset 0 -1px 0 0 var(--fancy-hover);
-        }
-
-        .input--fancy.input--error .input__widget::placeholder {
-            color: var(--error);
-        }
-
-
-
-
-
-textarea.input__widget {
-    height: auto; /* user rows="" attribute to set a default height */
-    min-height: 50px; /* 1 row */
-    max-height: 266px; /* 10 rows */
-    resize: vertical;
 }
+    .input--fancy.input--error .input__widget {
+        color: var(--error);
+        box-shadow: inset 0 -1px 0 0 var(--error);
+    }
+
+    .input--fancy.input--error .input__widget:hover {
+        box-shadow: inset 0 -1px 0 0 var(--fancy-hover);
+    }
+
+    .input--fancy.input--error .input__widget::placeholder {
+        color: var(--error);
+    }
+
+/* Textarea */
+    .input--fancy textarea.input__widget {
+        height: auto; /* user rows="" attribute to set a default height */
+        resize: vertical;
+        min-height: 48px; /* 1 row */
+        max-height: 264px; /* 10 rows */
+    }
+
 
 
 
