@@ -1,14 +1,16 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 674px;
+    width: 800px;
+    border-left: var(--container-padding) solid transparent;
+    border-right: var(--container-padding) solid transparent;
 }
 
 .container--wide { /* игра, страница вопроса и результата */
     width: 1120px;
 }
 
-.container--smartphone-only {
+.container--unlimited {
     width: auto;
 }
 
@@ -18,7 +20,6 @@
         width: 100%;
         min-width: 320px;
         max-width: 500px;
-        border-left: var(--container-padding) solid transparent;
-        border-right: var(--container-padding) solid transparent;
+
     }
 }
