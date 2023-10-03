@@ -94,31 +94,33 @@
 
 
 /* Уникальные модалки */
+.dialog--login {
 
-.dialog--login .dialog__heading {
-    width: 274px;
-    height: 101px;
-    background-image: url("../images/login-heading-letters.svg");
 }
-    .dialog--login .dialog__heading::after {
-        left: 138px;
-        top: -10px;
-        width: 40px;
-        height: 54px;
-        background-image: url("../images/login-heading-illustration.webp");
+    .dialog--login .dialog__heading {
+        width: 274px;
+        height: 101px;
+        background-image: url("../images/login-heading-letters.svg");
     }
-
-    @media (1.5dppx <= resolution < 2.5dppx ) {
         .dialog--login .dialog__heading::after {
-            background-image: url("../images/login-heading-illustration@2x.webp");
+            left: 138px;
+            top: -10px;
+            width: 40px;
+            height: 54px;
+            background-image: url("../images/login-heading-illustration.webp");
         }
-    }
 
-    @media (2.5dppx <= resolution) {
-        .dialog--login .dialog__heading::after {
-            background-image: url("../images/login-heading-illustration@3x.webp");
+        @media (1.5dppx <= resolution < 2.5dppx ) {
+            .dialog--login .dialog__heading::after {
+                background-image: url("../images/login-heading-illustration@2x.webp");
+            }
         }
-    }
+
+        @media (2.5dppx <= resolution) {
+            .dialog--login .dialog__heading::after {
+                background-image: url("../images/login-heading-illustration@3x.webp");
+            }
+        }
 
     .dialog--login .dialog__addition {
         padding-top: 10px;
@@ -126,30 +128,34 @@
     }
 
 
-.dialog--register .dialog__heading {
-    width: 245px;
-    height: 102px;
-    background-image: url("../images/register-heading-letters.svg");
+
+.dialog--register {
+
 }
-    .dialog--register .dialog__heading::after {
-        left: 213px;
-        top: 19px;
-        width: 45px;
-        height: 92px;
-        background-image: url("../images/register-heading-illustration.webp");
+    .dialog--register .dialog__heading {
+        width: 245px;
+        height: 102px;
+        background-image: url("../images/register-heading-letters.svg");
     }
-
-    @media (1.5dppx <= resolution < 2.5dppx ) {
         .dialog--register .dialog__heading::after {
-            background-image: url("../images/register-heading-illustration@2x.webp");
+            left: 213px;
+            top: 19px;
+            width: 45px;
+            height: 92px;
+            background-image: url("../images/register-heading-illustration.webp");
         }
-    }
 
-    @media (2.5dppx <= resolution) {
-        .dialog--register .dialog__heading::after {
-            background-image: url("../images/register-heading-illustration@3x.webp");
+        @media (1.5dppx <= resolution < 2.5dppx ) {
+            .dialog--register .dialog__heading::after {
+                background-image: url("../images/register-heading-illustration@2x.webp");
+            }
         }
-    }
+
+        @media (2.5dppx <= resolution) {
+            .dialog--register .dialog__heading::after {
+                background-image: url("../images/register-heading-illustration@3x.webp");
+            }
+        }
 
     .dialog--register .dialog__addition {
         font-size: 12px;
@@ -157,31 +163,33 @@
     }
 
 
+.dialog--settings {
 
-.dialog--settings .dialog__heading {
-    width: 277px;
-    height: 118px;
-    background-image: url("../images/settings-heading-letters.svg");
 }
-    .dialog--settings .dialog__heading::after {
-        left: 202px;
-        top: 1px;
-        width: 45px;
-        height: 92px;
-        background-image: url("../images/settings-heading-illustration.webp");
+    .dialog--settings .dialog__heading {
+        width: 277px;
+        height: 118px;
+        background-image: url("../images/settings-heading-letters.svg");
     }
-
-    @media (1.5dppx <= resolution < 2.5dppx ) {
         .dialog--settings .dialog__heading::after {
-            background-image: url("../images/settings-heading-illustration@2x.webp");
+            left: 202px;
+            top: 1px;
+            width: 45px;
+            height: 92px;
+            background-image: url("../images/settings-heading-illustration.webp");
         }
-    }
 
-    @media (2.5dppx <= resolution) {
-        .dialog--settings .dialog__heading::after {
-            background-image: url("../images/settings-heading-illustration@3x.webp");
+        @media (1.5dppx <= resolution < 2.5dppx ) {
+            .dialog--settings .dialog__heading::after {
+                background-image: url("../images/settings-heading-illustration@2x.webp");
+            }
         }
-    }
+
+        @media (2.5dppx <= resolution) {
+            .dialog--settings .dialog__heading::after {
+                background-image: url("../images/settings-heading-illustration@3x.webp");
+            }
+        }
 
     .dialog--settings .dialog__addition {
         margin-top: 25px;
@@ -192,33 +200,35 @@
 
 
 
+.dialog--test {
 
-.dialog--test .dialog__heading {
-    width: 206px;
-    height: 94px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("../images/test-heading-letters.svg");
 }
-    .dialog--test .dialog__heading::after {
-        left: 154px;
-        top: 53px;
-        width: 66px;
-        height: 49px;
-        background-image: url("../images/test-heading-illustration.webp");
+    .dialog--test .dialog__heading {
+        width: 206px;
+        height: 94px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../images/test-heading-letters.svg");
     }
-
-    @media (1.5dppx <= resolution < 2.5dppx ) {
         .dialog--test .dialog__heading::after {
-            background-image: url("../images/test-heading-illustration@2x.webp");
+            left: 154px;
+            top: 53px;
+            width: 66px;
+            height: 49px;
+            background-image: url("../images/test-heading-illustration.webp");
         }
-    }
 
-    @media (2.5dppx <= resolution) {
-        .dialog--test .dialog__heading::after {
-            background-image: url("../images/test-heading-illustration@3x.webp");
+        @media (1.5dppx <= resolution < 2.5dppx ) {
+            .dialog--test .dialog__heading::after {
+                background-image: url("../images/test-heading-illustration@2x.webp");
+            }
         }
-    }
+
+        @media (2.5dppx <= resolution) {
+            .dialog--test .dialog__heading::after {
+                background-image: url("../images/test-heading-illustration@3x.webp");
+            }
+        }
 
     .dialog--test .dialog__body {
         text-align: center;
@@ -230,31 +240,33 @@
     }
 
 
+.dialog--coins {
 
-.dialog--coins .dialog__heading {
-    width: 185px;
-    height: 94px;
-    background-image: url("../images/coins-heading-letters.svg");
 }
-    .dialog--coins .dialog__heading::after {
-        left: 162px;
-        top: 24px;
-        width: 72px;
-        height: 69px;
-        background-image: url("../images/coins-heading-illustration.webp");
+    .dialog--coins .dialog__heading {
+        width: 185px;
+        height: 94px;
+        background-image: url("../images/coins-heading-letters.svg");
     }
-
-    @media (1.5dppx <= resolution < 2.5dppx ) {
         .dialog--coins .dialog__heading::after {
-            background-image: url("../images/coins-heading-illustration@2x.webp");
+            left: 162px;
+            top: 24px;
+            width: 72px;
+            height: 69px;
+            background-image: url("../images/coins-heading-illustration.webp");
         }
-    }
 
-    @media (2.5dppx <= resolution) {
-        .dialog--coins .dialog__heading::after {
-            background-image: url("../images/coins-heading-illustration@3x.webp");
+        @media (1.5dppx <= resolution < 2.5dppx ) {
+            .dialog--coins .dialog__heading::after {
+                background-image: url("../images/coins-heading-illustration@2x.webp");
+            }
         }
-    }
+
+        @media (2.5dppx <= resolution) {
+            .dialog--coins .dialog__heading::after {
+                background-image: url("../images/coins-heading-illustration@3x.webp");
+            }
+        }
 
     .dialog--coins .dialog__body {
         padding-top: 30px;
@@ -269,36 +281,78 @@
 
 
 
-.dialog--team .dialog__heading {
-    width: 225px;
-    height: 117px;
-    background-image: url("../images/team-heading-letters.svg");
+.dialog--team {
+
 }
-    .dialog--team .dialog__heading::after {
-        left: 123px;
-        top: 4px;
-        width: 79px;
-        height: 109px;
-        background-image: url("../images/team-heading-illustration.webp");
+    .dialog--team .dialog__heading {
+        width: 225px;
+        height: 117px;
+        background-image: url("../images/team-heading-letters.svg");
     }
-
-    @media (1.5dppx <= resolution < 2.5dppx ) {
         .dialog--team .dialog__heading::after {
-            background-image: url("../images/team-heading-illustration@2x.webp");
+            left: 123px;
+            top: 4px;
+            width: 79px;
+            height: 109px;
+            background-image: url("../images/team-heading-illustration.webp");
         }
-    }
 
-    @media (2.5dppx <= resolution) {
-        .dialog--team .dialog__heading::after {
-            background-image: url("../images/team-heading-illustration@3x.webp");
+        @media (1.5dppx <= resolution < 2.5dppx ) {
+            .dialog--team .dialog__heading::after {
+                background-image: url("../images/team-heading-illustration@2x.webp");
+            }
         }
-    }
+
+        @media (2.5dppx <= resolution) {
+            .dialog--team .dialog__heading::after {
+                background-image: url("../images/team-heading-illustration@3x.webp");
+            }
+        }
 
     .dialog--team .dialog__body {
         padding-bottom: 46px;
     }
 
     .dialog--team .dialog__operations {
+        padding-bottom: 10px;
+    }
+
+
+.dialog--adulthood {
+    padding-top: 95px;
+}
+    .dialog--adulthood .dialog__heading {
+        width: 233px;
+        height: 104px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../images/adulthood-heading-letters.svg");
+    }
+        .dialog--adulthood .dialog__heading::after {
+            left: 119px;
+            top: -55px;
+            width: 96px;
+            height: 84px;
+            background-image: url("../images/adulthood-heading-illustration.webp");
+        }
+
+        @media (1.5dppx <= resolution < 2.5dppx ) {
+            .dialog--adulthood .dialog__heading::after {
+                background-image: url("../images/adulthood-heading-illustration@2x.webp");
+            }
+        }
+
+        @media (2.5dppx <= resolution) {
+            .dialog--adulthood .dialog__heading::after {
+                background-image: url("../images/adulthood-heading-illustration@3x.webp");
+            }
+        }
+
+    .dialog--adulthood .dialog__body {
+        padding-bottom: 46px;
+    }
+
+    .dialog--adulthood .dialog__operations {
         padding-bottom: 10px;
     }
 
@@ -342,5 +396,5 @@
     }
 
     .dialog--ready .dialog__addition {
-       
+
     }
