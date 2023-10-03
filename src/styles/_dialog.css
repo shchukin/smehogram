@@ -75,15 +75,14 @@
         }
 
     .dialog__operations {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 22px;
     }
         .dialog__operations .button {
 
         }
 
-        .dialog__operations .button:only-child {
-            min-width: 200px;
-        }
 
     .dialog__addition {
         margin-top: 34px;
@@ -305,17 +304,9 @@
 
 
 
-.dialog--qr .dialog__heading {
-    width: 225px;
-    height: 117px;
-}
-    .dialog--qr .dialog__heading::after {
-        left: 123px;
-        top: 4px;
-        width: 79px;
-        height: 109px;
-    }
+.dialog--qr {
 
+}
     .dialog--qr .dialog__body {
         padding-bottom: 10px;
     }
@@ -332,4 +323,24 @@
         padding-bottom: 23px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+
+
+.dialog--ready {
+
+}
+    .dialog--ready .dialog__body {
+        max-width: 224px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 67px;
+    }
+
+    .dialog--ready .dialog__operations {
+        padding-bottom: 12px;
+    }
+
+    .dialog--ready .dialog__addition {
+       
     }

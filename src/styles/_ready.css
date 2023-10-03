@@ -1,0 +1,29 @@
+.ready {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+}
+    .ready::before {
+        content: "";
+        display: block;
+        width: 206px;
+        height: 223px;
+        margin-bottom: 41px;
+        background-image: url("../images/ready.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    @media (1.5dppx <= resolution < 2.5dppx ) {
+        .ready::before {
+            background-image: url("../images/ready@2x.webp");
+        }
+    }
+
+    @media (2.5dppx <= resolution) {
+        .ready::before {
+            background-image: url("../images/ready@3x.webp");
+        }
+    }
