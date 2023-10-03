@@ -4,6 +4,10 @@
     width: 1120px;
 }
 
+.container--smartphone-only {
+    width: auto;
+}
+
 @media (width < 750px) {
 
     .container {
