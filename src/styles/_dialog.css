@@ -267,3 +267,44 @@
         font-size: 12px;
         line-height: 24px;
     }
+
+
+
+
+.dialog--team .dialog__heading {
+    width: 225px;
+    height: 117px;
+    background-image: url("../images/team-heading-letters.svg");
+}
+    .dialog--team .dialog__heading::after {
+        left: 123px;
+        top: 4px;
+        width: 79px;
+        height: 109px;
+        background-image: url("../images/team-heading-illustration.webp");
+    }
+
+    @media (1.5dppx <= resolution < 2.5dppx ) {
+        .dialog--team .dialog__heading::after {
+            background-image: url("../images/team-heading-illustration@2x.webp");
+        }
+    }
+
+    @media (2.5dppx <= resolution) {
+        .dialog--team .dialog__heading::after {
+            background-image: url("../images/team-heading-illustration@3x.webp");
+        }
+    }
+
+    .dialog--team .dialog__body {
+        /*padding-top: 30px;*/
+        padding-bottom: 46px;
+    }
+
+    .dialog--team .dialog__operations {
+        padding-bottom: 10px;
+        /*margin-top: 28px;*/
+        /*margin-bottom: -4px;*/
+        /*font-size: 12px;*/
+        /*line-height: 24px;*/
+    }
