@@ -10,8 +10,8 @@ body::after {
     position: fixed;
     right: 100%;
     bottom: 100%;
-    width: 1px;
-    height: 1px;
+    width: 1000px;
+    height: 1000px;
 }
 
 
@@ -21,6 +21,7 @@ body::after {
 body::before {
     background-image: url("../images/profile.webp"),
                       url("../images/menu.webp"),
+                      url("../images/window.webp"),
                       url("../images/user-heading-letters.svg"),
                       url("../images/nav-heading-letters.svg")
     ;

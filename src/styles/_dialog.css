@@ -1,0 +1,76 @@
+.dialog {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 54px 66px 47px;
+}
+    .dialog__heading {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+        .dialog__heading::after {
+            content: "";
+            position: absolute;
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+
+
+    .dialog__operations {
+        margin-top: auto;
+        text-align: center  ;
+    }
+        .dialog__operations .button {
+
+        }
+
+        .dialog__operations .button:only-child {
+            min-width: 200px;
+        }
+
+    .dialog__addition {
+        margin-top: 34px;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+
+
+/* Уникальные модалки */
+
+.dialog--login .dialog__heading {
+    width: 274px;
+    height: 101px;
+    background-image: url("../images/login-heading-letters.svg");
+}
+    .dialog--login .dialog__heading::after {
+        left: 138px;
+        top: -10px;
+        width: 40px;
+        height: 54px;
+        background-image: url("../images/login-heading-illustration.webp");
+    }
+
+    @media (1.5dppx <= resolution < 2.5dppx ) {
+        .dialog--login .dialog__heading::after {
+            background-image: url("../images/login-heading-illustration@2x.webp");
+        }
+    }
+
+    @media (2.5dppx <= resolution) {
+        .dialog--login .dialog__heading::after {
+            background-image: url("../images/login-heading-illustration@3x.webp");
+        }
+    }
+
+    .dialog--login .dialog__addition {
+        padding-top: 13px;
+    }

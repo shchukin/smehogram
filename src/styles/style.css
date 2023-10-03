@@ -20,7 +20,7 @@
 /*@import url("_helper.css");*/
 
 /*@import url("_mfp.css");*/
-/*@import url("_window.css");*/
+@import url("_window.css");
 /*@import url("_login.css");*/
 
 @import url("_achievements.css");
@@ -41,4 +41,7 @@
 @import url("_emblem.css");
 @import url("_start.css");
 @import url("_create.css");
+@import url("_popup.css");
+@import url("_html-lock.css");
+@import url("_dialog.css");
 

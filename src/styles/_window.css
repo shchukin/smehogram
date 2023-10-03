@@ -1,33 +1,41 @@
 .window {
     position: relative;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    background-color: #FFFFFF;
-    border-radius: 4px;
+    width: 426px;
+    min-height: 580px; /* Все модалки по размеру более-менее одинаковые */
+    display: flex; /* В комбинации с min-height нужно дать потомкам возможность заполнять всю высоту */
+    flex-direction: column;
+    background-color: #1B2587;
+    background-image: url("../images/window.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    border-radius: 25px;
 }
     .window__close {
         position: absolute;
-        right: 10px !important;
-        top: 10px !important;
-        width: 44px;
-        height: 44px;
-        text-indent: 200%;
-        white-space: nowrap;
-        overflow: hidden !important;
-        opacity: 1;
+        right: 2px;
+        top: 2px;
     }
-        .window__close::after {
-            content: "";
+        .window__close.action {
             position: absolute;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            background-image: url("../vectors/cross.svg");
-            background-size: 16px 16px;
-            background-repeat: no-repeat;
-            background-position: center center;
         }
 
+
+@media (width < 750px) {
+    .window {
+
+    }
+        .window__close {
+
+        }
+}
+
+
+
+@media (width < 475px) {
+    .window {
+        width: 100%;
+        padding-left: var(--container-padding); /* На этом разрешении заканчивается max-width модакли и она начинает прилипать к краям экрана. И можно уменьшать паддинг */
+        padding-right: var(--container-padding);
+    }
+}

@@ -65,9 +65,9 @@
                         </a>
                     </div>
                     <div class="header__profile">
-                        <button class="action action--login">
+                        <a class="action action--login" data-popup-show href="#login">
                             Вход
-                        </button>
+                        </a>
                         или:
                         <button class="action action--profile" type="button">
                             <span class="visuallyhidden">Профиль</span>
@@ -183,6 +183,37 @@
                 </div>
             </div>
 
+            <div class="popup popup--visible" id="login">
+                <div class="popup__container">
+                    <div class="popup__viewport">
+                        <div class="popup__slot">
+
+                            <div class="window">
+                                <form class="dialog dialog--login">
+                                    <h2 class="dialog__heading">
+                                        <span class="visuallyhidden">Авторизация</span>
+                                    </h2>
+                                    <div class="dialog__body">
+
+                                    </div>
+                                    <div class="dialog__operations">
+                                        <button class="button" type="submit">Войти</button>
+                                    </div>
+                                    <div class="dialog__addition">
+                                        если у вас нет учетной записи,<br>
+                                        тогда <a class="link link--text-alike" href="#register" data-popup-show>зарегистрируйтесь</a>
+                                    </div>
+                                </form>
+                                <button class="window__close action action--close" type="button" data-popup-close>
+                                    <span class="visuallyhidden">Закрыть</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
 
@@ -193,6 +224,7 @@
         <script src="../scripts/_achievements.js"></script>
         <script src="../scripts/_profile.js"></script>
         <script src="../scripts/_menu.js"></script>
+        <script src="../scripts/_popup.js"></script>
 
     </body>
 </html>
