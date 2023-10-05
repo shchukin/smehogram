@@ -64,19 +64,15 @@
         .trial__operations {
             position: absolute;
             left: 0;
-            bottom: 0;
+            right: 210px;
+            bottom: -2px;
             padding-top: 2px;
             padding-bottom: 2px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
         }
-            .trial__ribbon {
-                display: inline-flex;
-                align-items: center;
-                gap: 18px;
-            }
-                .trial__ribbon .action {
-                    margin-left: -14px;
-                    margin-right: -14px;
-                }
 
         .trial__loading {
             position: absolute;
@@ -149,6 +145,9 @@
             right: 0;
             bottom: 0;
         }
+            .trial__begin .button {
+                min-width: 190px;
+            }
 
 
 
@@ -198,28 +197,38 @@
                 }
 
             .trial__operations {
-                margin-top: 3px;
+                margin-top: 13px;
                 position: static;
-                /*left: 0;*/
-                /*bottom: 0;*/
-                /*padding-top: 2px;*/
-                /*padding-bottom: 2px;*/
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-                margin-left: calc(-1 * var(--container-padding) + 2px);
-                margin-right: calc(-1 * var(--container-padding) + 2px);
             }
-                .trial__ribbon {
-                    /*display: flex;*/
-                    /*align-items: center;*/
-                    /*gap: 18px;*/
-                    padding-left: var(--container-padding);
-                    padding-right: var(--container-padding);
+
+            @media (350px <= width < 380px) {
+                .trial__operations {
+                    margin-left: -4px;
+                    margin-right: -4px;
+                    gap: 8px;
                 }
-                    .trial__ribbon .action {
-                        /*margin-left: -14px;*/
-                        /*margin-right: -14px;*/
-                    }
+            }
+
+            @media (350px <= width < 370px) {
+                .trial__operations .button {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+
+            @media (350px <= width < 350px) {
+                .trial__operations .button {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+
+            @media (350px <= width < 340px) {
+                .trial__operations .button {
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+            }
 
             .trial__loading {
                 position: relative;
