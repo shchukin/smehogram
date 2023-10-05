@@ -129,7 +129,6 @@
                     padding-top: 7px;
                     padding-bottom: 7px;
                     padding-right: 32px;
-                    background-image: url("../vectors/confirmation-no.svg");
                     background-repeat: no-repeat;
                     background-position: right center;
                     border-bottom: 1px solid rgb(255 255 255 / 25%);
@@ -137,9 +136,22 @@
                     line-height: 18px;
                 }
 
+                .trial__team--pending {
+                    background-image: url("../vectors/confirmation-no.svg");
+                }
+
                 .trial__team--connected {
                     background-image: url("../vectors/confirmation-yes.svg");
                 }
+
+                .trial__team--host {
+
+                }
+                    .trial__team--host::before {
+                        content: "";
+                        float: left;
+                        width: ;
+                    }
 
                 .trial__team--current-player {
                     font-weight: bold;
@@ -170,6 +182,10 @@
                             left: -15px;
                         }
                     }
+
+                .trial__team--spectator {
+                    opacity: 0.5;
+                }
 
         .trial__begin {
             position: absolute;
