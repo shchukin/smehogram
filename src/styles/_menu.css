@@ -52,6 +52,16 @@
 
 /* мобилки */
 @media (width < 750px) {
+    @keyframes menu-slide {
+        from {
+            opacity: 0;
+            transform: translateX(calc(-1 * var(--container-padding)));
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 
     .menu {
         display: none;
@@ -59,6 +69,7 @@
 
     .menu-expanded .menu {
         display: block;
+        animation: menu-slide 800ms var(--ease-out-quint);
     }
         .menu__panel {
 

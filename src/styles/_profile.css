@@ -51,7 +51,20 @@
 
 
 /* мобилки */
+
+
 @media (width < 750px) {
+
+    @keyframes profile-slide {
+        from {
+            opacity: 0;
+            transform: translateX(var(--container-padding));
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 
     .profile {
         display: none;
@@ -59,6 +72,7 @@
 
     .profile-expanded .profile {
         display: block;
+        animation: profile-slide 800ms var(--ease-out-quint);
     }
         .profile__panel {
 
