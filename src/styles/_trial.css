@@ -125,6 +125,7 @@
                 margin-top: 8px;
             }
                 .trial__team {
+                    position: relative;
                     padding-top: 7px;
                     padding-bottom: 7px;
                     padding-right: 32px;
@@ -139,6 +140,36 @@
                 .trial__team--connected {
                     background-image: url("../vectors/confirmation-yes.svg");
                 }
+
+                .trial__team--current-player {
+                    font-weight: bold;
+                }
+                    .trial__team--current-player::after {
+                        content: "";
+                        position: absolute;
+                        left: -25px;
+                        top: 50%;
+                        margin-top: -5px;
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        background-image: url("../vectors/chevron-right-bold.svg");
+                        background-size: 10px 10px;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                    }
+
+                    @media (340px <= width < 400px) {
+                        .trial__team--current-player::after {
+                            left: -20px;
+                        }
+                    }
+
+                    @media (width < 340px) {
+                        .trial__team--current-player::after {
+                            left: -15px;
+                        }
+                    }
 
         .trial__begin {
             position: absolute;
