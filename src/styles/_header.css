@@ -1,6 +1,7 @@
 .header {
     position: relative;
     height: var(--header-height);
+    flex-shrink: 0;
 }
     .header__panel {
         position: absolute; /* Здесь можно сделать position: fixed, чтобы прикрепить шапку. Правда, нужно будет ещё добавить фон. */

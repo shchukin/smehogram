@@ -18,3 +18,9 @@
         max-width: 500px;
     }
 }
+
+
+
+.container--wide {
+    max-width: 1260px;
+}

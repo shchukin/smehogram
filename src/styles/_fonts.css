@@ -21,3 +21,11 @@
     font-weight: 700;
     src: url("../fonts/roboto-v30-cyrillic_latin-700.woff2") format("woff2");
 }
+
+@font-face {
+    font-display: swap;
+    font-family: "Press Start 2P";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/press-start-2p-v15-latin-regular.woff2") format("woff2");
+}
