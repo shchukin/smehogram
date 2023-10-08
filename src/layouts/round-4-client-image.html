@@ -55,8 +55,15 @@
             <div class="page container">
                 <div class="question">
                     <div class="question__head">
-                        <span class="question__index">ROUND1</span>
-                        <span class="question__type">Картинка</span>
+                        <span class="question__index">
+                            ROUND1
+                        </span>
+                        <span class="question__type">
+                            Картинка
+                        </span>
+                        <div class="question__countdown">
+                            <div class="countdown countdown--smaller">120</div>
+                        </div>
                     </div>
                     <div class="question__body">
                         <div class="question__asking">
@@ -65,11 +72,13 @@
                         </div>
                         <div class="question__answers">
                             <div class="question__item">
-                                <div class="answer">Для плакать</div>
+                                <div class="input input--classic">
+                                    <textarea class="input__widget" placeholder="Введите ваш ответ" rows="5"></textarea>
+                                </div>
                             </div>
-                            <div class="question__item">
-                                <div class="answer">Для видео с котиками</div>
-                            </div>
+                        </div>
+                        <div class="question__submit">
+                            <button class="button" type="button">Отправить</button>
                         </div>
                     </div>
                 </div>

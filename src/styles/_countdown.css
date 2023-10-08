@@ -15,22 +15,24 @@
 }
 
 
-
 @media (width < 740px) {
 
     .countdown {
-        /*display: flex;*/
-        /*align-items: center;*/
-        /*justify-content: center;*/
         width: 87px;
         height: 87px;
         padding-bottom: 0;
         background-image: url("../vectors/countdown--mobile.svg");
-        /*background-size: contain;*/
-        /*background-repeat: no-repeat;*/
-        /*background-position: center center;*/
-        /*font-weight: bold;*/
         font-size: 28px;
         line-height: 28px;
     }
+}
+
+
+.countdown--smaller {
+    width: 87px;
+    height: 87px;
+    padding-bottom: 0;
+    background-image: url("../vectors/countdown--mobile.svg");
+    font-size: 28px;
+    line-height: 28px;
 }
