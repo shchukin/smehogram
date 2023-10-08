@@ -200,50 +200,36 @@
     }
 
 
-.question--results {
-
-}
-    .question__body {
-
-    }
-        .question__asking {
-
+    /* vs icon */
+    @keyframes question-vs-slide {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
         }
-            .question--results .question__title {
-
-            }
-
-    .question--results .question__answers {
-
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
-        @keyframes question-vs-slide {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    .question__answers--vs-image::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        margin: -20px auto 0;
+        display: block;
+        width: 240px;
+        height: 113px;
+        background-image: url("../images/vs.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        animation: question-vs-slide 1000ms var(--ease-out-quint);
+    }
 
-        .question--results .question__answers::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 100%;
-            margin: -20px auto 0;
-            display: block;
-            width: 240px;
-            height: 113px;
-            background-image: url("../images/vs.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center center;
-            animation: question-vs-slide 1000ms var(--ease-out-quint);
-        }
+
 
     @keyframes question-results-slide {
         from {
@@ -485,7 +471,7 @@
             gap: 15px;
         }
 
-        .question--results .question__answers::before {
+        .question__answers--vs-image::before {
             zoom: 0.75;
         }
             .question__item {
