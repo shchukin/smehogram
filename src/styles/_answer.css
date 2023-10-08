@@ -1,10 +1,22 @@
 .answer {
-    height: 112px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 112px;
     padding: 20px 21px;
+    border: none;
     background-color: #FFFFFF;
     border-radius: 25px;
+    font-family: inherit;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
     color-scheme: light;
 }
+    .answer__select {
+        padding-top: 12px;
+    }
+        .answer__select {
+            margin-top: auto;
+            align-self: flex-end;
+        }
