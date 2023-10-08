@@ -194,6 +194,7 @@
                     .trial__team--host::before {
                         content: "";
                         margin-top: -2px;
+                        margin-left: -1px;
                         align-self: center;
                         width: 14px;
                         height: 14px;
