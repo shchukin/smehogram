@@ -1,10 +1,10 @@
-.trial {
+.game {
     display: flex;
     min-height: 100%;
     flex-direction: column;
     justify-content: center;
 }
-    .trial__inner {
+    .game__inner {
         position: relative;
         display: flex;
         align-items: flex-start;
@@ -15,10 +15,10 @@
         margin-left: auto;
         margin-right: auto;
     }
-        .trial__intro {
+        .game__intro {
             flex-basis: 244px;
         }
-            .trial__heading {
+            .game__heading {
                 position: relative;
                 margin-top: 0;
                 margin-bottom: 0;
@@ -29,7 +29,7 @@
                 background-repeat: no-repeat;
                 background-position: center center;
             }
-                .trial__heading::after {
+                .game__heading::after {
                     content: "";
                     position: absolute;
                     left: -40px;
@@ -43,25 +43,25 @@
                 }
 
                 @media (1.5dppx <= resolution < 2.5dppx ) {
-                    .trial__heading::after {
+                    .game__heading::after {
                         background-image: url("../images/trial-headings-illustration@2x.webp");
                     }
                 }
 
                 @media (2.5dppx <= resolution) {
-                    .trial__heading::after {
+                    .game__heading::after {
                         background-image: url("../images/trial-headings-illustration@3x.webp");
                     }
                 }
 
 
-            .trial__hint {
+            .game__hint {
                 margin-top: 21px;
                 font-size: 16px;
                 line-height: 24px;
             }
 
-        .trial__operations {
+        .game__operations {
             position: absolute;
             left: 0;
             right: 210px;
@@ -74,7 +74,7 @@
             gap: 10px;
         }
 
-        .trial__loading {
+        .game__loading {
             position: absolute;
             left: 0;
             right: 0;
@@ -85,14 +85,14 @@
                 to   { transform: rotate(360deg); }
             }
 
-            .trial__indicator {
+            .game__indicator {
                 text-indent: 200%;
                 white-space: nowrap;
                 overflow: hidden;
                 animation: trial-rotation 5000ms linear infinite;
             }
-                .trial__indicator.emblem,
-                .trial__indicator .emblem {
+                .game__indicator.emblem,
+                .game__indicator .emblem {
                     width: 100px;
                     height: 100px;
                     margin-left: auto;
@@ -100,7 +100,7 @@
                     border-radius: 50%;
                 }
 
-            .trial__waiting {
+            .game__waiting {
                 max-width: 150px;
                 margin-top: 25px;
                 margin-left: auto;
@@ -110,10 +110,10 @@
                 text-align: center;
             }
 
-        .trial__data {
+        .game__data {
             flex-basis: 295px;
         }
-            .trial__sub-heading {
+            .game__sub-heading {
                 margin-top: 0;
                 margin-bottom: 0;
                 font-weight: normal;
@@ -121,16 +121,16 @@
                 line-height: 24px;
             }
 
-            .trial__list {
+            .game__list {
                 margin-top: 8px;
             }
-                .trial__team {
+                .game__team {
                     position: relative;
                     display: flex;
                     align-items: stretch;
                     border-bottom: 1px solid rgb(255 255 255 / 25%);
                 }
-                    .trial__label {
+                    .game__label {
                         flex-grow: 1;
                         padding-top: 7px;
                         padding-bottom: 7px;
@@ -138,7 +138,7 @@
                         line-height: 18px;
                     }
 
-                    .trial__kick {
+                    .game__kick {
                         margin-left: 20px;
                         flex-shrink: 0;
                         position: relative;
@@ -152,7 +152,7 @@
                         cursor: pointer;
                     }
                         /* Наведение */
-                        .trial__kick::before {
+                        .game__kick::before {
                             content: "";
                             position: absolute;
                             left: 0;
@@ -166,12 +166,12 @@
                             border-radius: 3px;
                         }
 
-                        .trial__kick:hover::before {
+                        .game__kick:hover::before {
                             background-color: rgb(255 255 255 / 20%);
                         }
 
                         /* Крестик */
-                        .trial__kick::after {
+                        .game__kick::after {
                             content: "";
                             position: absolute;
                             left: 0;
@@ -188,10 +188,10 @@
                             background-position: center center;
                         }
 
-                .trial__team--host {
+                .game__team--host {
 
                 }
-                    .trial__team--host::before {
+                    .game__team--host::before {
                         content: "";
                         margin-top: -2px;
                         margin-left: -1px;
@@ -205,10 +205,10 @@
                         background-position: center center;
                     }
 
-                .trial__team--current-player {
+                .game__team--current-player {
                     font-weight: bold;
                 }
-                    .trial__team--current-player::after {
+                    .game__team--current-player::after {
                         content: "";
                         position: absolute;
                         left: -25px;
@@ -224,31 +224,31 @@
                     }
 
                     @media (340px <= width < 400px) {
-                        .trial__team--current-player::after {
+                        .game__team--current-player::after {
                             left: -20px;
                         }
                     }
 
                     @media (width < 340px) {
-                        .trial__team--current-player::after {
+                        .game__team--current-player::after {
                             left: -15px;
                         }
                     }
 
-                .trial__team--spectator {
+                .game__team--spectator {
 
                 }
-                    .trial__team--spectator .trial__label {
+                    .game__team--spectator .game__label {
                         opacity: 0.5;
                     }
 
 
-        .trial__begin {
+        .game__begin {
             position: absolute;
             right: 0;
             bottom: 0;
         }
-            .trial__begin .button {
+            .game__begin .button {
                 min-width: 190px;
             }
 
@@ -256,13 +256,13 @@
 
 @media (width < 750px) {
 
-    .trial {
+    .game {
         /*display: flex;*/
         /*min-height: 100%;*/
         /*flex-direction: column;*/
         /*justify-content: center;*/
     }
-        .trial__inner {
+        .game__inner {
             /*position: relative;*/
             display: block;
             /*align-items: flex-start;*/
@@ -275,10 +275,10 @@
             /*margin-left: auto;*/
             /*margin-right: auto;*/
         }
-            .trial__intro {
+            .game__intro {
                 /*flex-basis: 244px;*/
             }
-                .trial__heading {
+                .game__heading {
                     /*position: relative;*/
                     /*margin-top: 0;*/
                     /*margin-bottom: 0;*/
@@ -289,23 +289,23 @@
                     /*background-repeat: no-repeat;*/
                     /*background-position: center center;*/
                 }
-                    .trial__heading::after {
+                    .game__heading::after {
 
                     }
 
-                .trial__hint {
+                .game__hint {
                     /*margin-top: 21px;*/
                     /*font-size: 16px;*/
                     /*line-height: 24px;*/
                 }
 
-            .trial__operations {
+            .game__operations {
                 margin-top: 13px;
                 position: static;
             }
 
             @media (350px <= width < 380px) {
-                .trial__operations {
+                .game__operations {
                     margin-left: -4px;
                     margin-right: -4px;
                     gap: 8px;
@@ -313,34 +313,34 @@
             }
 
             @media (350px <= width < 370px) {
-                .trial__operations .button {
+                .game__operations .button {
                     padding-left: 20px;
                     padding-right: 20px;
                 }
             }
 
             @media (350px <= width < 350px) {
-                .trial__operations .button {
+                .game__operations .button {
                     padding-left: 20px;
                     padding-right: 20px;
                 }
             }
 
             @media (350px <= width < 340px) {
-                .trial__operations .button {
+                .game__operations .button {
                     padding-left: 16px;
                     padding-right: 16px;
                 }
             }
 
-            .trial__loading {
+            .game__loading {
                 position: relative;
                 margin-top: 37px;
                 /*left: 0;*/
                 /*right: 0;*/
                 bottom: auto;
             }
-                .trial__loading::before {
+                .game__loading::before {
                     content: "";
                     position: absolute;
                     left: calc(-1 * var(--container-padding) + 2px);
@@ -351,14 +351,14 @@
                     background-image: linear-gradient(to right, #45AEFD, #9352FF);
                 }
 
-                .trial__indicator {
+                .game__indicator {
                     /*text-indent: 200%;*/
                     /*white-space: nowrap;*/
                     /*overflow: hidden;*/
                     /*animation: trial-rotation 5000ms linear infinite;*/
                 }
-                    .trial__indicator.emblem,
-                    .trial__indicator .emblem {
+                    .game__indicator.emblem,
+                    .game__indicator .emblem {
                         /*width: 100px;*/
                         /*height: 100px;*/
                         /*margin-left: auto;*/
@@ -366,7 +366,7 @@
                         /*border-radius: 50%;*/
                     }
 
-                .trial__waiting {
+                .game__waiting {
                     /*max-width: 150px;*/
                     /*margin-top: 25px;*/
                     /*margin-left: auto;*/
@@ -376,11 +376,11 @@
                     /*text-align: center;*/
                 }
 
-            .trial__data {
+            .game__data {
                 margin-top: 20px;
                 /*flex-basis: 295px;*/
             }
-                .trial__sub-heading {
+                .game__sub-heading {
                     display: none;
                     /*margin-top: 0;*/
                     /*margin-bottom: 0;*/
@@ -389,10 +389,10 @@
                     /*line-height: 24px;*/
                 }
 
-                .trial__list {
+                .game__list {
                     /*margin-top: 8px;*/
                 }
-                    .trial__team {
+                    .game__team {
                         /*padding-top: 7px;*/
                         /*padding-bottom: 7px;*/
                         /*padding-right: 32px;*/
@@ -403,12 +403,8 @@
                         /*font-size: 12px;*/
                         /*line-height: 18px;*/
                     }
-
-                    .trial__team--connected {
-                        /*background-image: url("../vectors/confirmation-yes.svg");*/
-                    }
-
-            .trial__begin {
+                    
+            .game__begin {
                 margin-top: 42px;
                 position: static;
                 text-align: center;
