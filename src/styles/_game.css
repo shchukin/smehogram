@@ -151,6 +151,8 @@
                         position: relative;
                         width: 28px;
                         padding: 0;
+                        margin-top: -1px;
+                        margin-bottom: -1px;
                         border: none;
                         background-color: transparent;
                         text-indent: 200%;
@@ -212,10 +214,10 @@
                         background-position: center center;
                     }
 
-                .game__team--current-player {
+                .game__team--current {
                     font-weight: bold;
                 }
-                    .game__team--current-player::after {
+                    .game__team--current::after {
                         content: "";
                         position: absolute;
                         left: -25px;
@@ -231,13 +233,13 @@
                     }
 
                     @media (340px <= width < 400px) {
-                        .game__team--current-player::after {
+                        .game__team--current::after {
                             left: -20px;
                         }
                     }
 
                     @media (width < 340px) {
-                        .game__team--current-player::after {
+                        .game__team--current::after {
                             left: -15px;
                         }
                     }
