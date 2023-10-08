@@ -53,32 +53,40 @@
         <div id="root" style="height: 100%;">
 
             <div class="page container">
-                <div class="question">
+                <div class="question question--results">
                     <div class="question__head">
-                        <span class="question__index">
-                            ROUND1
-                        </span>
-                        <span class="question__type">
-                            Картинка
-                        </span>
-                        <div class="question__countdown">
-                            <div class="countdown countdown--smaller">120</div>
-                        </div>
+                        <span class="question__index">ROUND1</span>
+                        <span class="question__type">Картинка</span>
                     </div>
                     <div class="question__body">
                         <div class="question__asking">
                             <img class="question__image" src="../temp/question-image.jpg" alt="">
-                            <h1 class="question__title">Для чего нужно такое приспособление?</h1>
+                            <h1 class="question__title">
+                                Для чего нужно такое приспособление?
+                            </h1>
+                            <div class="question__results question__results--50-50">
+                                25 на 75
+                            </div>
                         </div>
                         <div class="question__answers">
                             <div class="question__item">
-                                <div class="input input--classic">
-                                    <textarea class="input__widget" placeholder="Введите ваш ответ" rows="4"></textarea>
+                                <div class="question__rating">
+                                    0
+                                    <div class="question__progress" style="height: 0%;"></div>
+                                </div>
+                                <div class="answer">
+                                    Для плакать
                                 </div>
                             </div>
-                        </div>
-                        <div class="question__submit">
-                            <button class="button" type="button">Отправить</button>
+                            <div class="question__item">
+                                <div class="answer">
+                                    Для видео с котиками
+                                </div>
+                                <div class="question__rating">
+                                    <div class="question__progress" style="height: 100%;"></div>
+                                    100
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

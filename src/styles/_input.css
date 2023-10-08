@@ -50,7 +50,16 @@
         padding: 20px 21px;
         background-color: #FFFFFF;
         border-radius: 25px;
+        font-size: 24px;
+        line-height: 32px;
         color: #000000;
+    }
+
+    @media (width < 740px) {
+        .input--classic .input__widget {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 
     .input--classic .input__widget:hover {
