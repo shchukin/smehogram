@@ -10,7 +10,7 @@
     width: auto;
 }
 
-@media (width < 750px) {
+@media (width < 740px) {
 
     .container {
         width: 100%;
@@ -20,7 +20,10 @@
 }
 
 
+@media ( 740px <= width) {
 
-.container--wide {
-    max-width: 1260px;
+    .wide-page .container {
+        width: 1240px;
+        max-width: none;
+    }
 }

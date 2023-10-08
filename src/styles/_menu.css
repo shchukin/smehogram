@@ -20,7 +20,7 @@
 
 
 /* Десктоп */
-@media (750px <= width) {
+@media (740px <= width) {
 
     .menu {
         position: fixed;
@@ -51,7 +51,7 @@
 
 
 /* мобилки */
-@media (width < 750px) {
+@media (width < 740px) {
     @keyframes menu-slide {
         from {
             opacity: 0;

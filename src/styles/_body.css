@@ -22,9 +22,9 @@ body {
 
 
 
-@media (width < 750px) {
+@media (width < 740px) {
     body {
         background-image: url("../images/background-smartphone.webp");
-        background-size: 750px 1487px;
+        background-size: 740px 1487px;
     }
 }

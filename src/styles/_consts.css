@@ -28,7 +28,7 @@
     --error: #FF0033;
 }
 
-@media (width < 750px) {
+@media (width < 740px) {
     :root {
         --header-height: 70px;
         --container-padding: 40px;

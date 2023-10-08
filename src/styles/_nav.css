@@ -73,7 +73,7 @@
 
 
 /* Наведения -- только на десктопах */
-@media (750px <= width) {
+@media (740px <= width) {
 
     .nav__link {
         padding-left: calc(var(--container-padding) / 2);

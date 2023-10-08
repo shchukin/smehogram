@@ -20,7 +20,7 @@
 
 
 /* Десктоп */
-@media (750px <= width) {
+@media (740px <= width) {
 
     .profile {
         position: fixed;
@@ -53,7 +53,7 @@
 /* мобилки */
 
 
-@media (width < 750px) {
+@media (width < 740px) {
 
     @keyframes profile-slide {
         from {

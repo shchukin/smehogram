@@ -52,7 +52,7 @@
 
 
 
-@media (width < 750px) {
+@media (width < 740px) {
 
     .action {
 
@@ -93,7 +93,7 @@
     }
 
 
-@media (width < 750px) {
+@media (width < 740px) {
 
     .action--close-profile {
 
@@ -123,7 +123,7 @@
     }
 
 
-@media (width < 750px) {
+@media (width < 740px) {
 
     .action--close-menu {
 
@@ -156,7 +156,7 @@
         background-image: url("../vectors/burger.svg");
     }
 
-@media (width < 750px) {
+@media (width < 740px) {
 
     .action--menu {
         padding-left: 20px;
@@ -184,7 +184,7 @@
         background-image: url("../vectors/profile.svg");
     }
 
-@media (width < 750px) {
+@media (width < 740px) {
 
     .action--profile {
         padding-left: 20px;
@@ -219,7 +219,7 @@
         background-image: url("../vectors/login.svg");
     }
 
-@media (width < 750px) {
+@media (width < 740px) {
 
     .action--login {
         padding-left: 20px;
