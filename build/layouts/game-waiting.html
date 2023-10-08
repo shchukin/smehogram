@@ -2,7 +2,7 @@
 <html lang="ru" itemscope itemtype="https://schema.org/Game">
     <head>
         <meta charset="utf-8">
-        <title>404</title>
+        <title>Пробная игра</title>
         <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dolorem eaque numquam quaerat quos sint tempore temporibus ullam veniam vero.">
 
         <!-- schema.org (google plus) -->
@@ -73,19 +73,50 @@
             </header>
 
             <div class="page container">
-                <div class="http-error http-error--404">
-                    <div class="http-error__wrap">
-                        <div class="http-error__heading">
-                            <span class="visuallyhidden">Ошибка</span>
+                <div class="game">
+                    <div class="game__inner">
+                        <div class="game__intro">
+                            <h1 class="game__heading">
+                                <span class="visuallyhidden">Игра</span>
+                            </h1>
+                            <div class="game__hint">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, sunt?
+                            </div>
                         </div>
-                        <div class="http-error__code">
-                            404
+                        <div class="game__loading">
+                            <div class="game__indicator emblem">Загрузка...</div>
+                            <div class="game__waiting">Ожидаем подключения игроков</div>
                         </div>
-                        <div class="http-error__sub-heading">
-                            Cтраница<br> не найдена
-                        </div>
-                        <div class="http-error__description">
-                            Тут ничего нет!<br> иди домой, дядя!
+                        <div class="game__data">
+                            <h2 class="game__sub-heading">
+                                Подключились
+                            </h2>
+                            <div class="game__list">
+                                <div class="game__team game__team--host">
+                                    <div class="game__label">Йожики</div>
+                                    <button class="game__kick" type="button">Кикнуть</button>
+                                </div>
+                                <div class="game__team game__team--current">
+                                    <div class="game__label">Кукуруза</div>
+                                    <button class="game__kick" type="button">Кикнуть</button>
+                                </div>
+                                <div class="game__team">
+                                    <div class="game__label">Lorem ipsum dolor sit amet consectetur adipisicing elit cumque enim</div>
+                                    <button class="game__kick" type="button">Кикнуть</button>
+                                </div>
+                                <div class="game__team">
+                                    <div class="game__label">Тряпки</div>
+                                    <button class="game__kick" type="button">Кикнуть</button>
+                                </div>
+                                <div class="game__team game__team--spectator">
+                                    <div class="game__label">Мама у меня месечные</div>
+                                    <button class="game__kick" type="button">Кикнуть</button>
+                                </div>
+                                <div class="game__team game__team--spectator">
+                                    <div class="game__label">Олигарх</div>
+                                    <button class="game__kick" type="button">Кикнуть</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -112,6 +143,7 @@
                     </section>
                 </div>
             </div>
+
             <div class="profile">
                 <div class="profile__panel">
                     <button class="profile__close action action--close-profile">
@@ -191,6 +223,48 @@
                             </a>
                         </div>
                     </section>
+                </div>
+            </div>
+
+            <div class="popup" id="login">
+                <div class="popup__container">
+                    <div class="popup__viewport">
+                        <div class="popup__slot">
+
+                            <div class="window">
+                                <form class="dialog dialog--login">
+                                    <h2 class="dialog__heading">
+                                        <span class="visuallyhidden">Авторизация</span>
+                                    </h2>
+                                    <div class="dialog__body">
+                                        <div class="dialog__field">
+                                            <div class="input input--fancy">
+                                                <input class="input__widget" type="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="dialog__field">
+                                            <div class="input input--fancy">
+                                                <input class="input__widget" type="password" placeholder="Пароль">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dialog__operations">
+                                        <button class="button" type="submit">Войти</button>
+                                    </div>
+                                    <div class="dialog__addition">
+                                        если у вас нет учетной записи,<br>
+                                        тогда <a class="link link--text-alike" href="#">зарегистрируйтесь</a>
+                                    </div>
+                                </form>
+                                <div class="window__close">
+                                    <button class="action action--close" type="button" data-popup-close>
+                                        <span class="visuallyhidden">Закрыть</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 

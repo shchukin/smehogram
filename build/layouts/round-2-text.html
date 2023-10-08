@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru" itemscope itemtype="https://schema.org/Game">
+<html class="wide-page" lang="ru" itemscope itemtype="https://schema.org/Game">
     <head>
         <meta charset="utf-8">
-        <title>Пробная игра</title>
+        <title>Раунд</title>
         <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dolorem eaque numquam quaerat quos sint tempore temporibus ullam veniam vero.">
 
         <!-- schema.org (google plus) -->
@@ -39,7 +39,7 @@
 
         <!-- assets -->
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-        <link rel="stylesheet" href="../styles/style.css?1696519387">
+        <link rel="stylesheet" href="../styles/style.css?1696778713">
 
     </head>
     <body>
@@ -52,55 +52,15 @@
 
         <div id="root" style="height: 100%;">
 
-            <header class="header">
-                <div class="header__panel">
-                    <div class="header__burger">
-                        <button class="action action--menu" type="button">
-                            <span class="visuallyhidden">Меню</span>
-                        </button>
-                    </div>
-                    <div class="header__branding">
-                        <a class="logo" href="../index.html">
-                            <span class="visuallyhidden">Smehogram</span>
-                        </a>
-                    </div>
-                    <div class="header__profile">
-                        <button class="action action--profile" type="button">
-                            <span class="visuallyhidden">Профиль</span>
-                        </button>
-                    </div>
-                </div>
-            </header>
-
             <div class="page container">
-                <div class="trial">
-                    <div class="trial__inner">
-                        <div class="trial__intro">
-                            <h1 class="trial__heading">
-                                <span class="visuallyhidden">Пробная игра</span>
-                            </h1>
-                            <div class="trial__hint">
-                                Для запуска пробной игры
-                                нужен как минимум один
-                                авторизованный пользователь
-                            </div>
-                        </div>
-                        <div class="trial__loading">
-                            <div class="trial__indicator emblem">Загрузка...</div>
-                            <div class="trial__waiting">Ожидаем подключения игроков</div>
-                        </div>
-                        <div class="trial__data">
-                            <h2 class="trial__sub-heading">
-                                Подключились
-                            </h2>
-                            <div class="trial__list">
-                                <div class="trial__team trial__team--connected">Йожики</div>
-                                <div class="trial__team trial__team--connected trial__team--current-player trial__team--current-player">Кукуруза</div>
-                                <div class="trial__team trial__team--pending">Матросы</div>
-                                <div class="trial__team trial__team--pending">Тряпки</div>
-                                <div class="trial__team trial__team--spectator">Мама у меня месечные</div>
-                                <div class="trial__team trial__team--spectator">Олигарх</div>
-                            </div>
+                <div class="question">
+                    <div class="question__head">
+                        <span class="question__index">ROUND1</span>
+                        <span class="question__type">Текстовый</span>
+                    </div>
+                    <div class="question__body">
+                        <div class="question__asking">
+                            <h1 class="question__title">Мужчины и роботы-пылесосы очень похожи. Единственное отличие в том что, пылесос...</h1>
                         </div>
                     </div>
                 </div>
@@ -127,7 +87,6 @@
                     </section>
                 </div>
             </div>
-
             <div class="profile">
                 <div class="profile__panel">
                     <button class="profile__close action action--close-profile">
@@ -210,59 +169,17 @@
                 </div>
             </div>
 
-            <div class="popup" id="login">
-                <div class="popup__container">
-                    <div class="popup__viewport">
-                        <div class="popup__slot">
-
-                            <div class="window">
-                                <form class="dialog dialog--login">
-                                    <h2 class="dialog__heading">
-                                        <span class="visuallyhidden">Авторизация</span>
-                                    </h2>
-                                    <div class="dialog__body">
-                                        <div class="dialog__field">
-                                            <div class="input input--fancy">
-                                                <input class="input__widget" type="email" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="dialog__field">
-                                            <div class="input input--fancy">
-                                                <input class="input__widget" type="password" placeholder="Пароль">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="dialog__operations">
-                                        <button class="button" type="submit">Войти</button>
-                                    </div>
-                                    <div class="dialog__addition">
-                                        если у вас нет учетной записи,<br>
-                                        тогда <a class="link link--text-alike" href="#">зарегистрируйтесь</a>
-                                    </div>
-                                </form>
-                                <div class="window__close">
-                                    <button class="action action--close" type="button" data-popup-close>
-                                        <span class="visuallyhidden">Закрыть</span>
-                                    </button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
 
         <script src="../vendors/jquery/jquery-3.7.0.min.js"></script>
         <script src="../vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script src="../scripts/_mfp.js?1696519387"></script>
-        <script src="../scripts/_input.js?1696519387"></script>
-        <script src="../scripts/_achievements.js?1696519387"></script>
-        <script src="../scripts/_profile.js?1696519387"></script>
-        <script src="../scripts/_menu.js?1696519387"></script>
-        <script src="../scripts/_popup.js?1696519387"></script>
+        <script src="../scripts/_mfp.js?1696778713"></script>
+        <script src="../scripts/_input.js?1696778713"></script>
+        <script src="../scripts/_achievements.js?1696778713"></script>
+        <script src="../scripts/_profile.js?1696778713"></script>
+        <script src="../scripts/_menu.js?1696778713"></script>
+        <script src="../scripts/_popup.js?1696778713"></script>
 
     </body>
 </html>
