@@ -75,3 +75,89 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 40px 60px;
     }
+
+
+
+@media (width < 740px) {
+
+    .question {
+        /*flex-grow: 1;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        padding-top: 5vh;
+        padding-bottom: 7.5vh;
+    }
+        .question__head {
+            /*flex-shrink: 0;*/
+            /*width: fit-content;*/
+            margin-left: 0;
+            margin-right: 0;
+            height: 87px; /* Как и шарик загрузки */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0;
+            padding: 0;
+            border: none;
+            /*border-radius: 25px;*/
+            /*font-family: var(--font-game);*/
+            font-size: 22px;
+            line-height: 24px;
+            /*color: #FFB369;*/
+        }
+            .question__index {
+                display: block;
+            }
+
+            .question__type {
+                margin-top: 0;
+                display: block;
+                /*font-size: 30px;*/
+                /*line-height: 30px;*/
+                /*color: #FFFFFF;*/
+            }
+
+        .question__body {
+            /*flex-grow: 1;*/
+            display: flex;
+            /*flex-direction: column;*/
+            /*justify-content: center;*/
+            /*align-items: center;*/
+            /*margin-top: 6vh;*/
+        }
+            .question__asking {
+                min-height: 0;
+                /*display: flex;*/
+                /*flex-direction: column;*/
+                /*align-items: center;*/
+                /*justify-content: center;*/
+            }
+                .question__image {
+                    /*vertical-align: top;*/
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 24px;
+                    /*background-color: rgb(255 255 255 / 20%);*/
+                    /*border-radius: 25px;*/
+                }
+
+                .question__title {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    /*font-weight: 500;*/
+                    font-size: 22px;
+                    line-height: 30px;
+                    /*text-align: center;*/
+                }
+
+        .question__answers {
+            margin-top: 24px;
+            /*width: 100%;*/
+            /*max-width: 900px;*/
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+            /*display: grid;*/
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+}
