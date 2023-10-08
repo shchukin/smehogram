@@ -126,31 +126,82 @@
             }
                 .trial__team {
                     position: relative;
-                    padding-top: 7px;
-                    padding-bottom: 7px;
-                    padding-right: 32px;
-                    background-repeat: no-repeat;
-                    background-position: right center;
+                    display: flex;
+                    align-items: stretch;
                     border-bottom: 1px solid rgb(255 255 255 / 25%);
-                    font-size: 12px;
-                    line-height: 18px;
                 }
+                    .trial__label {
+                        flex-grow: 1;
+                        padding-top: 7px;
+                        padding-bottom: 7px;
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
 
-                .trial__team--pending {
-                    background-image: url("../vectors/confirmation-no.svg");
-                }
+                    .trial__kick {
+                        margin-left: 20px;
+                        flex-shrink: 0;
+                        position: relative;
+                        width: 28px;
+                        padding: 0;
+                        border: none;
+                        background-color: transparent;
+                        text-indent: 200%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        cursor: pointer;
+                    }
+                        /* Наведение */
+                        .trial__kick::before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            display: block;
+                            margin: auto;
+                            width: 28px;
+                            height: 28px;
+                            border-radius: 3px;
+                        }
 
-                .trial__team--connected {
-                    background-image: url("../vectors/confirmation-yes.svg");
-                }
+                        .trial__kick:hover::before {
+                            background-color: rgb(255 255 255 / 20%);
+                        }
+
+                        /* Крестик */
+                        .trial__kick::after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            display: block;
+                            margin: auto;
+                            width: 16px;
+                            height: 16px;
+                            background-image: url("../vectors/cross-gradient.svg");
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                        }
 
                 .trial__team--host {
 
                 }
                     .trial__team--host::before {
                         content: "";
-                        float: left;
-                        width: ;
+                        margin-top: -2px;
+                        align-self: center;
+                        width: 14px;
+                        height: 14px;
+                        margin-right: 6px;
+                        background-image: url("../vectors/crown.svg");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center center;
                     }
 
                 .trial__team--current-player {
@@ -184,8 +235,12 @@
                     }
 
                 .trial__team--spectator {
-                    opacity: 0.5;
+
                 }
+                    .trial__team--spectator .trial__label {
+                        opacity: 0.5;
+                    }
+
 
         .trial__begin {
             position: absolute;
