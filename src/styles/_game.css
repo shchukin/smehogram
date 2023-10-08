@@ -22,14 +22,21 @@
                 position: relative;
                 margin-top: 0;
                 margin-bottom: 0;
-                width: 226px;
-                height: 145px;
-                background-image: url("../images/trial-headings-letters.svg");
+                width: 170px;
+                height: 43px;
+                background-image: url("../images/game-headings-letters.svg");
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center center;
             }
-                .game__heading::after {
+
+
+            .game__heading--trial {
+                width: 226px;
+                height: 145px;
+                background-image: url("../images/trial-headings-letters.svg");
+            }
+                .game__heading--trial::after {
                     content: "";
                     position: absolute;
                     left: -40px;
@@ -43,13 +50,13 @@
                 }
 
                 @media (1.5dppx <= resolution < 2.5dppx ) {
-                    .game__heading::after {
+                    .game__heading--trial::after {
                         background-image: url("../images/trial-headings-illustration@2x.webp");
                     }
                 }
 
                 @media (2.5dppx <= resolution) {
-                    .game__heading::after {
+                    .game__heading--trial::after {
                         background-image: url("../images/trial-headings-illustration@3x.webp");
                     }
                 }
