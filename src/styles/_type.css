@@ -107,6 +107,8 @@
                 /*position: relative;*/
                 width: 260px;
                 height: 251px;
+                margin-left: auto;
+                margin-right: auto;
                 /*background-size: contain;*/
                 /*background-repeat: no-repeat;*/
                 /*background-position: center center;*/
@@ -146,11 +148,13 @@
 
             .type__content {
                 margin-top: 27px;
-                /*width: 360px;*/
+                width: auto;
                 /*margin-top: 1px;*/
             }
                 .type__round {
                     /*width: fit-content;*/
+                    margin-left: auto;
+                    margin-right: auto;
                     padding: 10px 22px 8px;
                     /*border: 1px solid currentColor;*/
                     /*border-radius: 25px;*/
@@ -165,9 +169,11 @@
                     max-width: none;
                     font-size: 16px;
                     line-height: 24px;
+                    text-align: center;
                 }
 
                 .type__next {
                     /*margin-top: 36px;*/
+                    text-align: center;
                 }
 }
