@@ -1,0 +1,36 @@
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 202px;
+    height: 202px;
+    padding-bottom: 6px;
+    background-image: url("../vectors/countdown.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+
+
+@media (width < 740px) {
+
+    .countdown {
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        width: 87px;
+        height: 87px;
+        padding-bottom: 0;
+        background-image: url("../vectors/countdown--mobile.svg");
+        /*background-size: contain;*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: center center;*/
+        /*font-weight: bold;*/
+        font-size: 28px;
+        line-height: 28px;
+    }
+}
