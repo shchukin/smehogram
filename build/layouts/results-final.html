@@ -2,7 +2,7 @@
 <html class="wide-page" lang="ru" itemscope itemtype="https://schema.org/Game">
     <head>
         <meta charset="utf-8">
-        <title>Раунд</title>
+        <title>Результаты раунда</title>
         <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dolorem eaque numquam quaerat quos sint tempore temporibus ullam veniam vero.">
 
         <!-- schema.org (google plus) -->
@@ -42,7 +42,7 @@
         <link rel="stylesheet" href="../styles/style.css?1696830339">
 
     </head>
-    <body>
+    <body class="body-no-background">
 
         <!--[if IE]>
             <div class="browser">
@@ -52,33 +52,69 @@
 
         <div id="root" style="height: 100%;">
 
-            <div class="page container">
-                <div class="question">
-                    <div class="question__head">
-                        <span class="question__index">
-                            ROUND1
-                        </span>
-                        <span class="question__type">
-                            Картинка
-                        </span>
-                        <div class="question__countdown">
-                            <div class="countdown countdown--smaller">120</div>
-                        </div>
+            <div class="results">
+                <div class="results__head">
+                    <div class="results__over">
+                        GAME OVER
                     </div>
-                    <div class="question__body">
-                        <div class="question__asking">
-                            <img class="question__image" src="../temp/question-image.jpg" alt="">
-                            <h1 class="question__title">Для чего нужно такое приспособление?</h1>
-                        </div>
-                        <div class="question__answers">
-                            <div class="question__item">
-                                <div class="input input--classic">
-                                    <textarea class="input__widget" placeholder="Введите ваш ответ" rows="4"></textarea>
-                                </div>
+                    <h1 class="results__heading results__heading--final">
+                        <span class="visuallyhidden">Результаты</span>
+                    </h1>
+                    <div class="results__header-branding">
+                        <a class="logo" href="../index.html">
+                            <span class="visuallyhidden">Smehogram</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="results__body">
+                    <div class="results__summary">
+                        <div class="results__tile">
+                            <div class="results__inner-tile">
+                                <b class="results__top-index">1</b>
+                                <div class="results__top-score">948</div>
+                                <div class="results__team">Суп из 7 ингридиентов</div>
                             </div>
                         </div>
-                        <div class="question__submit">
-                            <button class="button" type="button">Отправить</button>
+                        <div class="results__tile">
+                            <div class="results__inner-tile">
+                                <b class="results__top-index">2</b>
+                                <div class="results__top-score">850</div>
+                                <div class="results__team">Кукуруза</div>
+                            </div>
+                        </div>
+                        <div class="results__tile">
+                            <div class="results__inner-tile">
+                                <b class="results__top-index">3</b>
+                                <div class="results__top-score">640</div>
+                                <div class="results__team">Матросы</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results__list">
+                        <div class="results__item">
+                            <b class="results__index">4.</b>
+                            <div class="results__team">Тряпки</div>
+                            <div class="results__score">100</div>
+                        </div>
+                        <div class="results__item">
+                            <b class="results__index">5.</b>
+                            <div class="results__team">Мама у меня месечные</div>
+                            <div class="results__score">70</div>
+                        </div>
+                        <div class="results__item">
+                            <b class="results__index">6.</b>
+                            <div class="results__team">Олигарх</div>
+                            <div class="results__score">40</div>
+                        </div>
+                        <div class="results__item">
+                            <b class="results__index">7.</b>
+                            <div class="results__team">Компашка</div>
+                            <div class="results__score">20</div>
+                        </div>
+                        <div class="results__item">
+                            <b class="results__index">8.</b>
+                            <div class="results__team">Тараканы</div>
+                            <div class="results__score">10</div>
                         </div>
                     </div>
                 </div>
@@ -105,6 +141,7 @@
                     </section>
                 </div>
             </div>
+
             <div class="profile">
                 <div class="profile__panel">
                     <button class="profile__close action action--close-profile">
@@ -184,6 +221,48 @@
                             </a>
                         </div>
                     </section>
+                </div>
+            </div>
+
+            <div class="popup" id="login">
+                <div class="popup__container">
+                    <div class="popup__viewport">
+                        <div class="popup__slot">
+
+                            <div class="window">
+                                <form class="dialog dialog--login">
+                                    <h2 class="dialog__heading">
+                                        <span class="visuallyhidden">Авторизация</span>
+                                    </h2>
+                                    <div class="dialog__body">
+                                        <div class="dialog__field">
+                                            <div class="input input--fancy">
+                                                <input class="input__widget" type="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="dialog__field">
+                                            <div class="input input--fancy">
+                                                <input class="input__widget" type="password" placeholder="Пароль">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dialog__operations">
+                                        <button class="button" type="submit">Войти</button>
+                                    </div>
+                                    <div class="dialog__addition">
+                                        если у вас нет учетной записи,<br>
+                                        тогда <a class="link link--text-alike" href="#">зарегистрируйтесь</a>
+                                    </div>
+                                </form>
+                                <div class="window__close">
+                                    <button class="action action--close" type="button" data-popup-close>
+                                        <span class="visuallyhidden">Закрыть</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
