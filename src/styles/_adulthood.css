@@ -25,19 +25,16 @@
 
     }
         .adulthood__heading {
-            /*font-weight: bold;*/
             font-size: 20px;
             line-height: 26px;
             text-align: center;
         }
 
         .adulthood__description {
-            /*margin-top: 20px;*/
             margin-left: 0;
             margin-right: 0;
             font-size: 14px;
             line-height: 20px;
-            /*text-align: center;*/
         }
 }
 
