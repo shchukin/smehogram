@@ -1,5 +1,5 @@
 .input {
-
+    width: 100%; /* Если внутри флекса */
 }
     .input__widget {
         vertical-align: top;
