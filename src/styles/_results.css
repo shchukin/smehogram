@@ -469,6 +469,7 @@
             /*display: flex;*/
             /*flex-direction: column;*/
             /*justify-content: space-between;*/
+            align-items: center;
             padding: 40px var(--container-padding) 60px;
             /*background-color: #2B1257;*/
             /*background-image: url("../images/results-background.webp");*/
