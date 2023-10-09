@@ -27,14 +27,14 @@
 
 @media ( 740px <= width) {
 
-    .wide-page .container {
+    .wide-page .page.container {
         width: 1240px;
         max-width: none;
     }
 }
 
 
-.full-width-page .container {
+.full-width-page .page.container {
     width: 100%;
     max-width: none;
     border-left: none;
