@@ -2,7 +2,7 @@ body {
     height: 100%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: #071535;
+    background-color: #001837;
     background-image: url("../images/background-desktop.webp");
     background-size: 1682px 1478px;
     background-repeat: no-repeat;
@@ -27,4 +27,10 @@ body {
         background-image: url("../images/background-smartphone.webp");
         background-size: 740px 1487px;
     }
+}
+
+
+
+.body-no-background {
+    background-image: none;
 }
