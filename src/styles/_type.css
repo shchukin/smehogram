@@ -170,6 +170,7 @@
             .type__preview {
                 margin-left: auto;
                 margin-right: auto;
+                width: auto;
             }
                 .type__heading {
                     /*flex-shrink: 0;*/
