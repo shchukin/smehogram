@@ -6,10 +6,6 @@
     border-right: var(--container-padding) solid transparent;
 }
 
-.container--unlimited {
-    width: auto;
-}
-
 @media (width < 740px) {
 
     .container {
@@ -20,21 +16,20 @@
 }
 
 
-
-.wide-page {
+.container--wide {
 
 }
 
 @media ( 740px <= width) {
 
-    .wide-page .page.container {
+    .container--wide {
         width: 1240px;
         max-width: none;
     }
 }
 
 
-.full-width-page .page.container {
+.container--full-width {
     width: 100%;
     max-width: none;
     border-left: none;
