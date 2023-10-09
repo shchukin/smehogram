@@ -20,10 +20,23 @@
 }
 
 
+
+.wide-page {
+
+}
+
 @media ( 740px <= width) {
 
     .wide-page .container {
         width: 1240px;
         max-width: none;
     }
+}
+
+
+.full-width-page .container {
+    width: 100%;
+    max-width: none;
+    border-left: none;
+    border-right: none;
 }
