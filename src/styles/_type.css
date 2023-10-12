@@ -154,18 +154,10 @@
 @media (width < 740px) {
 
     .type {
-        /*display: block;*/
-        /*flex-direction: column;*/
-        /*justify-content: center;*/
-        /*min-height: 100%;*/
-        /*padding-top: 80px;*/
-        /*padding-bottom: 80px;*/
+
     }
         .type__inner {
             display: block;
-            /*align-items: flex-start;*/
-            /*justify-content: center;*/
-            /*gap: 117px;*/
         }
             .type__preview {
                 margin-left: auto;
@@ -173,35 +165,21 @@
                 width: auto;
             }
                 .type__heading {
-                    /*flex-shrink: 0;*/
-                    /*margin-top: 0;*/
-                    /*margin-bottom: 0;*/
-                    /*position: relative;*/
                     margin-left: auto;
                     margin-right: auto;
-                    /*background-size: contain;*/
-                    /*background-repeat: no-repeat;*/
-                    /*background-position: center center;*/
                 }
 
                 .type__heading--text {
                     width: 261px;
                     height: 251px;
-                    /*background-image: url("../images/type-heading-text-letters.svg");*/
                 }
 
                 .type__heading--image {
                     width: 240px;
                     height: 251px;
-                    /*background-image: url("../images/type-heading-text-letters.svg");*/
                 }
                     .type__heading::after {
-                        /*content: "";*/
-                        /*position: absolute;*/
-                        /*display: block;*/
-                        /*background-size: contain;*/
-                        /*background-repeat: no-repeat;*/
-                        /*background-position: center center;*/
+
                     }
 
                     .type__heading--text::after {
@@ -221,19 +199,13 @@
             .type__content {
                 margin-top: 27px;
                 width: auto;
-                /*margin-top: 1px;*/
             }
                 .type__round {
-                    /*width: fit-content;*/
                     margin-left: auto;
                     margin-right: auto;
                     padding: 10px 22px 8px;
-                    /*border: 1px solid currentColor;*/
-                    /*border-radius: 25px;*/
-                    /*font-family: var(--font-game);*/
                     font-size: 18px;
                     line-height: 24px;
-                    /*color: #FFB369;*/
                 }
 
                 .type__hint {
@@ -245,7 +217,6 @@
                 }
 
                 .type__next {
-                    /*margin-top: 36px;*/
                     text-align: center;
                 }
 
