@@ -2,20 +2,19 @@
     flex-grow: 1;
     position: relative;
     padding: 10px 40px 30px;
+    background-color: rgb(8 21 53 / 30%);
     border-radius: 25px;
-    background-image: linear-gradient(#00FFFF, #B32DFF);
     text-align: center;
 }
     .trophy__illustration {
         width: 280px;
         margin-left: -40px; /* немного неумечаемся в контейнер на телефонах в 320px */
         margin-right: -40px; /* немного неумечаемся в контейнер на телефонах в 320px */
+        filter: saturate(0);
     }
 
     .trophy__value {
-        margin-top: -75px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: -75px auto 37px;
         width: fit-content;
         padding: 12px 30px;
         background-color: #FFB369;
@@ -28,7 +27,6 @@
     }
 
     .trophy__title {
-        margin-top: 37px;
         font-weight: bold;
         font-size: 24px;
         line-height: 32px;
@@ -50,3 +48,12 @@
         text-align: center;
     }
 
+
+
+.trophy--earned {
+    background-color: transparent;
+    background-image: linear-gradient(#00FFFF, #B32DFF);
+}
+    .trophy--earned .trophy__illustration {
+        filter: none;
+    }

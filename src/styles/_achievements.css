@@ -71,6 +71,11 @@
             .achievements__item {
                 box-shadow: inset 0 0 0 1px rgb(255 255 255 / 40%);
                 border-radius: 25px;
+                transition: background-color var(--transition-hover);
+            }
+
+            .achievements__item:hover {
+                background-color: rgb(255 255 255 / 10%);
             }
                 .achievements__thumbnail {
                     vertical-align: top;
