@@ -35,7 +35,7 @@
         background-image: url("../images/classics-heading-illustration.webp");
     }
 
-    @media (1.5dppx <= resolution < 2.5dppx ) {
+    @media (1.5dppx <= resolution < 2.5dppx) {
         .schedule--classics .schedule__heading::after {
             background-image: url("../images/classics-heading-illustration@2x.webp");
         }

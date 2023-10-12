@@ -62,7 +62,7 @@
                     background-image: url("../images/type-heading-text-illustration.webp");
                 }
 
-                @media (1.5dppx <= resolution < 2.5dppx ) {
+                @media (1.5dppx <= resolution < 2.5dppx) {
                     .type__heading--text::after {
                         background-image: url("../images/type-heading-text-illustration@2x.webp");
                     }
@@ -86,7 +86,7 @@
                     background-image: url("../images/type-heading-image-illustration.webp");
                 }
 
-                @media (1.5dppx <= resolution < 2.5dppx ) {
+                @media (1.5dppx <= resolution < 2.5dppx) {
                     .type__heading--image::after {
                         background-image: url("../images/type-heading-image-illustration@2x.webp");
                     }

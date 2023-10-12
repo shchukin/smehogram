@@ -23,8 +23,7 @@ body::before {
                       url("../images/menu.webp"),
                       url("../images/window.webp"),
                       url("../images/user-heading-letters.svg"),
-                      url("../images/nav-heading-letters.svg")
-    ;
+                      url("../images/nav-heading-letters.svg");
 }
 
 
@@ -32,20 +31,17 @@ body::before {
 /* Картинки с версией для ретины в ::after */
 
 body::after {
-    background-image: url("../images/nav-heading-illustration.webp")
-    ;
+    background-image: url("../images/nav-heading-illustration.webp");
 }
 
-@media (1.5dppx <= resolution < 2.5dppx ) {
+@media (1.5dppx <= resolution < 2.5dppx) {
     body::after {
-        background-image: url("../images/nav-heading-illustration@2x.webp")
-        ;
+        background-image: url("../images/nav-heading-illustration@2x.webp");
     }
 }
 
 @media (2.5dppx <= resolution) {
     body::after {
-        background-image: url("../images/nav-heading-illustration@3x.webp")
-        ;
+        background-image: url("../images/nav-heading-illustration@3x.webp");
     }
 }

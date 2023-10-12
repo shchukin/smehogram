@@ -46,7 +46,6 @@
                     visibility 400ms ease,              /* анимация открытия */
                     right 800ms var(--ease-out-quint);  /* анимация открытия */
     }
-
 }
 
 

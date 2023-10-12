@@ -103,7 +103,7 @@
                 background-position: center center;
             }
 
-            @media (1.5dppx <= resolution < 2.5dppx ) {
+            @media (1.5dppx <= resolution < 2.5dppx) {
                 .question__voting-heading::after {
                     background-image: url("../images/question-voting-illustration@2x.webp");
                 }
@@ -287,7 +287,7 @@
             background-position: center center;
         }
 
-        @media (1.5dppx <= resolution < 2.5dppx ) {
+        @media (1.5dppx <= resolution < 2.5dppx) {
             .question__results--50-50::after {
                 background-image: url("../images/question-results-50-50@2x.webp");
             }
@@ -318,7 +318,7 @@
             background-position: center center;
         }
 
-        @media (1.5dppx <= resolution < 2.5dppx ) {
+        @media (1.5dppx <= resolution < 2.5dppx) {
             .question__results--0-100::after {
                 background-image: url("../images/question-results-0-100@2x.webp");
             }
@@ -352,8 +352,6 @@
             gap: 0;
             padding: 0;
             border: none;
-            /*border-radius: 25px;*/
-
         }
             .question__index {
                 display: block;

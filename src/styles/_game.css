@@ -49,7 +49,7 @@
                     background-position: center center;
                 }
 
-                @media (1.5dppx <= resolution < 2.5dppx ) {
+                @media (1.5dppx <= resolution < 2.5dppx) {
                     .game__heading--trial::after {
                         background-image: url("../images/trial-headings-illustration@2x.webp");
                     }
@@ -89,7 +89,7 @@
         }
             @keyframes trial-rotation {
                 from { transform: rotate(0); }
-                to   { transform: rotate(360deg); }
+                to { transform: rotate(360deg); }
             }
 
             .game__indicator {

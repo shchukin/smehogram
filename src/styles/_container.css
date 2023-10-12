@@ -20,7 +20,7 @@
 
 }
 
-@media ( 740px <= width) {
+@media (740px <= width) {
 
     .container--wide {
         width: 1240px;

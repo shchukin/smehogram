@@ -30,7 +30,7 @@
             background-position: center center;
         }
 
-        @media (1.5dppx <= resolution < 2.5dppx ) {
+        @media (1.5dppx <= resolution < 2.5dppx) {
             .achievements__heading::before,
             .achievements__heading::after {
                 background-image: url("../images/achievements-heading-illustration@2x.webp");

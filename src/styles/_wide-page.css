@@ -1,4 +1,4 @@
-@media ( 740px <= width) {
+@media (740px <= width) {
     .wide-page {
         min-width: 1260px;
     }

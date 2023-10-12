@@ -26,7 +26,7 @@
             background-position: center center;
         }
 
-        @media (1.5dppx <= resolution < 2.5dppx ) {
+        @media (1.5dppx <= resolution < 2.5dppx) {
             .create__heading::after {
                 background-image: url("../images/create-heading-illustrations@2x.webp");
             }
@@ -94,7 +94,7 @@
             grid-template-rows: unset;
             grid-auto-flow: unset;
             /*gap: 25px;*/
-            grid-auto-rows: 1fr
+            grid-auto-rows: 1fr;
         }
             .create__options .button {
                 /*text-align: left;*/

@@ -110,7 +110,7 @@
             background-image: url("../images/login-heading-illustration.webp");
         }
 
-        @media (1.5dppx <= resolution < 2.5dppx ) {
+        @media (1.5dppx <= resolution < 2.5dppx) {
             .dialog--login .dialog__heading::after {
                 background-image: url("../images/login-heading-illustration@2x.webp");
             }
@@ -145,7 +145,7 @@
             background-image: url("../images/register-heading-illustration.webp");
         }
 
-        @media (1.5dppx <= resolution < 2.5dppx ) {
+        @media (1.5dppx <= resolution < 2.5dppx) {
             .dialog--register .dialog__heading::after {
                 background-image: url("../images/register-heading-illustration@2x.webp");
             }
@@ -179,7 +179,7 @@
             background-image: url("../images/settings-heading-illustration.webp");
         }
 
-        @media (1.5dppx <= resolution < 2.5dppx ) {
+        @media (1.5dppx <= resolution < 2.5dppx) {
             .dialog--settings .dialog__heading::after {
                 background-image: url("../images/settings-heading-illustration@2x.webp");
             }
@@ -218,7 +218,7 @@
             background-image: url("../images/test-heading-illustration.webp");
         }
 
-        @media (1.5dppx <= resolution < 2.5dppx ) {
+        @media (1.5dppx <= resolution < 2.5dppx) {
             .dialog--test .dialog__heading::after {
                 background-image: url("../images/test-heading-illustration@2x.webp");
             }
@@ -256,7 +256,7 @@
             background-image: url("../images/coins-heading-illustration.webp");
         }
 
-        @media (1.5dppx <= resolution < 2.5dppx ) {
+        @media (1.5dppx <= resolution < 2.5dppx) {
             .dialog--coins .dialog__heading::after {
                 background-image: url("../images/coins-heading-illustration@2x.webp");
             }
@@ -297,7 +297,7 @@
             background-image: url("../images/team-heading-illustration.webp");
         }
 
-        @media (1.5dppx <= resolution < 2.5dppx ) {
+        @media (1.5dppx <= resolution < 2.5dppx) {
             .dialog--team .dialog__heading::after {
                 background-image: url("../images/team-heading-illustration@2x.webp");
             }
@@ -336,7 +336,7 @@
             background-image: url("../images/adulthood-heading-illustration.webp");
         }
 
-        @media (1.5dppx <= resolution < 2.5dppx ) {
+        @media (1.5dppx <= resolution < 2.5dppx) {
             .dialog--adulthood .dialog__heading::after {
                 background-image: url("../images/adulthood-heading-illustration@2x.webp");
             }
