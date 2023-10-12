@@ -3,7 +3,7 @@ html {
     height: 100%;
     color-scheme: dark;
     background-color: #081535;
-    background-image: url("background-default-desktop.webp");
+    background-image: url("../images/background-default-desktop.webp");
     background-size: 1682px 1478px;
     background-repeat: no-repeat;
     background-position: center top;
@@ -25,10 +25,27 @@ html {
 
 @media (width < 740px) {
     html {
-        background-image: url("background-default-smartphone.webp");
+        background-image: url("../images/background-default-smartphone.webp");
         background-size: 740px 1487px;
     }
 }
+
+
+
+/* Принципиально другая картинка: */
+
+.alternate-background {
+    background-image: url("../images/background-alternate.webp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+    @media (width < 740px) {
+        .alternate-background {
+            background-image: url("../images/background-alternate-mobile.webp");
+        }
+    }
+
 
 
 .no-background {
