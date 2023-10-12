@@ -1,6 +1,7 @@
 .window {
     position: relative;
-    width: 426px;
+    width: 100%;
+    max-width: 426px;
     min-height: 580px; /* Все модалки по размеру более-менее одинаковые */
     display: flex; /* В комбинации с min-height нужно дать потомкам возможность заполнять всю высоту */
     flex-direction: column;
@@ -22,37 +23,9 @@
 
 
 
-@media (width < 740px) {
-
-    .window {
-
-    }
-        .window__close {
-
-        }
-}
-
-
-
-@media (width < 475px) {
-    .window {
-        width: 100%;
-    }
-}
-
-
-
-
 .window--smaller {
-    width: 360px;
+    max-width: 360px;
     min-height: 500px;
 }
-    @media (width < 475px) {
-        .window--smaller {
-            width: 100%;
-            max-width: 360px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
+
 

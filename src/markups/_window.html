@@ -17,7 +17,11 @@
             <br>
             <h1>.window</h1>
             <p>
-                Это статичный компонент. Просто обёртка с фоном, скруглёнными углами, крестиком:
+                Это статичный компонент. Просто обёртка с фоном, скруглёнными углами, крестиком.
+            </p>
+            <p>
+                В проекте масса форм и чтобы их сделать более-менее одинаковыми у этого компонента <b>.window</b>
+                задана минимальная ширина.
             </p>
 
             <div class="window">
@@ -143,6 +147,44 @@
                 </div>
             </div>
 
+
+            <br>
+            <br>
+            <br>
+            <h2>.window--smaller</h2>
+            <p>
+                Эта опция используется однократно, только для модалки трофея:
+            </p>
+
+            <div class="window window--smaller">
+                <div class="trophy">
+                    <img class="trophy__illustration"
+                         srcset="../temp/trophy-a@2x.webp 2x"
+                         src="../temp/trophy-a.webp"
+                         width="280"
+                         height="280"
+                         alt=""
+                    >
+                    <div class="trophy__value">
+                        +800100уе
+                    </div>
+                    <div class="trophy__title">
+                        Первая игра
+                    </div>
+                    <div class="trophy__description">
+                        Наша любовь и приятный бонус за твой первый шаг как зарегистрированного пользователя
+                    </div>
+                    <div class="trophy__date">
+                        21.05.23
+                    </div>
+                </div>
+
+                <div class="window__close">
+                    <button class="action action--close" type="button" data-popup-close>
+                        <span class="visuallyhidden">Закрыть</span>
+                    </button>
+                </div>
+            </div>
 
             <br>
             <br>

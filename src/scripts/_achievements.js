@@ -21,7 +21,7 @@
     /* Клик вне .achievements__popup (1) */
 
     $(document).on('click', function (event) {
-        if (!$(event.target).closest('.achievements__popup').length) {
+        if (!$(event.target).closest('.trophy').length) {
             $('.achievements').removeClass('achievements--expanded');
         }
     });
