@@ -79,7 +79,7 @@
                     </h1>
                     <div class="achievements__body">
                         <div class="achievements__list">
-                            <a class="achievements__item achievements__item--achieved" href="#">
+                            <a class="achievements__item achievements__item--achieved" href="#trophy-earned" data-popup-show>
                                 <img class="achievements__thumbnail"
                                      srcset="../temp/trophy-thumbnail-a@2x.webp 2x"
                                      src="../temp/trophy-thumbnail-a.webp"
@@ -242,33 +242,86 @@
                                 >
                             </div>
                         </div>
-                        <div class="achievements__popup">
-                            <img class="achievements__illustration"
-                                 srcset="../temp/trophy-a@2x.webp 2x"
-                                 src="../temp/trophy-a.webp"
-                                 width="280"
-                                 height="280"
-                                 alt=""
-                            >
-                            <div class="achievements__value">
-                                +800100уе
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup" id="trophy-earned">
+                <div class="popup__container">
+                    <div class="popup__viewport">
+                        <div class="popup__slot">
+                            <div class="window window--smaller">
+                                <div class="achievements__popup">
+                                    <img class="achievements__illustration"
+                                         srcset="../temp/trophy-a@2x.webp 2x"
+                                         src="../temp/trophy-a.webp"
+                                         width="280"
+                                         height="280"
+                                         alt=""
+                                    >
+                                    <div class="achievements__value">
+                                        +800100уе
+                                    </div>
+                                    <div class="achievements__title">
+                                        Первая игра
+                                    </div>
+                                    <div class="achievements__description">
+                                        Наша любовь и приятный бонус за твой первый шаг как зарегистрированного пользователя
+                                    </div>
+                                    <div class="achievements__date">
+                                        21.05.23
+                                    </div>
+                                </div>
+
+                                <div class="window__close">
+                                    <button class="action action--close" type="button" data-popup-close>
+                                        <span class="visuallyhidden">Закрыть</span>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="achievements__title">
-                                Первая игра
-                            </div>
-                            <div class="achievements__description">
-                                Наша любовь и приятный бонус за твой первый шаг как зарегистрированного пользователя
-                            </div>
-                            <div class="achievements__date">
-                                21.05.23
-                            </div>
-                            <button class="achievements__close" type="button">
-                                Закрыть
-                            </button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="popup" id="trophy-unearned">
+                <div class="popup__container">
+                    <div class="popup__viewport">
+                        <div class="popup__slot">
+                            <div class="window">
+                                <div class="achievements__popup">
+                                    <img class="achievements__illustration"
+                                         srcset="../temp/trophy-a@2x.webp 2x"
+                                         src="../temp/trophy-a.webp"
+                                         width="280"
+                                         height="280"
+                                         alt=""
+                                    >
+                                    <div class="achievements__value">
+                                        +800100уе
+                                    </div>
+                                    <div class="achievements__title">
+                                        Первая игра
+                                    </div>
+                                    <div class="achievements__description">
+                                        Наша любовь и приятный бонус за твой первый шаг как зарегистрированного пользователя
+                                    </div>
+                                    <div class="achievements__date">
+                                        21.05.23
+                                    </div>
+                                </div>
+
+                                <div class="window__close">
+                                    <button class="action action--close" type="button" data-popup-close>
+                                        <span class="visuallyhidden">Закрыть</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <div class="menu">
                 <div class="menu__panel">
@@ -380,7 +433,6 @@
         <script src="../vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
         <script src="../scripts/_mfp.js"></script>
         <script src="../scripts/_input.js"></script>
-        <script src="../scripts/_achievements.js"></script>
         <script src="../scripts/_profile.js"></script>
         <script src="../scripts/_menu.js"></script>
         <script src="../scripts/_popup.js"></script>

@@ -96,21 +96,12 @@
                 }
 
         .achievements__popup {
-            position: absolute;
-            top: -51px;
-            left: 0;
-            right: 0;
-            max-width: 360px;
-            margin-left: auto;
-            margin-right: auto;
+            flex-grow: 1;
+            position: relative;
             padding: 10px 40px 30px;
-            background-image: linear-gradient(#00FFFF, #B32DFF);
             border-radius: 25px;
+            background-image: linear-gradient(#00FFFF, #B32DFF);
             text-align: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity var(--transition-show),
-                        visibility var(--transition-show);
         }
             .achievements__illustration {
                 width: 280px;
@@ -156,77 +147,6 @@
                 text-align: center;
             }
 
-            .achievements__close {
-                position: absolute;
-                right: 0;
-                top: 0;
-                width: 54px;
-                height: 54px;
-                border: none;
-                padding: 0;
-                background-color: transparent;
-                text-indent: 200%;
-                white-space: nowrap;
-                overflow: hidden;
-                cursor: pointer;
-            }
-
-                /* наведение */
-                .achievements__close::before {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    margin: auto;
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    transition: background-color var(--transition-hover);
-                }
-
-                .achievements__close:hover::before {
-                    background-color: #66CEFF;
-                }
-
-                /* крестик */
-                .achievements__close::after {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    margin: auto;
-                    display: block;
-                    width: 16px;
-                    height: 16px;
-                    background-image: url("../vectors/cross.svg");
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                }
-
-
-            .achievements__close:active {
-                translate: 0 1px;
-            }
-
-
-
-.achievements--expanded {
-
-}
-    .achievements--expanded .achievements__list {
-        opacity: 0.5;
-        pointer-events: none;
-    }
-
-    .achievements--expanded .achievements__popup {
-        opacity: 1;
-        visibility: visible;
-    }
 
 
 
@@ -247,37 +167,6 @@
             .achievements__list {
                 grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
             }
-
-            .achievements__popup {
-                top: calc(-1 * var(--container-padding) / 2);
-                left: calc(-1 * var(--container-padding) / 2);
-                right: calc(-1 * var(--container-padding) / 2);
-                padding-bottom: 22px;
-            }
-                .achievements__illustration {
-
-                }
-
-                .achievements__value {
-
-                }
-
-                .achievements__title {
-                    text-align: left;
-                }
-
-                .achievements__description {
-                    text-align: left;
-                }
-
-                .achievements__date {
-                    margin-top: 12px;
-                    text-align: right;
-                }
-
-                .achievements__close {
-
-                }
 }
 
 
