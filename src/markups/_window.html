@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>.schedule</title>
+        <title>.window</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic" rel="stylesheet">-->
         <link rel="stylesheet" href="../styles/style.css">
@@ -15,9 +15,61 @@
         <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
             <br>
-            <h1>.schedule</h1>
+            <h1>.window</h1>
             <p>
-                Смотри так-же <a href="_dialog.html">.dialog</a> и <a href="_window.html">.window</a>
+                Это статичный компонент. Просто обёртка с фоном, скруглёнными углами, крестиком:
+            </p>
+
+            <div class="window">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, aspernatur consequuntur eaque eius excepturi expedita magnam modi nesciunt officiis provident voluptates? Adipisci ea enim fugiat molestiae mollitia nihil obcaecati possimus quaerat quasi sint. Earum illum itaque tenetur voluptatibus voluptatum? Adipisci at dolor ducimus, earum harum, incidunt laborum omnis quam quas rem sed sint. Accusamus at corporis cupiditate doloremque, incidunt maiores nam necessitatibus quos sed vel. Aperiam atque commodi consectetur cum delectus eligendi est explicabo illo illum inventore iste iusto nihil, odit pariatur, quam qui sapiente similique soluta tempore velit! uam qui sapiente similique soluta tempore velit alias debitis deserunt dolorem expedita magni maxime repellat repellendus! Consequuntur. Aperiam atque commodi consectetur cum delectus eligendi est explicabo illo illum inventore iste iusto nihil, odit pariatur, quam qui sapiente similique soluta tempore velit! Alias debitis deserunt dolorem expedita magni maxime repellat repellendus! Consequuntur deserunt dolorem expedita magni maxime repellat repellendus! Consequuntur.
+                <div class="window__close">
+                    <button class="action action--close" type="button" data-popup-close>
+                        <span class="visuallyhidden">Закрыть</span>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <p>
+                Внутри может быть любой контент. Часто это компонент <a href="_dialog.html">.dialog</a>:
+            </p>
+
+            <div class="window">
+                <form class="dialog dialog--register">
+                    <h2 class="dialog__heading">
+                        <span class="visuallyhidden">Регистрация</span>
+                    </h2>
+                    <div class="dialog__body">
+                        <div class="dialog__field">
+                            <div class="input input--fancy">
+                                <input class="input__widget" type="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="dialog__field">
+                            <div class="input input--fancy">
+                                <input class="input__widget" type="password" placeholder="Пароль из почты">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dialog__operations">
+                        <button class="button" type="submit">Зарегаться</button>
+                    </div>
+                    <div class="dialog__addition">
+                        регистрируясь вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности. Также подтверждаете, что Вам есть 18 лет и более
+                    </div>
+                </form>
+                <div class="window__close">
+                    <button class="action action--close" type="button" data-popup-close>
+                        <span class="visuallyhidden">Закрыть</span>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <p>
+                Или, например <a href="_schedule.html">.schedule</a>:
             </p>
 
             <div class="window">
@@ -90,7 +142,6 @@
                     </button>
                 </div>
             </div>
-
 
 
             <br>

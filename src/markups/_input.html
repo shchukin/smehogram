@@ -75,8 +75,7 @@
             <br>
             <h2>С припиской <a href="_helper.html">.helper</a></h2>
             <p>
-                These two are not part of <b><i>.input</i></b> component. However, they often used together,
-                placed before and after, like so:
+                Вообще говоря, этот <a href="_helper.html">.helper</a> не является частью инпутов, но часто они используются вместе. Смотрим:
             </p>
 
             <br>
@@ -103,7 +102,7 @@
             <br>
             <br>
             <p>
-                Also, the same <b><i>.helper</i></b> component will be used to output messages in cases covering errors.
+                Этот же <b><i>.helper</i></b> будет использоваться для вывода ошибок
             </p>
 
             <br>
@@ -151,17 +150,12 @@
             <br>
             <br>
             <h2>.input--error</h2>
-            <p>
-                Despite the fact that native <b><i>:invalid</i></b> attribute is widely supported,
-                we still expect that validation to be coded manually. So here are the classes
-                and error messages coded manually as well.
-            </p>
 
             <div class="input input--classic input--error">
                 <input class="input__widget" type="text" placeholder="Введите игровое имя">
             </div>
             <div class="helper helper--error">
-                This field is required
+                Обязательное поле
             </div>
 
             <br>
@@ -170,26 +164,26 @@
                 <input class="input__widget" type="email" placeholder="Email" value="foobar@example.">
             </div>
             <div class="helper helper--error">
-                Email is not valid
+                Неправильный формат электронной почты
             </div>
 
             <br>
-            <p>In the multi-error case, helpers should be output one after another, like so:</p>
+            <p>Многострочный кейс</p>
 
             <div class="input input--classic input--error">
                 <input class="input__widget" type="password" placeholder="Password" value="0xFoo">
             </div>
             <div class="helper helper--error">
-                Password is too short
+                Пароль слишком короткий
             </div>
             <div class="helper helper--error">
-                Password must contain a special character
+                Пароль должен содержать спецсимвол
             </div>
             <div class="helper helper--error">
-                Password must be hard to guess: dates, phone numbers and names are not allowed and either it shouldn’t be based on public data
+                Пароль должно быть сложно угадать: даты, имена, и номера телефонов и прочую открытую информацию нельзя использовать в качестве пароля
             </div>
             <div class="helper helper--error">
-                New password is similar to previous password
+                Новый пароль не может быть идентичен старому
             </div>
 
 
@@ -202,7 +196,7 @@
                 <input class="input__widget" type="text" placeholder="Введите игровое имя">
             </div>
             <div class="helper helper--error">
-                This field is required
+                Обязательное поле
             </div>
 
             <br>
@@ -211,26 +205,26 @@
                 <input class="input__widget" type="email" placeholder="Email" value="foobar@example.">
             </div>
             <div class="helper helper--error">
-                Email is not valid
+                Неправильный формат электронной почты
             </div>
 
             <br>
-            <p>In the multi-error case, helpers should be output one after another, like so:</p>
+            <br>
 
             <div class="input input--fancy input--error">
                 <input class="input__widget" type="password" placeholder="Password" value="0xFoo">
             </div>
             <div class="helper helper--error">
-                Password is too short
+                Пароль слишком короткий
             </div>
             <div class="helper helper--error">
-                Password must contain a special character
+                Пароль должен содержать спецсимвол
             </div>
             <div class="helper helper--error">
-                Password must be hard to guess: dates, phone numbers and names are not allowed and either it shouldn’t be based on public data
+                Пароль должно быть сложно угадать: даты, имена, и номера телефонов и прочую открытую информацию нельзя использовать в качестве пароля
             </div>
             <div class="helper helper--error">
-                New password is similar to previous password
+                Новый пароль не может быть идентичен старому
             </div>
 
 
@@ -239,7 +233,7 @@
             <br>
             <h2>Password</h2>
             <p>
-                The font was changed here for better-looking dots.
+                Несколько иной шрифт
             </p>
 
             <div class="input input--classic">
@@ -259,7 +253,7 @@
             <br>
             <h2>Textarea</h2>
             <p>
-                Don’t forget to use the <b><i>rows</i></b> attribute to specify number of lines.
+                Количество строк задаём атрибутом <b>rows</b>
             </p>
 
             <div class="input input--classic">
@@ -275,9 +269,8 @@
             <br>
             <h3>.input--expandable</h3>
             <p>
-                Using JavaScript, calculate the height to make the textarea expand as the user types.
-                In this case, the <b><i>rows</i></b> attribute will serve as a starting point, and the <b><i>max-height</i></b>
-                set in the styles will limit the computed height, even if it exceeds any reasonable value.
+                Обсчитываем ширину жаба-скриптом. Атрибут <b><i>rows</i></b> в этом случае задаёт стартовую высоту. <b><i>max-height</i></b> в стилях
+                ограничение по высоте.
             </p>
 
             <div class="input input--classic input--expandable">
@@ -367,18 +360,13 @@
             <br>
             <h3>Placeholder</h3>
             <p>
-                Notice that there is a problem with the <b><i>&lt;select&gt;</i></b> tag.
-                It doesn’t work with the <b><i>placeholder</i></b> attribute.
-                It’s expected that at least one option is always selected.
+                У тега &lt;select&gt; есть проблема. Ему невозможно установить плейсхолдер. Предполагается, что какое-то значение
+                всегда выбрано по умолчанию. Но с остальными инпутами в формах это не матчится.
             </p>
             <p>
-                However, it doesn’t match the rest of the inputs, especially when there are a few of them in a row along with a select.
-                So let’s fake it.
-            </p>
-            <p>
-                Assign first option to be a placeholder: <b><i>&lt;option value="placeholder"&gt;</i></b>. Then
-                use JS to check if this option is selected and toggle the <b><i>.input--placeholder-is-chosen</i></b>
-                class to change the color.
+                Назначаем первый опшн как <b><i>&lt;option value="placeholder"&gt;</i></b> и когда он выбран проставляем класс
+                <b><i>.input--placeholder-is-chosen</i></b>
+                на весь инпут. Этот класс подделает цвет под плейсхолдер.
             </p>
 
             <div class="input input--classic">
@@ -454,19 +442,10 @@
             </div>
 
 
-            <p>
-                Don’t make option with placeholder to be disabled. Users may want to leave this field untouched, or clear it by re-selecting placeholder.
-                If the form was submitted with <b><i>"placeholder"</i></b> as the value for the select, it should be treated as equivalent to an empty text field.
-            </p>
-            <p>
-                On the other hand, if the field is required, ensure that it does not pass validation with the placeholder selected.
-            </p>
-
-
             <br>
             <br>
             <br>
-            <h2>Other types</h2>
+            <h2>Остальные типы</h2>
             <br>
 
             <label class="label" for="uzoyce97">
