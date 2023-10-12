@@ -1,6 +1,6 @@
 (function($) {
 
-    $('.achievements__item--achieved').on('click', function (event) {
+    $('.trophy-thumbnail--earned').on('click', function (event) {
         $('.achievements').addClass('achievements--expanded')
         event.stopPropagation(); /* чтобы не сработало закрытие по клику вне модалки из (1) */
     });
@@ -21,7 +21,7 @@
     /* Клик вне .achievements__popup (1) */
 
     $(document).on('click', function (event) {
-        if (!$(event.target).closest('.achievements__popup').length) {
+        if (!$(event.target).closest('.trophy').length) {
             $('.achievements').removeClass('achievements--expanded');
         }
     });
