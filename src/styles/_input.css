@@ -50,8 +50,6 @@
         padding: 20px 21px;
         background-color: #FFFFFF;
         border-radius: 25px;
-        font-size: 24px;
-        line-height: 32px;
         color: #000000;
     }
 
@@ -74,6 +72,7 @@
     .input--classic .input__widget::placeholder {
         color: var(--classic-placeholder-color);
     }
+
 
 
 /* Disabled */
@@ -292,6 +291,7 @@
     border-color: var(--error);
 }
 
+
 .input--placeholder-is-chosen {
 
 }
@@ -299,8 +299,12 @@
         color: var(--classic-placeholder-color);
     }
 
-    .input--placeholder-is-chosen select.input__widget:disabled {
-        color: var(--disabled-color);
+    .input--placeholder-is-chosen.input--classic select.input__widget:disabled {
+        color: var(--classic-disabled-color);
+    }
+
+    .input--placeholder-is-chosen.input--fancy select.input__widget:disabled {
+        color: var(--fancy-disabled-color);
     }
 
     .input--placeholder-is-chosen.input--error select.input__widget {
@@ -310,3 +314,13 @@
             color: #000000; /* Browsers on Windows inherit grey color from <select> to <option>`s. Reset it. */
         }
 
+
+.input--larger {
+
+}
+    @media (740px <= width) {
+        .input--larger .input__widget {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
