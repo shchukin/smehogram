@@ -37,15 +37,6 @@
     translate: 0 1px;
 }
 
-/*.button:disabled,*/
-/*.button:disabled:hover,*/
-/*.button:disabled:active {*/
-/*    background-color: #F6F6F6;*/
-/*    color: var(--disabled-color);*/
-/*    translate: none;*/
-/*    cursor: default;*/
-/*}*/
-
 .button--secondary {
     background-color: #6C81FF;
     background-image: linear-gradient(to right, #45AEFF, #9352FF);
@@ -133,3 +124,14 @@
         text-transform: uppercase;
     }
 
+
+.button:disabled,
+.button:disabled:hover,
+.button:disabled:active {
+    background-color: #666666;
+    filter: none;
+    background-image: none;
+    box-shadow: none;
+    translate: none;
+    cursor: default;
+}
