@@ -47,7 +47,7 @@ html {
     }
 
 
-
+/* Кейс без фона */
 .no-background {
     background-image: none;
 }
