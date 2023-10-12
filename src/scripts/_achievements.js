@@ -1,6 +1,6 @@
 (function($) {
 
-    $('.achievements__item--achieved').on('click', function (event) {
+    $('.trophy-thumbnail--earned').on('click', function (event) {
         $('.achievements').addClass('achievements--expanded')
         event.stopPropagation(); /* чтобы не сработало закрытие по клику вне модалки из (1) */
     });

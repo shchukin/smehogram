@@ -1,0 +1,31 @@
+.trophy-thumbnail {
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 40%);
+    border-radius: 25px;
+    transition: background-color var(--transition-hover);
+}
+
+.trophy-thumbnail:hover {
+    background-color: rgb(255 255 255 / 10%);
+}
+    .trophy-thumbnail__illustration {
+        vertical-align: top;
+        width: 100%;
+        height: auto;
+        filter: saturate(0);
+        opacity: 0.5;
+    }
+
+
+.trophy-thumbnail--earned {
+    box-shadow: none;
+    background-image: linear-gradient(#00FFFF, #B32DFF);
+    transition: filter var(--transition-hover);
+}
+
+.trophy-thumbnail--earned:hover {
+    filter: brightness(1.1) contrast(1.1);
+}
+    .trophy-thumbnail--earned .trophy-thumbnail__illustration {
+        filter: none;
+        opacity: 1;
+    }
