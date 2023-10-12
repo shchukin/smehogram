@@ -416,8 +416,7 @@
             }
 
         .results__body {
-            padding-left: 0;
-            padding-right: 0;
+            padding: 40px 0 80px;
         }
             .results__summary {
 
@@ -493,6 +492,10 @@
                 margin-top: 40px;
                 border-left: var(--container-padding) solid transparent;
                 border-right: var(--container-padding) solid transparent;
+            }
+
+            .results__list:first-child {
+                margin-top: 0;
             }
                 .results__item {
 
