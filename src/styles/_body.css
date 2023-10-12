@@ -1,36 +1,3 @@
 body {
     height: 100%;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    background-color: #081535;
-    background-image: url("../images/background-desktop.webp");
-    background-size: 1682px 1478px;
-    background-repeat: no-repeat;
-    background-position: center top;
-    color: #FFFFFF;
-    font-family: var(--font);
-    font-size: 16px;
-    line-height: 24px;
-}
-
-/* Картинка по ширине ограничена в 1682px */
-@media (1682px <= width) {
-    body {
-        background-size: cover;
-    }
-}
-
-
-
-@media (width < 740px) {
-    body {
-        background-image: url("../images/background-smartphone.webp");
-        background-size: 740px 1487px;
-    }
-}
-
-
-
-.body-no-background {
-    background-image: none;
 }

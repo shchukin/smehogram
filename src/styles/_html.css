@@ -2,4 +2,35 @@ html {
     min-width: 320px;
     height: 100%;
     color-scheme: dark;
+    background-color: #081535;
+    background-image: url("../images/background-desktop.webp");
+    background-size: 1682px 1478px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+/* Картинка по ширине ограничена в 1682px */
+@media (1682px <= width) {
+    html {
+        background-size: cover;
+    }
+}
+
+
+@media (width < 740px) {
+    html {
+        background-image: url("../images/background-smartphone.webp");
+        background-size: 740px 1487px;
+    }
+}
+
+
+.no-background {
+    background-image: none;
 }
