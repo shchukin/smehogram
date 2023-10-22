@@ -2,7 +2,7 @@
     --padding: 40px;
 }
 
-@media (width <740px) {
+@media (width < 740px) {
 
     .wysiwyg {
         --padding: 16px;
