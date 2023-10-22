@@ -35,7 +35,7 @@
 
         function popupShow(popup) {
             lockPage();
-            popup.addClass('popup--visible');
+            popup.css('display', 'block');
             popup.scrollTop(0);
         }
 
@@ -44,7 +44,7 @@
                 popup = $('.popup');
             }
 
-            popup.removeClass('popup--visible');
+            popup.css('display', 'none');
             unlockPage();
         }
 

@@ -1,3 +1,8 @@
+@keyframes popup-show { /* (2) */
+    from { opacity: 0; } /* (2) */
+    to { opacity: 1; } /* (2) */
+} /* (2) */
+
 .popup {
     position: fixed;
     z-index: 5000;
@@ -7,19 +12,28 @@
     height: 100%;
     overflow: auto;
     background-color: rgb(0 0 0 / 50%);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 300ms ease, /* анимация закрытия */
-                visibility 300ms ease; /* анимация закрытия */
+
+    /* Если попап изначально есть в DOM, то анимацци хорошо делать так: (1) */
+    /* Такие анимации проще, можно сделать через transition, и есть анимация закрытия: */
+
+    /*opacity: 0; (1) */
+    /*visibility: hidden; (1)*/
+    /*transition: opacity 300ms ease, !* анимация закрытия (1) *!*/
+    /*            visibility 300ms ease; !* анимация закрытия (1) *!*/
+
+
+    /* Если попап в DOM добавляется, то так: (2) */
+    animation: popup-show 400ms ease; /* (2) */
 }
 
-.popup--visible {
-    top: 0;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 400ms ease, /* анимация открытия */
-                visibility 400ms ease; /* анимация открытия */
-}
+/*.popup--visible { (1)*/
+    /*top: 0; (1) */
+    /*opacity: 1; (1) */
+    /*visibility: visible; (1) */
+    /*transition: opacity 400ms ease, !* анимация открытия (1) *!*/
+    /*            visibility 400ms ease; !* анимация открытия (1) *!*/
+/*} (1) */
+
     .popup__container {
         display: table;
         table-layout: fixed;
@@ -33,19 +47,25 @@
             text-align: center;
             vertical-align: middle;
         }
+            @keyframes popup-slide { /* (2) */
+                from { transform: translateY(100px); } /* (2) */
+                to { transform: translateY(0); } /* (2) */
+            }  /* (2) */
+
             .popup__slot {
                 position: relative;
                 display: inline-block;
                 vertical-align: top;
                 text-align: left;
                 margin: 20px;
-                transform: translateY(100px);
-                transition: transform 1000ms ease; /* анимация закрытия */
+                /*transform: translateY(100px); (1)*/
+                /*transition: transform 1000ms ease; !* анимация закрытия (1) *!*/
+                animation: popup-slide 800ms var(--ease-out-quint); /* (2) */
             }
 
             .popup--visible .popup__slot {
-                transform: translateY(0);
-                transition: transform 800ms var(--ease-out-quint); /* анимация открытия */
+                /*transform: translateY(0); (1)*/
+                /*transition: transform 800ms var(--ease-out-quint); !* анимация открытия (1) *!*/
             }
 
             .popup__close {
