@@ -5,19 +5,15 @@
 @import url("_preload.css");
 @import url("_html.css");
 @import url("_body.css");
-@import url("_root.css");
+@import url("_next.css");
 @import url("_visuallyhidden.css");
 @import url("_browser.css");
 @import url("_container.css");
-
 @import url("_button.css");
 @import url("_input.css");
 @import url("_link.css");
-
 @import url("_helper.css");
-
 @import url("_window.css");
-
 @import url("_achievements.css");
 @import url("_action.css");
 @import url("_logo.css");
