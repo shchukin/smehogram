@@ -1,0 +1,35 @@
+.history {
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+    .history__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: "Verdana", sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        color: #6587FE;
+        text-transform: uppercase;
+    }
+
+    .history__body {
+        margin-top: 40px;
+    }
+
+
+@media (width < 740px) {
+
+
+    .history {
+        padding-bottom: 60px;
+    }
+        .history__heading {
+            font-size: 36px;
+            line-height: 36px;
+        }
+
+        .history__body {
+            margin-top: 30px;
+        }
+}

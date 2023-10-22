@@ -1,0 +1,53 @@
+.listing {
+
+}
+    .listing table {
+        vertical-align: top;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .listing th,
+    .listing td {
+        padding: 10px 14px;
+        border: 1px solid rgb(255 255 255 / 50%);
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .listing th {
+        color: #FFB369;
+    }
+
+
+@media (width < 740px) {
+
+    .listing th,
+    .listing td {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+
+.listing--games {
+
+}
+    .listing--games td:last-child {
+        text-align: center;
+    }
+
+
+.listing--results {
+
+}
+    .listing--results td:first-child {
+        font-weight: bold;
+        color: #FFB369;
+        text-align: center;
+    }
+
+    .listing--results td:last-child {
+        text-align: center;
+        color: #FFB369;
+    }

@@ -1,0 +1,12 @@
+.results-link {
+    display: block;
+    background-image: url("../vectors/table.svg");
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 44px;
+    margin: -10px -14px;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+}
