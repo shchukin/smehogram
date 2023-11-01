@@ -24,7 +24,7 @@
 @media (740px <= width) {
 
     .container--wide {
-        width: 1240px;
+        width: 1020px;
         max-width: none;
     }
 }
