@@ -6,6 +6,7 @@
     padding: 15px 16px;
     border: 5px solid transparent;
     background-color: #FFFFFF;
+    box-shadow: 0 0 0 3px transparent;
     border-radius: 25px;
     font-family: inherit;
     font-size: 16px;
@@ -13,12 +14,15 @@
     color: #000000;
     text-align: left;
     color-scheme: light;
+    transition: box-shadow var(--transition-hover);
+}
+
+.answer--selectable {
     cursor: pointer;
-    transition: border-color var(--transition-hover);
 }
 
 .answer:hover {
-    
+
 }
     .answer__select {
         padding-top: 12px;
@@ -31,7 +35,7 @@
 
 .answer--current,
 .answer--current:hover {
-    border-color: #FFB369;
+    box-shadow: 0 0 0 3px #FFB369;
 }
 
 

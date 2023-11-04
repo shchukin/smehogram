@@ -191,6 +191,8 @@
     }
         .question__item {
             position: relative;
+            padding-left: 3px; /* чтобы не обрезались тени у инпутов и выбранных .answer */
+            padding-right: 3px; /* чтобы не обрезались тени у инпутов и выбранных .answer */
             flex-basis: calc(50% - 30px);
         }
             @keyframes question-rating-left {
