@@ -3,8 +3,8 @@
     flex-direction: column;
     width: 100%;
     min-height: calc(2 * 20px + 3 * 24px);
-    padding: 20px 21px;
-    border: none;
+    padding: 15px 16px;
+    border: 5px solid transparent;
     background-color: #FFFFFF;
     border-radius: 25px;
     font-family: inherit;
@@ -13,6 +13,12 @@
     color: #000000;
     text-align: left;
     color-scheme: light;
+    cursor: pointer;
+    transition: border-color var(--transition-hover);
+}
+
+.answer:hover {
+    
 }
     .answer__select {
         padding-top: 12px;
@@ -21,6 +27,12 @@
             margin-top: auto;
             align-self: flex-end;
         }
+
+
+.answer--current,
+.answer--current:hover {
+    border-color: #FFB369;
+}
 
 
 /* Только десктопы (не мобилки, запрос обратный к мобильному (width < 740px) */
