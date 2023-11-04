@@ -45,11 +45,19 @@
     /* Запросы по высоте */
     @media (700px <= height) {
         .countdown--smaller {
+            width: 70px;
+            height: 70px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+
+    @media (950px <= height) {
+        .countdown--smaller {
             width: 87px;
             height: 87px;
             font-size: 28px;
             line-height: 28px;
         }
-
     }
 }

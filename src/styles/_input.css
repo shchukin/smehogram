@@ -327,9 +327,20 @@
     @media (700px <= height) {
 
         .input--larger .input__widget {
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        .input--larger textarea.input__widget {
+            min-height: calc(2 * 20px + 3 * 28px);
+        }
+    }
+
+    @media (950px <= height) {
+
+        .input--larger .input__widget {
             font-size: 24px;
             line-height: 32px;
-            border-radius: 25px;
         }
 
         .input--larger textarea.input__widget {
