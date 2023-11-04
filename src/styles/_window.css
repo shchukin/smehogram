@@ -27,3 +27,7 @@
     max-width: 360px;
     min-height: 500px;
 }
+
+.window--short {
+    min-height: 200px;
+}
