@@ -2,14 +2,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 136px;
+    min-height: calc(2*20px + 3*24px);
     padding: 20px 21px;
     border: none;
     background-color: #FFFFFF;
     border-radius: 25px;
     font-family: inherit;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 24px;
     color: #000000;
     text-align: left;
     color-scheme: light;
@@ -23,11 +23,26 @@
         }
 
 
+/* Только десктопы (не мобилки, запрос обратный к мобильному (width < 740px) */
+@media (740px <= width) {
+
+    /* Запросы по высоте */
+    @media (700px <= height) {
+
+        .answer {
+            min-height: calc(2 * 20px + 3 * 32px);
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+}
+
+
+
 @media (width < 740px) {
 
     .answer {
-        font-size: 16px;
-        line-height: 24px;
+
     }
         .answer__select {
 

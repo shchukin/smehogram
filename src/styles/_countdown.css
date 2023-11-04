@@ -28,11 +28,28 @@
 }
 
 
+
+
 .countdown--smaller {
-    width: 87px;
-    height: 87px;
+    width: 54px;
+    height: 54px;
     padding-bottom: 0;
     background-image: url("../vectors/countdown--mobile.svg");
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+/* Только десктопы (не мобилки, запрос обратный к мобильному (width < 740px) */
+@media (740px <= width) {
+
+    /* Запросы по высоте */
+    @media (700px <= height) {
+        .countdown--smaller {
+            width: 87px;
+            height: 87px;
+            font-size: 28px;
+            line-height: 28px;
+        }
+
+    }
 }
