@@ -22,12 +22,12 @@
                 position: relative;
                 margin-top: 0;
                 margin-bottom: 0;
-                width: 170px;
-                height: 43px;
-                background-image: url("../images/game-headings-letters.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center center;
+                font-family: "Verdana", sans-serif;
+                font-weight: bold;
+                font-size: 48px;
+                line-height: 48px;
+                color: #6587FE;
+                text-transform: uppercase;
             }
 
 
@@ -35,6 +35,9 @@
                 width: 226px;
                 height: 145px;
                 background-image: url("../images/trial-headings-letters.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
             }
                 .game__heading--trial::after {
                     content: "";
