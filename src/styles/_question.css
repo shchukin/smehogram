@@ -320,7 +320,7 @@
         line-height: 40px;
         color: #FFFFFF;
         animation: question-results-slide 1000ms var(--ease-out-quint);
-        zoom: 0.8
+        zoom: 0.8;
     }
 
     .question__image ~ .question__results {

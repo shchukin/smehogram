@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: calc(2*20px + 3*24px);
+    min-height: calc(2 * 20px + 3 * 24px);
     padding: 20px 21px;
     border: none;
     background-color: #FFFFFF;
