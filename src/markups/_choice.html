@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>.choice</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body>
+
+
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>.choice</h1>
+
+            <label class="choice choice--checkbox">
+                <input class="choice__widget" type="checkbox">
+                <i class="choice__icon" role="presentation"></i>
+                <span class="choice__label">Автоматический следующий раунд</span>
+            </label>
+
+            <br>
+
+            <label class="choice choice--radio">
+                <input class="choice__widget" type="radio">
+                <i class="choice__icon" role="presentation"></i>
+                <span class="choice__label">Автоматический следующий раунд</span>
+            </label>
+
+            <br>
+
+
+            <label class="choice choice--checkbox">
+                <input class="choice__widget" type="checkbox" checked>
+                <i class="choice__icon" role="presentation"></i>
+                <span class="choice__label">Автоматический следующий раунд</span>
+            </label>
+
+            <br>
+
+            <label class="choice choice--radio">
+                <input class="choice__widget" type="radio" checked>
+                <i class="choice__icon" role="presentation"></i>
+                <span class="choice__label">Автоматический следующий раунд</span>
+            </label>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.choice--disabled</h2>
+            <p>
+                Also please use <b>disabled</b> attribute to block it on logic level
+            </p>
+            <br>
+
+
+            <label class="choice choice--checkbox choice--disabled">
+                <input class="choice__widget" type="checkbox" disabled>
+                <i class="choice__icon" role="presentation"></i>
+                <span class="choice__label">Автоматический следующий раунд</span>
+            </label>
+
+            <br>
+
+            <label class="choice choice--radio choice--disabled">
+                <input class="choice__widget" type="radio" disabled>
+                <i class="choice__icon" role="presentation"></i>
+                <span class="choice__label">Автоматический следующий раунд</span>
+            </label>
+
+            <br>
+
+
+            <label class="choice choice--checkbox choice--disabled">
+                <input class="choice__widget" type="checkbox" checked disabled>
+                <i class="choice__icon" role="presentation"></i>
+                <span class="choice__label">Автоматический следующий раунд</span>
+            </label>
+
+            <br>
+
+            <label class="choice choice--radio choice--disabled">
+                <input class="choice__widget" type="radio" checked disabled>
+                <i class="choice__icon" role="presentation"></i>
+                <span class="choice__label">Автоматический следующий раунд</span>
+            </label>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.choice--hidden-label</h2>
+
+            <p>
+                Alternatively <b>.choice__label</b> can be removed
+            </p>
+
+            <label class="choice choice--checkbox choice--hidden-label">
+                <input class="choice__widget" type="checkbox">
+                <i class="choice__icon" role="presentation"></i>
+                <span class="choice__label">Автоматический следующий раунд</span>
+            </label>
+
+            <br>
+
+            <label class="choice choice--radio choice--hidden-label">
+                <input class="choice__widget" type="radio">
+                <i class="choice__icon" role="presentation"></i>
+                <span class="choice__label">Автоматический следующий раунд</span>
+            </label>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.choice--full-width</h2>
+
+            <p>
+                By default .choice component has width based on text inside.
+                But in some cases we want it to be full width. For example in the
+                list of options in sidebar. In this case we want to move cursor
+                over all checkboxes and be able to click them even if some
+                of them are shorter.
+            </p>
+
+
+            <label class="choice choice--checkbox choice--full-width">
+                <input class="choice__widget" type="checkbox">
+                <i class="choice__icon" role="presentation"></i>
+                <span class="choice__label">Автоматический следующий раунд</span>
+            </label>
+
+            <br>
+
+            <label class="choice choice--radio choice--full-width">
+                <input class="choice__widget" type="radio">
+                <i class="choice__icon" role="presentation"></i>
+                <span class="choice__label">Автоматический следующий раунд</span>
+            </label>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+        <script src="../vendors/jquery/jquery-3.7.0.min.js"></script>
+        <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_profile.js"></script>
+        <script src="../scripts/_menu.js"></script>
+        <script src="../scripts/_popup.js"></script>
+        <script src="../scripts/_question.js"></script>
+        <script src="../scripts/_answer.js"></script>
+        <script src="../scripts/_thermometer.js"></script>
+
+
+    </body>
+</html>

@@ -18,6 +18,9 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 32px;
     }
 
     @supports (zoom: 0.5) {

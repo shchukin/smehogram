@@ -1,0 +1,52 @@
+.thermometer {
+    display: flex;
+    align-items: stretch;
+}
+    .thermometer__item {
+        flex-grow: 1;
+        flex-basis: 0;
+        display: inline-block;
+        vertical-align: top;
+        border: none;
+        padding: 10px 18px;
+        background-color: #FFFFFF;
+        box-shadow: inset 1px 0 0 rgb(0 0 0 / 10%);
+        font-family: inherit;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        color: #6587FE;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .thermometer__item:first-child {
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 18px;
+    }
+
+    .thermometer__item:last-child {
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+    }
+
+    .thermometer__item--current {
+        background-image: linear-gradient(to right, #45AEFF, #9352FF);
+        color: #FFFFFF;
+        box-shadow: none;
+    }
+
+    .thermometer__item--current + .thermometer__item {
+        box-shadow: none;
+    }
+
+
+.thermometer--smaller {
+
+}
+    .thermometer--smaller .thermometer__item {
+        font-size: 16px;
+    }
