@@ -39,7 +39,7 @@
 
         <!-- assets -->
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-        <link rel="stylesheet" href="../styles/style.css?1699078813">
+        <link rel="stylesheet" href="../styles/style.css?1699191839">
 
     </head>
     <body>
@@ -471,16 +471,84 @@
                 <br>
                 <br>
 
+                <div class="window">
+                    <section class="dialog">
+                        <h2 class="dialog__heading">
+                            Настройки игры
+                        </h2>
+                        <div class="dialog__body">
+                           <div class="dialog__field">
+                               <label class="choice choice--checkbox">
+                                   <input class="choice__widget" type="checkbox" checked>
+                                   <i class="choice__icon" role="presentation"></i>
+                                   <span class="choice__label">Автоматический следующий раунд</span>
+                               </label>
+                           </div>
+                           <div class="dialog__field">
+                               <label class="choice choice--checkbox">
+                                   <input class="choice__widget" type="checkbox" checked>
+                                   <i class="choice__icon" role="presentation"></i>
+                                   <span class="choice__label">Режим ведущего</span>
+                               </label>
+                           </div>
+                           <div class="dialog__field">
+                               <span class="label">
+                                   Время на ответ
+                               </span>
+                                <div class="thermometer">
+                                    <button class="thermometer__item" type="button">30</button>
+                                    <button class="thermometer__item thermometer__item--current" type="button">60</button>
+                                    <button class="thermometer__item" type="button">120</button>
+                                </div>
+                           </div>
+                           <div class="dialog__field">
+                               <span class="label">
+                                   Время на голосование
+                               </span>
+                                <div class="thermometer">
+                                    <button class="thermometer__item" type="button">15</button>
+                                    <button class="thermometer__item thermometer__item--current" type="button">30</button>
+                                    <button class="thermometer__item" type="button">60</button>
+                                </div>
+                           </div>
+                           <div class="dialog__field">
+                               <span class="label">
+                                   Раунд брейк
+                               </span>
+                                <div class="thermometer thermometer--smaller">
+                                    <button class="thermometer__item" type="button">2 мин.</button>
+                                    <button class="thermometer__item thermometer__item--current" type="button">5 мин.</button>
+                                    <button class="thermometer__item" type="button">10 мин.</button>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="dialog__operations">
+                            <a class="button button--tiny" href="#">Да</a>
+                            <a class="button button--tiny button--outline-secondary" href="#">Нет</a>
+                        </div>
+                    </section>
+                    <div class="window__close">
+                        <button class="action action--close" type="button" data-popup-close>
+                            <span class="visuallyhidden">Закрыть</span>
+                        </button>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
             </div>
         </div>
 
 
         <script src="../vendors/jquery/jquery-3.7.0.min.js"></script>
-        <script src="../scripts/_input.js?1699078813"></script>
-        <script src="../scripts/_profile.js?1699078813"></script>
-        <script src="../scripts/_menu.js?1699078813"></script>
-        <script src="../scripts/_popup.js?1699078813"></script>
-        <script src="../scripts/_question.js?1699078813"></script>
+        <script src="../scripts/_input.js?1699191839"></script>
+        <script src="../scripts/_profile.js?1699191839"></script>
+        <script src="../scripts/_menu.js?1699191839"></script>
+        <script src="../scripts/_popup.js?1699191839"></script>
+        <script src="../scripts/_question.js?1699191839"></script>
+        <script src="../scripts/_answer.js?1699191839"></script>
+        <script src="../scripts/_thermometer.js?1699191839"></script>
 
     </body>
 </html>
