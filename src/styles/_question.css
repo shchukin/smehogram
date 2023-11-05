@@ -42,7 +42,7 @@
 
     .question__stage {
         padding-top: 101px;
-        padding-bottom: 50px;
+        padding-bottom: 101px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -261,7 +261,10 @@
                     }
 
         .question__submit {
-            margin-top: 20px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 40px;
             text-align: center;
         }
 
@@ -412,7 +415,7 @@
                 scroll-snap-align: start;
                 height: 100vh;
                 padding-top: 122px;
-                padding-bottom: 61px;
+                padding-bottom: 122px;
             }
     }
 
@@ -568,7 +571,6 @@
         .question__stage + .question__stage {
             margin-top: 50px;
         }
-
             .question__body {
                 display: flex;
             }
@@ -760,7 +762,7 @@
             }
 
 
-    @media (700px <= height) {
+    @media (600px <= height) {
         .question {
             padding-top: 0;
             height: 100svh;
@@ -773,7 +775,7 @@
             height: 100svh;
             margin-top: 0 !important;
             padding-top: 82px;
-            padding-bottom: 41px;
+            padding-bottom: 120px;
         }
     }
 }
