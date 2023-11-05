@@ -42,7 +42,7 @@ html {
 }
     @media (width < 740px) {
         .alternate-background {
-            background-image: url("../images/background-alternate-mobile.webp");
+            background-image: url("../images/background-alternate-smartphone.webp");
         }
     }
 

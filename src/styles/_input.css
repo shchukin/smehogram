@@ -348,3 +348,12 @@
         }
     }
 }
+
+
+@media (width < 740px) {
+    .input--larger textarea.input__widget {
+        min-height: auto;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}
