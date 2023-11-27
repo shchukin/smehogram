@@ -6,6 +6,7 @@
 }
     .game__inner {
         position: relative;
+        width: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -23,7 +24,6 @@
                 margin-top: 0;
                 margin-bottom: 0;
             }
-
 
             .game__heading--trial {
                 width: 226px;
