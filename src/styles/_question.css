@@ -264,6 +264,11 @@
         text-align: center;
     }
 
+    .question__next {
+        margin-top: 20px;
+        text-align: center;
+    }
+
 
     /* vs icon */
     @keyframes question-vs-slide {
@@ -449,6 +454,10 @@
             margin-top: 30px;
         }
 
+        .question__next {
+            margin-top: 30px;
+        }
+
         .question__results {
             zoom: 0.9;
         }
@@ -496,6 +505,10 @@
             }
 
             .question__submit {
+                margin-top: 43px;
+            }
+
+            .question__next {
                 margin-top: 43px;
             }
 
@@ -731,6 +744,10 @@
 
 
         .question__submit {
+
+        }
+
+        .question__next {
 
         }
 }
