@@ -13,7 +13,7 @@
         display: block;
         padding: 13px 16px;
         background-color: #34537B;
-        box-shadow: 0 2px 4px 1px #111111;
+        box-shadow: 0 2px 4px 1px #222222;
         border-radius: 4px;
         font-family: inherit;
         font-weight: normal;
@@ -52,7 +52,7 @@
             margin-left: -5px;
             width: 10px;
             height: 10px;
-            box-shadow: 0 0 4px 2px #111111;
+            box-shadow: 0 0 4px 2px #222222;
             transform: rotate(45deg);
         }
 

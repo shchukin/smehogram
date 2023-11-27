@@ -26,7 +26,8 @@
         position: absolute;
         z-index: 10;
         left: 12px;
-        top: 8px;
+        top: 50%;
+        margin-top: -10px;
         width: 20px;
         height: 20px;
         background-color: #FFFFFF;
@@ -78,11 +79,12 @@
     .choice__label {
         position: relative;
         display: flex;
+        align-items: center;
         vertical-align: top;
-        padding: 6px 12px 6px 46px;
+        padding: 8px 12px 8px 46px;
         border-radius: 2px;
         font-size: 15px;
-        line-height: 24px;
+        line-height: 20px;
         color: #FFFFFF;
     }
         .choice__label .explain {
