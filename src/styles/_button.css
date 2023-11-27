@@ -30,6 +30,7 @@
 .button--tiny {
     min-width: 100px;
     border-radius: 15px;
+    font-size: 20px;
 }
 
 
@@ -128,7 +129,8 @@
 .button:disabled,
 .button:disabled:hover,
 .button:disabled:active {
-    background-color: #666666;
+    background-color: rgb(255 201 216 / 50%);
+    color: #E5E5E5;
     filter: none;
     background-image: none;
     box-shadow: none;

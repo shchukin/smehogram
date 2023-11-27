@@ -1,7 +1,6 @@
 .window {
     position: relative;
-    width: 100%;
-    max-width: 426px;
+    width: 426px;
     min-height: 580px; /* Все модалки по размеру более-менее одинаковые */
     display: flex; /* В комбинации с min-height нужно дать потомкам возможность заполнять всю высоту */
     flex-direction: column;
@@ -22,12 +21,20 @@
         }
 
 
-
 .window--smaller {
-    max-width: 360px;
+    width: 360px;
     min-height: 500px;
 }
 
 .window--short {
     min-height: 200px;
+}
+
+
+/* В самом конце: */
+
+@media (width < 475px) {
+    .window {
+        width: 100%;
+    }
 }
