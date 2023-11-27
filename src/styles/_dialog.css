@@ -367,6 +367,11 @@
     .dialog--qr .dialog__body {
         padding-bottom: 10px;
     }
+        .dialog--qr .dialog__body canvas {
+            vertical-align: top;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
     .dialog--qr .dialog__operations {
         padding-bottom: 10px;

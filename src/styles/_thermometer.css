@@ -49,6 +49,14 @@
 }
     .thermometer--smaller .thermometer__item {
         font-size: 16px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    @media (width < 370px) {
+        .thermometer--smaller .thermometer__item {
+            font-size: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
