@@ -1,0 +1,96 @@
+.bubble {
+    position: relative;
+    z-index: 100;
+    display: inline-block;
+    vertical-align: top;
+    opacity: 0;
+    visibility: hidden;
+    cursor: text;
+}
+    .bubble__body {
+        position: relative;
+        z-index: 20;
+        display: block;
+        padding: 13px 16px;
+        background-color: #34537B;
+        box-shadow: 0 2px 4px 1px #111111;
+        border-radius: 4px;
+        font-family: inherit;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+        white-space: nowrap;
+        text-transform: none;
+        text-align: left;
+        text-indent: 0;
+    }
+        .bubble__body p {
+            margin-top: 9px;
+            margin-bottom: 9px;
+        }
+
+        .bubble__body p:first-child {
+            margin-top: 0;
+        }
+
+        .bubble__body p:last-child {
+            margin-bottom: 0;
+        }
+
+    .bubble__angle {
+
+    }
+        .bubble__angle::before {
+            content: "";
+            position: absolute;
+            z-index: 10;
+            left: 50%;
+            top: 100%;
+            margin-top: -5px;
+            margin-left: -5px;
+            width: 10px;
+            height: 10px;
+            box-shadow: 0 0 4px 2px #111111;
+            transform: rotate(45deg);
+        }
+
+        .bubble__angle::after {
+            content: "";
+            position: absolute;
+            z-index: 30;
+            left: 50%;
+            top: 100%;
+            margin-top: -5px;
+            margin-left: -5px;
+            width: 10px;
+            height: 10px;
+            background-color: #34537B;
+            transform: rotate(45deg);
+        }
+
+
+
+
+
+.bubble--visible {
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 9px; /* эффект выезжания */
+}
+
+
+/* Если работаем мышью, то показываем c анимациями и по таймауту */
+@media (hover: hover) {
+    .bubble-context:hover .bubble {
+        opacity: 1;
+        visibility: visible;
+        margin-bottom: 9px; /* эффект выезжания */
+        transition: opacity 0.3s ease 0.15s,
+                    visibility 0.3s ease 0.15s,
+                    margin-bottom 0.3s ease 0.15s;
+    }
+}
+
+

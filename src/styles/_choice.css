@@ -85,6 +85,11 @@
         line-height: 24px;
         color: #FFFFFF;
     }
+        .choice__label .explain {
+            margin-top: -8px;
+            margin-bottom: -8px;
+            margin-right: -10px;
+        }
 
 
 

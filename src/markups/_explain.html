@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>.explain</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body>
+
+
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>.explain</h1>
+            <p>
+                Это разметочный блок, который к иконке добавляет небольшой поповер.
+                В качестве поповера используется отдельный блок <a href="_bubble.html">.bubble</a>.
+                Скрытие и показ там же. Здесь только иконки и позиционирование.
+            </p>
+            <p>
+                Смотрим:
+            </p>
+
+            <span class="explain bubble-context">
+                <button class="explain__icon bubble-handler" type="button">
+                    Подсказка
+                </button>
+                <span class="explain__popover bubble">
+                    <span class="bubble__body">
+                        Lorem ipsum dolor sit amet
+                    </span>
+                    <i class="bubble__angle"></i>
+                </span>
+            </span>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.explain--question</h2>
+
+            <span class="explain explain--question bubble-context">
+                <button class="explain__icon bubble-handler" type="button">
+                    Подсказка
+                </button>
+                <span class="explain__popover bubble">
+                    <span class="bubble__body">
+                        Lorem ipsum dolor sit amet
+                    </span>
+                    <i class="bubble__angle"></i>
+                </span>
+            </span>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+        <script src="../vendors/jquery/jquery-3.7.0.min.js"></script>
+        <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_profile.js"></script>
+        <script src="../scripts/_menu.js"></script>
+        <script src="../scripts/_popup.js"></script>
+        <script src="../scripts/_question.js"></script>
+        <script src="../scripts/_answer.js"></script>
+        <script src="../scripts/_thermometer.js"></script>
+        <script src="../scripts/_bubble.js"></script>
+
+
+    </body>
+</html>
