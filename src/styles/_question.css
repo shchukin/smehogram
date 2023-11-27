@@ -86,8 +86,9 @@
                     }
                         .question__image {
                             vertical-align: top;
-                            width: auto;
-                            height: 240px;
+                            position: static !important; /* override weird react styles */
+                            width: auto !important; /* !important is because of the weird react styles */
+                            height: 240px !important; /* !important is because of the weird react styles */
                             margin-bottom: 19px;
                             background-color: rgb(255 255 255 / 20%);
                             border-radius: 25px;
@@ -101,6 +102,9 @@
                             line-height: 50px;
                             text-align: center;
                         }
+                            .question__title p {
+                                margin: 0;
+                            }
 
                         .question__image ~ .question__title {
                             font-size: 32px;
@@ -426,7 +430,7 @@
         }
 
         .question__image {
-            height: 280px;
+            height: 280px !important; /* !important is because of the weird react styles */
             margin-bottom: 27px;
         }
 
@@ -476,7 +480,7 @@
                 margin-top: 6vh;
             }
                 .question__image {
-                    height: 320px;
+                    height: 320px !important; /* !important is because of the weird react styles */
                     margin-bottom: 38px;
                 }
 
@@ -555,8 +559,9 @@
                     padding-right: calc(var(--container-padding) / 2);
                 }
                     .question__image {
-                        width: 100%;
-                        height: auto;
+                        max-width: 100% !important; /* !important is because of the weird react styles */
+                        height: auto !important; /* !important is because of the weird react styles */
+                        max-height: 320px;
                         margin-bottom: 24px;
                     }
 
