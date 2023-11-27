@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>.bubble</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <link rel="stylesheet" href="../styles/style.css?1701092330">
+    </head>
+
+    <body>
+
+
+
+        <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
+            <br>
+            <br>
+            <h1>.bubble</h1>
+
+            <p>
+                Смотри так же <a href="_explain.html">.explain</a>
+            </p>
+
+            <span class="bubble" style="visibility: visible; opacity: 1;">
+                <span class="bubble__body">
+                    Lorem ipsum dolor sit amet
+                </span>
+                <i class="bubble__angle"></i>
+            </span>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Разметка внутри</h2>
+            <p>
+                Предполагается, что внутри будут небольшие тексты, без переносов строк. По умолчанию переносы запрещены.
+                Если вдруг нужен многострочный текст, то проставляем <b>&lt;br&gt;</b>`ы вручную.
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <h2>Показ бабла</h2>
+            <p>
+                Клик по <b>.bubble-handler</b> ищет и показывает соответствующий бабл.
+                Соответствующий этот тот, который находится внутри <b>.bubble-context</b> вместе с тем
+                <b>.bubble-handler</b> на который кликнули. Это нужно главным образом для мобилок без ховера.
+            </p>
+            <p>
+                Ещё бабл показывается обычным CSS-ным наведением на <b>.bubble-context</b>
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <h2>Позиционирование</h2>
+            <p>
+                В этом компоненте нет позиционирования. В каждом месте используется
+                своё позиционирование. Смотри, например, <a href="_explain.html">.explain</a>
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+        <script src="../vendors/jquery/jquery-3.7.0.min.js"></script>
+        <script src="../scripts/_input.js?1701092330"></script>
+        <script src="../scripts/_profile.js?1701092330"></script>
+        <script src="../scripts/_menu.js?1701092330"></script>
+        <script src="../scripts/_popup.js?1701092330"></script>
+        <script src="../scripts/_question.js?1701092330"></script>
+        <script src="../scripts/_answer.js?1701092330"></script>
+        <script src="../scripts/_thermometer.js?1701092330"></script>
+        <script src="../scripts/_bubble.js?1701092330"></script>
+
+
+    </body>
+</html>
+
+
