@@ -30,7 +30,11 @@
 .button--tiny {
     min-width: 100px;
     border-radius: 15px;
+}
+
+.button--smaller-font {
     font-size: 20px;
+    line-height: 28px;
 }
 
 
@@ -66,10 +70,6 @@
     line-height: 24px;
 }
 
-.button--smaller-font {
-    font-size: 20px;
-    line-height: 28px;
-}
 
 
 .button--qr-code {
