@@ -426,15 +426,19 @@
             border-radius: 20px;
         }
 
-        .question__index {
-            font-size: 24px;
-            line-height: 32px;
-        }
+            .question__index {
+                font-size: 24px;
+                line-height: 32px;
+            }
 
-        .question__type {
-            font-size: 22px;
-            line-height: 26px;
-        }
+            .question__type {
+                font-size: 22px;
+                line-height: 26px;
+            }
+
+            .question__countdown {
+                gap: 16px;
+            }
 
         .question__body {
             margin-top: 5.5vh;
@@ -489,6 +493,10 @@
                 .question__type {
                     font-size: 30px;
                     line-height: 30px;
+                }
+
+                .question__countdown {
+                    
                 }
 
             .question__body {
