@@ -41,6 +41,9 @@
             top: 50%;
             margin-left: 30px;
             translate: 0 -50%;
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
 
     .question__body {

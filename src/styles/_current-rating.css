@@ -1,0 +1,39 @@
+.current-rating {
+    display: inline-block;
+    vertical-align: top;
+    width: 41px;
+    height: 41px;
+    background-color: transparent;
+    background-image: url("../vectors/table.svg");
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #FFB369;
+    border-radius: 13px;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Только десктопы (не мобилки, запрос обратный к мобильному (width < 740px) */
+@media (740px <= width) {
+
+    /* Запросы по высоте */
+    @media (700px <= height) {
+        .current-rating {
+            width: 62px;
+            height: 62px;
+            background-size: 36px 36px;
+        }
+    }
+
+    /* Запросы по высоте */
+    @media (950px <= height) {
+        .current-rating {
+            width: 76px;
+            height: 76px;
+            background-size: 44px 44px;
+        }
+    }
+}
