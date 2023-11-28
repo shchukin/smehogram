@@ -39,7 +39,7 @@
 
         <!-- assets -->
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-        <link rel="stylesheet" href="../styles/style.css?1701174105">
+        <link rel="stylesheet" href="../styles/style.css?1701174996">
 
     </head>
     <body>
@@ -57,6 +57,10 @@
                     <div class="question__head">
                         <span class="question__index">ROUND1</span>
                         <span class="question__type">Картинка</span>
+                        <div class="question__countdown">
+                            <div class="countdown countdown--smaller">120</div>
+                            <a class="current-rating" data-popup-show href="#current-rating">Промежуточные результаты</a>
+                        </div>
                     </div>
                     <div class="question__body">
                         <div class="question__asking">
@@ -172,18 +176,242 @@
                 </div>
             </div>
 
+
+            <div class="popup" style="display: none;" id="current-rating">
+                <div class="popup__container">
+                    <div class="popup__viewport">
+                        <div class="popup__slot">
+                            <div class="window window--no-background">
+                                <div class="mini-results">
+                                    <h2 class="mini-results__heading">
+                                        Промежуточные результаты
+                                    </h2>
+                                    <div class="mini-results__list">
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">1.</b>
+                                            <div class="mini-results__team">Йожики</div>
+                                            <div class="mini-results__score">200</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">2.</b>
+                                            <div class="mini-results__team">Матросы</div>
+                                            <div class="mini-results__score">180</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">3.</b>
+                                            <div class="mini-results__team">Кукуруза</div>
+                                            <div class="mini-results__score">150</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">4.</b>
+                                            <div class="mini-results__team">Тряпки</div>
+                                            <div class="mini-results__score">100</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">5.</b>
+                                            <div class="mini-results__team">Мама у меня месячные</div>
+                                            <div class="mini-results__score">70</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">6.</b>
+                                            <div class="mini-results__team">Олигарх</div>
+                                            <div class="mini-results__score">40</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">7.</b>
+                                            <div class="mini-results__team">Компашка</div>
+                                            <div class="mini-results__score">20</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">8.</b>
+                                            <div class="mini-results__team">Тараканы</div>
+                                            <div class="mini-results__score">10</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">9.</b>
+                                            <div class="mini-results__team">Йожики</div>
+                                            <div class="mini-results__score">200</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">10.</b>
+                                            <div class="mini-results__team">Тараканы</div>
+                                            <div class="mini-results__score">10</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">11.</b>
+                                            <div class="mini-results__team">Йожики</div>
+                                            <div class="mini-results__score">200</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">12.</b>
+                                            <div class="mini-results__team">Матросы</div>
+                                            <div class="mini-results__score">180</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">13.</b>
+                                            <div class="mini-results__team">Кукуруза</div>
+                                            <div class="mini-results__score">150</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">14.</b>
+                                            <div class="mini-results__team">Тряпки</div>
+                                            <div class="mini-results__score">100</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">15.</b>
+                                            <div class="mini-results__team">Мама у меня месячные</div>
+                                            <div class="mini-results__score">70</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">16.</b>
+                                            <div class="mini-results__team">Олигарх</div>
+                                            <div class="mini-results__score">40</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">17.</b>
+                                            <div class="mini-results__team">Компашка</div>
+                                            <div class="mini-results__score">20</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">18.</b>
+                                            <div class="mini-results__team">Тараканы</div>
+                                            <div class="mini-results__score">10</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">19.</b>
+                                            <div class="mini-results__team">Йожики</div>
+                                            <div class="mini-results__score">200</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">20.</b>
+                                            <div class="mini-results__team">Матросы</div>
+                                            <div class="mini-results__score">180</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">21.</b>
+                                            <div class="mini-results__team">Тараканы</div>
+                                            <div class="mini-results__score">10</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">22.</b>
+                                            <div class="mini-results__team">Йожики</div>
+                                            <div class="mini-results__score">200</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">23.</b>
+                                            <div class="mini-results__team">Кукуруза</div>
+                                            <div class="mini-results__score">150</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">24.</b>
+                                            <div class="mini-results__team">Тряпки</div>
+                                            <div class="mini-results__score">100</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">25.</b>
+                                            <div class="mini-results__team">Мама у меня месячные</div>
+                                            <div class="mini-results__score">70</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">26.</b>
+                                            <div class="mini-results__team">Олигарх</div>
+                                            <div class="mini-results__score">40</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">27.</b>
+                                            <div class="mini-results__team">Компашка</div>
+                                            <div class="mini-results__score">20</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">28.</b>
+                                            <div class="mini-results__team">Тараканы</div>
+                                            <div class="mini-results__score">10</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">29.</b>
+                                            <div class="mini-results__team">Олигарх</div>
+                                            <div class="mini-results__score">40</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">30.</b>
+                                            <div class="mini-results__team">Компашка</div>
+                                            <div class="mini-results__score">20</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">31.</b>
+                                            <div class="mini-results__team">Йожики</div>
+                                            <div class="mini-results__score">200</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">32.</b>
+                                            <div class="mini-results__team">Матросы</div>
+                                            <div class="mini-results__score">180</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">33.</b>
+                                            <div class="mini-results__team">Кукуруза</div>
+                                            <div class="mini-results__score">150</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">34.</b>
+                                            <div class="mini-results__team">Тряпки</div>
+                                            <div class="mini-results__score">100</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">35.</b>
+                                            <div class="mini-results__team">Мама у меня месячные</div>
+                                            <div class="mini-results__score">70</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">36.</b>
+                                            <div class="mini-results__team">Олигарх</div>
+                                            <div class="mini-results__score">40</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">37.</b>
+                                            <div class="mini-results__team">Компашка</div>
+                                            <div class="mini-results__score">20</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">38.</b>
+                                            <div class="mini-results__team">Тараканы</div>
+                                            <div class="mini-results__score">10</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">39.</b>
+                                            <div class="mini-results__team">Компашка</div>
+                                            <div class="mini-results__score">20</div>
+                                        </div>
+                                        <div class="mini-results__item">
+                                            <b class="mini-results__index">40.</b>
+                                            <div class="mini-results__team">Тараканы</div>
+                                            <div class="mini-results__score">10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="window__close">
+                                    <button class="action action--close" type="button" data-popup-close>
+                                        <span class="visuallyhidden">Закрыть</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
 
         <script src="../vendors/jquery/jquery-3.7.0.min.js"></script>
-        <script src="../scripts/_input.js?1701174105"></script>
-        <script src="../scripts/_profile.js?1701174105"></script>
-        <script src="../scripts/_menu.js?1701174105"></script>
-        <script src="../scripts/_popup.js?1701174105"></script>
-        <script src="../scripts/_question.js?1701174105"></script>
-        <script src="../scripts/_answer.js?1701174105"></script>
-        <script src="../scripts/_thermometer.js?1701174105"></script>
-        <script src="../scripts/_bubble.js?1701174105"></script>
+        <script src="../scripts/_input.js?1701174996"></script>
+        <script src="../scripts/_profile.js?1701174996"></script>
+        <script src="../scripts/_menu.js?1701174996"></script>
+        <script src="../scripts/_popup.js?1701174996"></script>
+        <script src="../scripts/_question.js?1701174996"></script>
+        <script src="../scripts/_answer.js?1701174996"></script>
+        <script src="../scripts/_thermometer.js?1701174996"></script>
+        <script src="../scripts/_bubble.js?1701174996"></script>
 
     </body>
 </html>
