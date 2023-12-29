@@ -64,6 +64,20 @@
 
 
 
+/* специфичный телик */
+@media tv and (max-height: 599px) {
+    .answer {
+        min-height: calc(2 * 14px + 3 * 20px);
+        font-size: 15px;
+        line-height: 20px;
+        color: red;
+    }
+}
+
+
+
+
+
 @media (width < 740px) {
 
     .answer {

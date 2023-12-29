@@ -348,3 +348,18 @@
         }
     }
 }
+
+
+/* специфичный телик */
+@media tv and (max-height: 599px) {
+
+    .input--larger .input__widget {
+        font-size: 15px;
+        line-height: 20px;
+        color: red;
+    }
+
+    .input--larger textarea.input__widget {
+        min-height: calc(2 * 14px + 3 * 20px);
+    }
+}

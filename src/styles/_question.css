@@ -533,6 +533,72 @@
 }
 
 
+
+/* специфичный телик */
+@media tv and (max-height: 599px) {
+
+    .question {
+        padding-top: 3.5vh;
+        padding-bottom: 5vh;
+        color: red;
+    }
+
+    .question__head {
+        gap: 12px;
+        padding: 7px 15px 6px;
+        border-radius: 10px;
+    }
+
+        .question__index {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .question__type {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .question__countdown {
+            gap: 8px;
+        }
+
+    .question__body {
+        margin-top: 2.25vh;
+    }
+
+    .question__image {
+        height: 140px !important; /* !important is because of the weird react styles */
+        margin-bottom: 14px;
+    }
+
+    .question__title,
+    .question__image ~ .question__title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+
+    .question__answers {
+        margin-top: 13px;
+    }
+
+    .question__submit {
+        margin-top: 15px;
+    }
+
+    .question__next {
+        margin-top: 15px;
+    }
+
+    .question__results {
+        zoom: 1;
+    }
+}
+
+
+
+
 @media (width < 740px) {
 
     .question {
