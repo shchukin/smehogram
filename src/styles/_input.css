@@ -356,7 +356,6 @@
     .input--larger .input__widget {
         font-size: 15px;
         line-height: 20px;
-        color: red;
     }
 
     .input--larger textarea.input__widget {

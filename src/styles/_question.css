@@ -540,7 +540,6 @@
     .question {
         padding-top: 3.5vh;
         padding-bottom: 5vh;
-        color: red;
     }
 
     .question__head {
@@ -592,7 +591,11 @@
     }
 
     .question__results {
-        zoom: 1;
+        zoom: 0.6;
+    }
+
+    .question__asking {
+        min-height: 200px;
     }
 }
 
