@@ -567,7 +567,7 @@
     }
 
     .question__image {
-        height: 200px !important; /* !important is because of the weird react styles */
+        height: 190px !important; /* !important is because of the weird react styles */
         margin-bottom: 14px;
     }
 
@@ -583,7 +583,7 @@
     }
 
     .question__submit {
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .question__next {

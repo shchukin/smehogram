@@ -81,7 +81,9 @@
 /* специфичный телек */
 @media (min-width: 740px) and (max-width: 999px) and (max-height: 599px) {
     .answer {
-        min-height: calc(2 * 14px + 3 * 20px);
+        min-height: calc(2 * 12px + 3 * 20px);
+        padding-top: 12px;
+        padding-bottom: 12px;
         font-size: 15px;
         line-height: 20px;
     }
