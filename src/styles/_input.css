@@ -356,6 +356,7 @@
     .input--larger .input__widget {
         padding-top: 12px;
         padding-bottom: 12px;
+        border-radius: 20px;
         font-size: 15px;
         line-height: 20px;
     }
