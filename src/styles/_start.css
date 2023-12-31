@@ -61,3 +61,81 @@
         font-size: 16px;
         line-height: 24px;
     }
+
+
+
+@media (min-width: 740px) and (max-width: 999px) and (max-height: 599px) {
+
+    .start {
+        --bottom-padding: 100px;
+    }
+
+    .start {
+        margin-top: -35px;
+        /*display: grid;*/
+        /*grid-template-rows: 1fr auto;*/
+        /*min-height: 100%;*/
+        padding-top: 0;
+        /*padding-bottom: var(--bottom-padding);*/
+    }
+        .start__center {
+            /*margin-top: auto;*/
+            /*margin-bottom: auto;*/
+        }
+            .start__branding {
+                /*display: flex;*/
+                /*flex-direction: column;*/
+                /*align-items: center;*/
+                /*gap: 5px;*/
+            }
+                .start__branding .emblem {
+                    width: 60px;
+                    height: 60px;
+                }
+                .start__branding .logo {
+                    width: 144px;
+                    height: 45px;
+                }
+
+            .start__heading {
+                /*margin: 16px auto 0;*/
+                width: 242px;
+                height: 51px;
+                /*background-image: url("../images/start-heading.svg");*/
+                /*background-size: contain;*/
+                /*background-repeat: no-repeat;*/
+                /*background-position: center center;*/
+            }
+
+            .start__primary-menu {
+                margin-top: 24px;
+                /*margin-left: auto;*/
+                /*margin-right: auto;*/
+                /*display: grid;*/
+                width: 230px;
+                gap: 16px;
+            }
+
+            .start__sub-menu {
+                margin-top: 12px;
+                /*display: flex;*/
+                /*flex-direction: column;*/
+                /*align-items: center;*/
+                /*font-weight: 500;*/
+                /*font-size: 16px;*/
+                /*line-height: 24px;*/
+            }
+
+
+        .start__alternate-menu {
+            /*margin-bottom: calc(-1 * var(--bottom-padding));*/
+            /*display: flex;*/
+            /*flex-direction: column;*/
+            /*align-items: center;*/
+            padding-top: 20px;
+            /*padding-bottom: 66px;*/
+            /*font-weight: 500;*/
+            font-size: 15px;
+            line-height: 22px;
+        }
+}
