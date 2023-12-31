@@ -80,7 +80,7 @@
 
         .game__operations {
             position: absolute;
-            right: 335px; /* правый край qr-кода */
+            left: 0;
             bottom: -2px;
             padding-top: 2px;
             padding-bottom: 2px;
@@ -264,8 +264,7 @@
 
         .game__begin {
             position: absolute;
-            left: 50%;
-            margin-left: 175px; /* левый край .game__data */
+            right: 0;
             bottom: 0;
         }
             .game__begin .button {
@@ -347,7 +346,6 @@
 
             .game__operations {
                 /*position: absolute;*/
-                right: 320px; /* правый край qr-кода */
                 /*bottom: -2px;*/
                 /*padding-top: 2px;*/
                 /*padding-bottom: 2px;*/
@@ -527,7 +525,6 @@
             .game__begin {
                 /*position: absolute;*/
                 /*left: 50%;*/
-                margin-left: 155px; /* левый край .game__data */
                 /*bottom: 0;*/
             }
                 .game__begin .button {
@@ -551,7 +548,7 @@
             /*align-items: flex-start;*/
             /*justify-content: space-between;*/
             padding-top: 20px;
-            padding-bottom: 360px;
+            padding-bottom: 100px;
             border-bottom: none;
             width: auto;
             max-width: 100%;
