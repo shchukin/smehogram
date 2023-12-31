@@ -41,7 +41,7 @@
             .game__heading--trial {
                 width: 226px;
                 height: 145px;
-                background-image: url("/images/trial-headings-letters.svg");
+                background-image: url("../images/trial-headings-letters.svg");
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center center;
@@ -53,7 +53,7 @@
                     top: 10px;
                     width: 117px;
                     height: 151px;
-                    background-image: url("/images/trial-headings-illustration.webp");
+                    background-image: url("../images/trial-headings-illustration.webp");
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center center;
@@ -61,13 +61,13 @@
 
                 @media (1.5dppx <= resolution < 2.5dppx) {
                     .game__heading--trial::after {
-                        background-image: url("/images/trial-headings-illustration@2x.webp");
+                        background-image: url("../images/trial-headings-illustration@2x.webp");
                     }
                 }
 
                 @media (2.5dppx <= resolution) {
                     .game__heading--trial::after {
-                        background-image: url("/images/trial-headings-illustration@3x.webp");
+                        background-image: url("../images/trial-headings-illustration@3x.webp");
                     }
                 }
 
@@ -201,7 +201,7 @@
                             margin: auto;
                             width: 16px;
                             height: 16px;
-                            background-image: url("/vectors/cross-gradient.svg");
+                            background-image: url("../vectors/cross-gradient.svg");
                             background-size: contain;
                             background-repeat: no-repeat;
                             background-position: center center;
@@ -218,7 +218,7 @@
                         width: 14px;
                         height: 14px;
                         margin-right: 6px;
-                        background-image: url("/vectors/crown.svg");
+                        background-image: url("../vectors/crown.svg");
                         background-size: contain;
                         background-repeat: no-repeat;
                         background-position: center center;
@@ -236,7 +236,7 @@
                         display: block;
                         width: 10px;
                         height: 10px;
-                        background-image: url("/vectors/chevron-right-bold.svg");
+                        background-image: url("../vectors/chevron-right-bold.svg");
                         background-size: 10px 10px;
                         background-repeat: no-repeat;
                         background-position: center center;
@@ -315,7 +315,7 @@
                     /*margin-bottom: 0;*/
                     /*width: 226px;*/
                     /*height: 145px;*/
-                    /*background-image: url("/images/trial-headings-letters.svg");*/
+                    /*background-image: url("../images/trial-headings-letters.svg");*/
                     /*background-size: contain;*/
                     /*background-repeat: no-repeat;*/
                     /*background-position: center center;*/
@@ -427,7 +427,7 @@
                         /*padding-top: 7px;*/
                         /*padding-bottom: 7px;*/
                         /*padding-right: 32px;*/
-                        /*background-image: url("/vectors/confirmation-no.svg");*/
+                        /*background-image: url("../vectors/confirmation-no.svg");*/
                         /*background-repeat: no-repeat;*/
                         /*background-position: right center;*/
                         /*border-bottom: 1px solid rgb(255 255 255 / 25%);*/
