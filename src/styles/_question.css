@@ -567,7 +567,7 @@
     }
 
     .question__image {
-        height: 140px !important; /* !important is because of the weird react styles */
+        height: 200px !important; /* !important is because of the weird react styles */
         margin-bottom: 14px;
     }
 
