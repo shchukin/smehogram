@@ -24,7 +24,7 @@
         }
             .game__qr-code img,
             .game__qr-code canvas {
-                vertical-align: top;
+                display: block;
                 width: 220px;
                 height: 220px;
                 margin-left: auto;
@@ -548,6 +548,7 @@
         .game__inner {
             /*position: relative;*/
             display: block;
+            gap: 0;
             /*align-items: flex-start;*/
             /*justify-content: space-between;*/
             padding-top: 20px;
@@ -558,21 +559,19 @@
             /*margin-left: auto;*/
             /*margin-right: auto;*/
         }
-
             /* Если на странице представлен .container--inner, то есть и qr-code */
             .container--limited .game__inner {
-                padding-bottom: 380px;
+                /*padding-bottom: 380px;*/
             }
 
             .game__qr-code {
-                position: absolute;
-                left: 0;
-                right: 0;
-                bottom: 100px;
-                width: 220px;
-                margin-left: auto;
-                margin-right: auto;
+                margin-top: 32px;
             }
+                .game__qr-code img,
+                .game__qr-code canvas {
+                    width: 190px;
+                    height: 190px;
+                }
 
 
 
