@@ -8,7 +8,7 @@
         position: relative;
         width: 100%;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
         padding-top: 60px;
         padding-bottom: max(140px, calc(20px + 15vh));
@@ -16,8 +16,13 @@
         margin-left: auto;
         margin-right: auto;
     }
+        .game__qr-code {
+            flex-basis: 220px;
+            height: auto;
+        }
+
         .game__intro {
-            flex-basis: 244px;
+            flex-basis: 295px;
         }
             .game__heading {
                 position: relative;
@@ -67,8 +72,7 @@
 
         .game__operations {
             position: absolute;
-            left: 0;
-            right: 210px;
+            right: 335px; /* правый край qr-кода */
             bottom: -2px;
             padding-top: 2px;
             padding-bottom: 2px;
@@ -116,6 +120,7 @@
 
         .game__data {
             flex-basis: 295px;
+            padding-left: 20px;
         }
             .game__sub-heading {
                 margin-top: 0;
@@ -251,7 +256,8 @@
 
         .game__begin {
             position: absolute;
-            right: 0;
+            left: 50%;
+            margin-left: 175px; /* левый край .game__data */
             bottom: 0;
         }
             .game__begin .button {
@@ -274,13 +280,24 @@
             /*align-items: flex-start;*/
             /*justify-content: space-between;*/
             padding-top: 20px;
-            padding-bottom: 100px;
+            padding-bottom: 360px;
             border-bottom: none;
             width: auto;
             max-width: 100%;
             /*margin-left: auto;*/
             /*margin-right: auto;*/
         }
+            .game__qr-code {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 100px;
+                width: 220px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+
             .game__intro {
                 /*flex-basis: 244px;*/
             }
@@ -412,6 +429,8 @@
 
             .game__begin {
                 margin-top: 42px;
+                margin-right: 0;
+                margin-left: 0;
                 position: static;
                 text-align: center;
                 /*right: 0;*/
