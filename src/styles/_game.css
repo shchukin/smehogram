@@ -10,12 +10,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 45px;
         padding-top: 60px;
         padding-bottom: max(140px, calc(20px + 15vh));
         border-bottom: 120px solid transparent;
         margin-left: auto;
         margin-right: auto;
     }
+        /* Опционально может присутствовать QR-код (для "режим экрана"). Поставляется параллельно с container--limited. */
         .game__qr-code {
             flex-basis: 220px;
             height: auto;
@@ -288,6 +290,7 @@
             /*display: flex;*/
             /*align-items: center;*/
             /*justify-content: space-between;*/
+            gap: 30px;
             padding-top: 10px;
             padding-bottom: 100px;
             border-bottom-width: 40px;
@@ -555,6 +558,12 @@
             /*margin-left: auto;*/
             /*margin-right: auto;*/
         }
+
+            /* Если на странице представлен .container--inner, то есть и qr-code */
+            .container--limited .game__inner {
+                padding-bottom: 380px;
+            }
+
             .game__qr-code {
                 position: absolute;
                 left: 0;
@@ -564,6 +573,7 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+
 
 
             .game__intro {
