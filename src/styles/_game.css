@@ -274,6 +274,269 @@
 
 
 
+/* специфичный телек */
+@media (min-width: 740px) and (max-width: 999px) and (max-height: 599px) {
+
+    .game {
+        /*display: flex;*/
+        /*min-height: 100%;*/
+        /*flex-direction: column;*/
+        /*justify-content: center;*/
+    }
+        .game__inner {
+            /*position: relative;*/
+            /*width: 100%;*/
+            /*display: flex;*/
+            /*align-items: center;*/
+            /*justify-content: space-between;*/
+            padding-top: 10px;
+            padding-bottom: 100px;
+            border-bottom-width: 10px;
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+        }
+            .game__qr-code {
+                flex-basis: 180px;
+                /*height: auto;*/
+            }
+                .game__qr-code img,
+                .game__qr-code canvas {
+                    /*vertical-align: top;*/
+                    width: 180px;
+                    height: 180px;
+                    /*margin-left: auto;*/
+                    /*margin-right: auto;*/
+                }
+
+            .game__intro {
+                flex-basis: 280px;
+            }
+                .game__heading {
+                    /*position: relative;*/
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                }
+
+                .game__heading--trial {
+                    width: 181px;
+                    height: 116px;
+                    /*background-image: url("../images/trial-headings-letters.svg");*/
+                    /*background-size: contain;*/
+                    /*background-repeat: no-repeat;*/
+                    /*background-position: center center;*/
+                }
+                    .game__heading--trial::after {
+                        /*content: "";*/
+                        /*position: absolute;*/
+                        /*left: -40px;*/
+                        /*top: 10px;*/
+                        /*width: 117px;*/
+                        /*height: 151px;*/
+                        /*background-image: url("../images/trial-headings-illustration.webp");*/
+                        /*background-size: contain;*/
+                        /*background-repeat: no-repeat;*/
+                        /*background-position: center center;*/
+                    }
+
+
+                .game__hint {
+                    margin-top: 16px;
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+
+            .game__operations {
+                /*position: absolute;*/
+                right: 320px; /* правый край qr-кода */
+                /*bottom: -2px;*/
+                /*padding-top: 2px;*/
+                /*padding-bottom: 2px;*/
+                /*display: flex;*/
+                /*align-items: center;*/
+                /*flex-wrap: wrap;*/
+                /*gap: 10px;*/
+            }
+
+            .game__loading {
+                /*position: absolute;*/
+                /*left: 0;*/
+                /*right: 0;*/
+                /*bottom: -70px;*/
+            }
+                .game__indicator {
+                    /*text-indent: 200%;*/
+                    /*white-space: nowrap;*/
+                    /*overflow: hidden;*/
+                    /*animation: trial-rotation 5000ms linear infinite;*/
+                }
+                    .game__indicator.emblem,
+                    .game__indicator .emblem {
+                        /*width: 100px;*/
+                        /*height: 100px;*/
+                        /*margin-left: auto;*/
+                        /*margin-right: auto;*/
+                        /*border-radius: 50%;*/
+                    }
+
+                .game__waiting {
+                    /*max-width: 150px;*/
+                    /*margin-top: 25px;*/
+                    /*margin-left: auto;*/
+                    /*margin-right: auto;*/
+                    /*font-size: 12px;*/
+                    /*line-height: 18px;*/
+                    /*text-align: center;*/
+                }
+
+            .game__data {
+                flex-basis: 280px;
+                /*padding-left: 20px;*/
+            }
+                .game__sub-heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    /*font-weight: normal;*/
+                    /*font-size: 16px;*/
+                    /*line-height: 24px;*/
+                }
+
+                .game__list {
+                    /*margin-top: 8px;*/
+                }
+                    .game__team {
+                        /*position: relative;*/
+                        /*display: flex;*/
+                        /*align-items: stretch;*/
+                        /*border-bottom: 1px solid rgb(255 255 255 / 25%);*/
+                    }
+                        .game__label {
+                            /*flex-grow: 1;*/
+                            /*padding-top: 7px;*/
+                            /*padding-bottom: 7px;*/
+                            font-size: 11px;
+                            line-height: 18px;
+                        }
+
+                        .game__kick {
+                            /*margin-left: 20px;*/
+                            /*flex-shrink: 0;*/
+                            /*position: relative;*/
+                            /*width: 28px;*/
+                            /*padding: 0;*/
+                            /*margin-top: -1px;*/
+                            /*margin-bottom: -1px;*/
+                            /*border: none;*/
+                            /*background-color: transparent;*/
+                            /*text-indent: 200%;*/
+                            /*white-space: nowrap;*/
+                            /*overflow: hidden;*/
+                            /*cursor: pointer;*/
+                        }
+                            /* Наведение */
+                            .game__kick::before {
+                                /*content: "";*/
+                                /*position: absolute;*/
+                                /*left: 0;*/
+                                /*top: 0;*/
+                                /*right: 0;*/
+                                /*bottom: 0;*/
+                                /*display: block;*/
+                                /*margin: auto;*/
+                                /*width: 28px;*/
+                                /*height: 28px;*/
+                                /*border-radius: 3px;*/
+                            }
+
+                            .game__kick:hover::before {
+                                /*background-color: rgb(255 255 255 / 20%);*/
+                            }
+
+                            /* Крестик */
+                            .game__kick::after {
+                                /*content: "";*/
+                                /*position: absolute;*/
+                                /*left: 0;*/
+                                /*top: 0;*/
+                                /*right: 0;*/
+                                /*bottom: 0;*/
+                                /*display: block;*/
+                                /*margin: auto;*/
+                                /*width: 16px;*/
+                                /*height: 16px;*/
+                                /*background-image: url("../vectors/cross-gradient.svg");*/
+                                /*background-size: contain;*/
+                                /*background-repeat: no-repeat;*/
+                                /*background-position: center center;*/
+                            }
+
+                    .game__team--host {
+
+                    }
+                        .game__team--host::before {
+                            /*content: "";*/
+                            /*margin-top: -2px;*/
+                            /*margin-left: -1px;*/
+                            /*align-self: center;*/
+                            /*width: 14px;*/
+                            /*height: 14px;*/
+                            /*margin-right: 6px;*/
+                            /*background-image: url("../vectors/crown.svg");*/
+                            /*background-size: contain;*/
+                            /*background-repeat: no-repeat;*/
+                            /*background-position: center center;*/
+                        }
+
+                    .game__team--current {
+                        /*font-weight: bold;*/
+                    }
+                        .game__team--current::after {
+                            /*content: "";*/
+                            /*position: absolute;*/
+                            /*left: -25px;*/
+                            /*top: 50%;*/
+                            /*margin-top: -5px;*/
+                            /*display: block;*/
+                            /*width: 10px;*/
+                            /*height: 10px;*/
+                            /*background-image: url("../vectors/chevron-right-bold.svg");*/
+                            /*background-size: 10px 10px;*/
+                            /*background-repeat: no-repeat;*/
+                            /*background-position: center center;*/
+                        }
+
+                        @media (340px <= width < 400px) {
+                            .game__team--current::after {
+                                /*left: -20px;*/
+                            }
+                        }
+
+                        @media (width < 340px) {
+                            .game__team--current::after {
+                                /*left: -15px;*/
+                            }
+                        }
+
+                    .game__team--spectator {
+
+                    }
+                        .game__team--spectator .game__label {
+                            /*opacity: 0.5;*/
+                        }
+
+
+            .game__begin {
+                /*position: absolute;*/
+                /*left: 50%;*/
+                margin-left: 155px; /* левый край .game__data */
+                /*bottom: 0;*/
+            }
+                .game__begin .button {
+                    /*min-width: 190px;*/
+                }
+}
+
+
+
 @media (width < 740px) {
 
     .game {
