@@ -64,6 +64,20 @@
 
 
 
+@media (width < 740px) {
+
+    .answer {
+
+    }
+        .answer__select {
+
+        }
+            .answer__select {
+
+            }
+}
+
+
 /* специфичный телек */
 @media (min-width: 740px) and (max-width: 999px) and (max-height: 599px) {
     .answer {
@@ -77,15 +91,3 @@
 
 
 
-@media (width < 740px) {
-
-    .answer {
-
-    }
-        .answer__select {
-
-        }
-            .answer__select {
-
-            }
-}
