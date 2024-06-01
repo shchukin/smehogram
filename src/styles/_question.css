@@ -79,7 +79,7 @@
                     .question__swipe--disable-snapping {
                         scroll-snap-type: none;
                     }
-                        .question__asking {
+                        .question__slide {
                             scroll-snap-align: center;
                             position: relative;
                             flex-shrink: 0;
@@ -94,7 +94,7 @@
                         }
 
                         @media (740px <= width < 860px) {
-                            .question__asking {
+                            .question__slide {
                                 width: 100%;
                             }
                         }
@@ -625,7 +625,7 @@
                             padding-left: 10%;
                             padding-right: 10%;
                         }
-                            .question__asking {
+                            .question__slide {
                                 min-height: 0;
                                 width: 100%;
                                 padding-left: calc(var(--container-padding) / 2);
