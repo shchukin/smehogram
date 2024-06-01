@@ -56,10 +56,12 @@
             align-items: center;
         }
             .question__left-mask {
+                width: 100%;
                 -webkit-mask-image: linear-gradient(to left, transparent 0%, black 10%);
                         mask-image: linear-gradient(to left, transparent 0%, black 10%);
             }
                 .question__right-mask {
+                    width: 100%;
                     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%);
                             mask-image: linear-gradient(to right, transparent 0%, black 10%);
                 }
@@ -607,10 +609,10 @@
             }
 
                 .question__left-mask {
-                    width: 100%;
+
                 }
                     .question__right-mask {
-                        width: 100%;
+                  
                     }
                         .question__swipe {
                             padding-left: 10%;
