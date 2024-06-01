@@ -55,15 +55,15 @@
         align-items: center;
         margin-top: 5vh;
     }
-        .question__left-mask {
+        .question--swipe .question__left-mask {
             -webkit-mask-image: linear-gradient(to left, transparent 0%, black 10%);
                     mask-image: linear-gradient(to left, transparent 0%, black 10%);
         }
-            .question__right-mask {
+            .question--swipe .question__right-mask {
                 -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%);
                         mask-image: linear-gradient(to right, transparent 0%, black 10%);
             }
-                .question__swipe {
+                .question--swipe .question__swipe {
                     position: relative;
                     display: flex;
                     align-items: center;
@@ -74,7 +74,7 @@
                     scroll-snap-type: x mandatory;
                 }
 
-                .question__swipe--disable-snapping {
+                .question--swipe .question__swipe--disable-snapping {
                     scroll-snap-type: none;
                 }
                     .question__asking {
@@ -649,7 +649,7 @@
             display: flex;
             margin-top: 0;
         }
-            .question__swipe {
+            .question--swipe .question__swipe {
                 padding-left: 10%;
                 padding-right: 10%;
             }
