@@ -115,13 +115,10 @@
 
             .question__control {
                 position: absolute;
-                top: 0;
-                bottom: 0;
-                width: calc(2 * var(--container-padding));
                 border: none;
                 padding: 0;
-                background-color: transparent;
                 background-size: 60px;
+                background-color: transparent;
                 background-repeat: no-repeat;
                 background-position: center center;
                 text-indent: 200%;
@@ -130,14 +127,40 @@
                 cursor: pointer;
             }
 
-            .question__control--prev {
-                background-image: url("../vectors/chevron-left.svg");
+            .question__control--left {
+                top: 0;
+                bottom: 0;
                 left: 0;
+                width: calc(2 * var(--container-padding));
+                background-image: url("../vectors/chevron-left.svg");
             }
 
-            .question__control--next {
-                background-image: url("../vectors/chevron-right.svg");
+            .question__control--right {
+                top: 0;
+                bottom: 0;
                 right: 0;
+                width: calc(2 * var(--container-padding));
+                background-image: url("../vectors/chevron-right.svg");
+            }
+
+
+            .question__control--top {
+                top: 0;
+                right: 0;
+                /*bottom: 0;*/
+                /*left: 0;*/
+                width: calc(3 * var(--container-padding));
+                height: calc(3 * var(--container-padding));
+                background-image: url("../vectors/chevron-top.svg");
+            }
+
+            .question__control--bottom {
+                /*top: 0;*/
+                bottom: 0;
+                right: 0;
+                width: calc(3 * var(--container-padding));
+                height: calc(3 * var(--container-padding));
+                background-image: url("../vectors/chevron-bottom.svg");
             }
 
         .question__voting {
@@ -599,30 +622,15 @@
                         }
 
                 .question__control {
-                    /*position: absolute;*/
-                    /*top: 0;*/
-                    /*bottom: 0;*/
-                    width: var(--container-padding);
-                    /*border: none;*/
-                    /*padding: 0;*/
-                    /*background-color: transparent;*/
                     background-size: 24px 24px;
-                    /*background-repeat: no-repeat;*/
-                    /*background-position: center center;*/
-                    /*text-indent: 200%;*/
-                    /*white-space: nowrap;*/
-                    /*overflow: hidden;*/
-                    /*cursor: pointer;*/
                 }
 
-                .question__control--prev {
-                    /*background-image: url("../vectors/chevron-left.svg");*/
-                    /*left: 0;*/
+                .question__control--left {
+                    width: var(--container-padding);
                 }
 
-                .question__control--next {
-                    /*background-image: url("../vectors/chevron-right.svg");*/
-                    /*right: 0;*/
+                .question__control--right {
+                    width: var(--container-padding);
                 }
 
             .question__voting {

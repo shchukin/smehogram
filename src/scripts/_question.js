@@ -4,10 +4,10 @@
 
     $('.question__control').on('click', function () {
         let toScroll;
-        if ($(this).hasClass('question__control--next')) {
+        if ($(this).hasClass('question__control--right')) {
             toScroll = isDesktop ? $(window).outerWidth() : '900px';
         }
-        if ($(this).hasClass('question__control--prev')) {
+        if ($(this).hasClass('question__control--left')) {
             toScroll = 0;
         }
         $('.question__swipe').addClass('question__swipe--disable-snapping');
