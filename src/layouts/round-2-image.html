@@ -52,18 +52,31 @@
 
         <div id="__next">
 
-            <div class="page container container--wide">
+            <div class="page">
                 <div class="question">
                     <div class="question__head">
                         <span class="question__index">ROUND1</span>
                         <span class="question__type">Картинка</span>
                     </div>
-                    <div class="question__body">
-                        <div class="question__asking">
-                            <img class="question__image" src="../temp/question-image.jpg" alt="">
-                            <!-- Только на втором шаге добавляем .question__title--larger потому что много места -->
-                            <h1 class="question__title">Для чего нужно такое приспособление?</h1>
+                    <div class="question__stage">
+                        <div class="question__inner">
+                            <div class="question__body">
+                                <div class="question__left-mask">
+                                    <div class="question__right-mask">
+                                        <div class="question__swipe hide-scrollbar">
+                                            <div class="question__asking">
+                                                <img class="question__image" src="../temp/question-image.jpg" alt="">
+                                                <!-- Только на втором шаге добавляем .question__title--larger потому что много места -->
+                                                <h1 class="question__title">Для чего нужно такое приспособление?</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="question__submit">
+                        <button class="button" type="button">Отправить</button>
                     </div>
                 </div>
             </div>

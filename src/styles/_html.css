@@ -36,6 +36,7 @@ html {
 
 .alternate-background {
     background-image: url("../images/background-alternate.webp");
+    background-attachment: fixed;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
