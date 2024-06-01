@@ -92,6 +92,13 @@
                             align-items: center;
                             justify-content: center;
                         }
+
+                        @media (740px <= width < 860px) {
+                            .question__asking {
+                                width: 100%;
+                            }
+                        }
+
                             .question__image {
                                 vertical-align: top;
                                 width: auto;
@@ -612,7 +619,7 @@
 
                 }
                     .question__right-mask {
-                  
+
                     }
                         .question__swipe {
                             padding-left: 10%;
